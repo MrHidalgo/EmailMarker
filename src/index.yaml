@@ -1,10 +1,22 @@
-ProjectTitle: emailmarker
+ProjectTitle: EmailMarker
 
 PageList:
 - file:
   titleName: LANDING
 - file: index.html
   titleName: Home
+  ready: 1
+- file: features.html
+  titleName: Features
+  ready: 1
+- file: pricing.html
+  titleName: Pricing
+  ready: 1
+- file: integrations.html
+  titleName: Integrations
+  ready: 1
+- file: datavalidation.html
+  titleName: Datavalidation
   ready: 1
 
 - file:

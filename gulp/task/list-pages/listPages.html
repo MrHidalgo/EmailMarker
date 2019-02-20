@@ -598,7 +598,7 @@
     >
 
     <a
-      class="pagelist__title <% if(i==1){ %> is-active <% } %>"
+      class="pagelist__title <% if((i==1 && page.ready)){ %> is-active <% } %>"
       target="_blank"
       href="<%= page.file %>"
     >
@@ -649,7 +649,7 @@
 </section>
 
 <aside class="preview" id="preview-wrapper">
-  <iframe id="preview" width="1440" height="600" src="<%= pages.PageList[0].file %>" frameborder="0"></iframe>
+  <iframe id="preview" width="1440" height="600" src="<%= pages.PageList[1].file %>" frameborder="0"></iframe>
 </aside>
 
 

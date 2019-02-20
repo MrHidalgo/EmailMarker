@@ -10,23 +10,28 @@ const initWebFontLoader = () => {
 	/**
    * @description
 	 */
-	WebFont.load({
-    google: {
-      families: [
-        'Roboto:100,300,400,500,700,900'
-      ]
-    }
-  });
+	// WebFont.load({
+  //   google: {
+  //     families: [
+  //       'Roboto:100,300,400,500,700,900'
+  //     ]
+  //   }
+  // });
 
 	/**
    * @description
 	 */
-  // const WebFontConfig = {
-  //   custom: {
-  //     families: [
-  //       'Lato:n1,n3,n4,n5,n6,n7,n9'
-  //     ]
-  //   }
-  // };
+  const WebFontConfig = {
+    custom: {
+      families: [
+        'Dakota:n1',
+        'Eina01:n3,n4,n6,n7',
+        'Eina02:n3,n4,n6,n7',
+        'Eina03:n3,n4,n6,n7',
+        'Eina04:n3,n4,n6,n7',
+        'Brandon Grotesque:n7',
+      ]
+    }
+  };
 
 };

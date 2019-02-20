@@ -63,4 +63,27 @@
 /// @include mixinFontFace("SF-Pro-Text", "-Heavy", "../fonts/", 800, otf);
 ///
 /// ===============
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+@include mixinFontFace("Dakota", "", "../fonts/", 100, woff2 woff ttf);
+
+@include mixinFontFace("Eina01", "-Bold", "../fonts/", bold, woff2 woff ttf);
+@include mixinFontFace("Eina01", "-Light", "../fonts/", 300, woff2 woff ttf);
+@include mixinFontFace("Eina01", "-Regular", "../fonts/", normal, woff2 woff ttf);
+@include mixinFontFace("Eina01", "-SemiBold", "../fonts/", 600, woff2 woff ttf);
+@include mixinFontFace("Eina02", "-Light", "../fonts/", 300, woff2 woff ttf);
+@include mixinFontFace("Eina02", "-Bold", "../fonts/", bold, woff2 woff ttf);
+@include mixinFontFace("Eina02", "-SemiBold", "../fonts/", 600, woff2 woff ttf);
+@include mixinFontFace("Eina02", "-Regular", "../fonts/", normal, woff2 woff ttf);
+@include mixinFontFace("Eina03", "-Regular", "../fonts/", normal, woff2 woff ttf);
+@include mixinFontFace("Eina03", "-Light", "../fonts/", 300, woff2 woff ttf);
+@include mixinFontFace("Eina03", "-Bold", "../fonts/", bold, woff2 woff ttf);
+@include mixinFontFace("Eina03", "-SemiBold", "../fonts/", 600, woff2 woff ttf);
+@include mixinFontFace("Eina04", "-SemiBold", "../fonts/", 600, woff2 woff ttf);
+@include mixinFontFace("Eina04", "-Regular", "../fonts/", 400, woff2 woff ttf);
+@include mixinFontFace("Eina04", "-Light", "../fonts/", 300, woff2 woff ttf);
+@include mixinFontFace("Eina04", "-Bold", "../fonts/", bold, woff2 woff ttf);
+
+@include mixinFontFace("Brandon Grotesque", "-Bold", "../fonts/", bold, woff2 woff ttf);
+@include mixinFontFace("Brandon Grotesque", "-Bold_1", "../fonts/", bold, woff2 woff ttf);
+@include mixinFontFace("Brandon Grotesque", "-Bold_2", "../fonts/", bold, woff2 woff ttf);

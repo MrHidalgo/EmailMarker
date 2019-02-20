@@ -54,27 +54,36 @@ var initWebFontLoader = function initWebFontLoader() {
   /**
     * @description
    */
-  WebFont.load({
-    google: {
-      families: ['Roboto:100,300,400,500,700,900']
-    }
-  });
+  // WebFont.load({
+  //   google: {
+  //     families: [
+  //       'Roboto:100,300,400,500,700,900'
+  //     ]
+  //   }
+  // });
 
   /**
     * @description
    */
-  // const WebFontConfig = {
-  //   custom: {
-  //     families: [
-  //       'Lato:n1,n3,n4,n5,n6,n7,n9'
-  //     ]
-  //   }
-  // };
+  var WebFontConfig = {
+    custom: {
+      families: ['Dakota:n1', 'Eina01:n3,n4,n6,n7', 'Eina02:n3,n4,n6,n7', 'Eina03:n3,n4,n6,n7', 'Eina04:n3,n4,n6,n7', 'Brandon Grotesque:n7']
+    }
+  };
 };
+
 /**
  * @description Document DOM ready.
  */
-(function () {
+$(document).ready(function (ev) {
+  /**
+   *
+   * @type {*|jQuery|HTMLElement}
+   * @private
+   */
+  var _document = $(document),
+      _window = $(window);
+
   /*
   * =============================================
   * CALLBACK :: start
@@ -85,11 +94,9 @@ var initWebFontLoader = function initWebFontLoader() {
   * ============================================= */
 
   /**
-   * @name initNative
-   *
    * @description Init all method
    */
-  var initNative = function initNative() {
+  var initJquery = function initJquery() {
     // default
     initWebFontLoader();
     initPreventBehavior();
@@ -102,5 +109,5 @@ var initWebFontLoader = function initWebFontLoader() {
     // callback
     // ==========================================
   };
-  initNative();
-})();
+  initJquery();
+});
