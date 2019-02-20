@@ -1,0 +1,11 @@
+ProjectTitle: emailmarker
+
+PageList:
+- file:
+  titleName: LANDING
+- file: index.html
+  titleName: Home
+  ready: 1
+
+- file:
+  titleName: DASHBOARD
