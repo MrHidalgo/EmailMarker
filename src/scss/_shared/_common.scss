@@ -1,3 +1,68 @@
 // COMMON :: START
 
+// social
+.social {
+  display: flex;
+
+  &__list {
+    display: flex;
+
+    &-item {
+      margin-left: 15px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    @include transition(opacity);
+
+    &:hover {
+      opacity: 0.95;
+      @include transition(opacity);
+    }
+
+    @each $classMod, $bg, $iconH in
+        ('fb', #3B5998, 19px),
+        ('tw', #55ACEE, 14px),
+        ('in', #007AB9, 16px),
+        ('gp', #DC4E41, 12px),
+        ('pn', #CB2027, 18px)
+    {
+      &--#{$classMod} {
+        background-color: $bg;
+
+        .icon-font {
+          font-size: $iconH;
+        }
+      }
+    }
+
+    .icon-font {
+      color: #fff;
+    }
+  }
+}
+// social :: end
+
+// copyright
+.copyright {
+  &__text {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    line-height: line-height-convert(28, 12);
+    text-align: center;
+    color: #f8fcff;
+  }
+}
+// copyright :: end
+
 // COMMON :: END

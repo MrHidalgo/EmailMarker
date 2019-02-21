@@ -1,7 +1,72 @@
 // FOOTER :: START
 
 footer#footer.footer
-  .c-grid
-    .footer__wrapper
+  .footer__wrapper.footer__wrapper-0
+    .c-grid
+
+      .footer__row
+        .footer__col.footer__col-0
+
+          .footer__logo
+            a(href="/" class="" title="")
+              +logoImage()
+
+        .footer__col.footer__col-1
+
+          p.footer__title!= "Company"
+
+          ul.footer__nav
+            li.footer__nav-item
+              a.footer__nav-btn(href="#" class="" title="")!= "Blog"
+            li.footer__nav-item
+              a.footer__nav-btn(href="#" class="" title="")!= "Terms and Conditions"
+            li.footer__nav-item
+              a.footer__nav-btn(href="#" class="" title="")!= "Copyright Policy"
+
+        .footer__col.footer__col-2
+
+          p.footer__title!= "Help"
+
+          ul.footer__nav
+            li.footer__nav-item
+              a.footer__nav-btn(href="#" class="" title="")!= "FAQ"
+            li.footer__nav-item
+              a.footer__nav-btn(href="#" class="" title="")!= "Documentation"
+
+        .footer__col.footer__col-3
+
+          p.footer__title!= "Contact"
+
+          ul.footer__nav
+            li.footer__nav-item
+              a.footer__nav-btn(href="tel:+19718033746" class="" title="")!= "+1 971-803-3746"
+            li.footer__nav-item
+              a.footer__nav-btn(href="mailto:contact@emailmarker.com" class="" title="")!= "contact@emailmarker.com"
+
+        .footer__col.footer__col-4
+
+          .social
+            ul.social__list
+              li.social__list-item
+                a.social__btn.social__btn--fb(href="#" class="" title="")
+                  i.icon-font.icon-fb
+              li.social__list-item
+                a.social__btn.social__btn--tw(href="#" class="" title="")
+                  i.icon-font.icon-tw
+              li.social__list-item
+                a.social__btn.social__btn--in(href="#" class="" title="")
+                  i.icon-font.icon-in
+              li.social__list-item
+                a.social__btn.social__btn--gp(href="#" class="" title="")
+                  i.icon-font.icon-gp
+              li.social__list-item
+                a.social__btn.social__btn--pn(href="#" class="" title="")
+                  i.icon-font.icon-pn
+
+  .footer__wrapper.footer__wrapper-1
+    .c-grid
+
+      .copyright
+        p.copyright__text!= "© EmailMarker, Inc 2015 - 2019. All rights reserved."
 
 // FOOTER :: END

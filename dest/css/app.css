@@ -1,3 +1,47 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-fb:before, .icon-gp:before, .icon-in:before, .icon-pn:before, .icon-tw:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-fb:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-gp:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-in:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-pn:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-tw:before {
+  content: "";
+}
+
 @font-face {
   font-family: "Dakota";
   src: url("../fonts/Dakota.woff2") format("woff2"), url("../fonts/Dakota.woff") format("woff"), url("../fonts/Dakota.ttf") format("truetype");
@@ -371,6 +415,136 @@ picture {
   }
 }
 
+/* line 4, src/scss/_shared/_common.scss */
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 7, src/scss/_shared/_common.scss */
+.social__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 10, src/scss/_shared/_common.scss */
+.social__list-item {
+  margin-left: 15px;
+}
+
+/* line 13, src/scss/_shared/_common.scss */
+.social__list-item:first-of-type {
+  margin-left: 0;
+}
+
+/* line 19, src/scss/_shared/_common.scss */
+.social__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 28, src/scss/_shared/_common.scss */
+.social__btn:hover {
+  opacity: 0.95;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__btn--fb {
+  background-color: #3B5998;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__btn--fb .icon-font {
+  font-size: 19px;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__btn--tw {
+  background-color: #55ACEE;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__btn--tw .icon-font {
+  font-size: 14px;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__btn--in {
+  background-color: #007AB9;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__btn--in .icon-font {
+  font-size: 16px;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__btn--gp {
+  background-color: #DC4E41;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__btn--gp .icon-font {
+  font-size: 12px;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__btn--pn {
+  background-color: #CB2027;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__btn--pn .icon-font {
+  font-size: 18px;
+}
+
+/* line 49, src/scss/_shared/_common.scss */
+.social__btn .icon-font {
+  color: #fff;
+}
+
+/* line 58, src/scss/_shared/_common.scss */
+.copyright__text {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  line-height: 2.33333;
+  text-align: center;
+  color: #f8fcff;
+}
+
+/* line 1, src/scss/_shared/_iconFont.scss */
+.icon-font {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+}
+
 /* line 3, src/scss/_components/_header.scss */
 .header {
   z-index: 100;
@@ -455,13 +629,7 @@ picture {
   display: flex;
 }
 
-/* line 49, src/scss/_components/_header.scss */
-.header__logo > a svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 56, src/scss/_components/_header.scss */
+/* line 51, src/scss/_components/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -473,27 +641,27 @@ picture {
           align-items: center;
 }
 
-/* line 62, src/scss/_components/_header.scss */
+/* line 57, src/scss/_components/_header.scss */
 .header__nav--p-home .header__nav-link, .header__nav--p-datavalidation .header__nav-link {
   opacity: 1;
 }
 
-/* line 75, src/scss/_components/_header.scss */
+/* line 70, src/scss/_components/_header.scss */
 .header__nav--p-features .header__nav-item:nth-of-type(1) a {
   opacity: 1;
 }
 
-/* line 75, src/scss/_components/_header.scss */
+/* line 70, src/scss/_components/_header.scss */
 .header__nav--p-pricing .header__nav-item:nth-of-type(2) a {
   opacity: 1;
 }
 
-/* line 75, src/scss/_components/_header.scss */
+/* line 70, src/scss/_components/_header.scss */
 .header__nav--p-integrations .header__nav-item:nth-of-type(3) a {
   opacity: 1;
 }
 
-/* line 83, src/scss/_components/_header.scss */
+/* line 78, src/scss/_components/_header.scss */
 .header__nav-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -501,7 +669,7 @@ picture {
   display: flex;
 }
 
-/* line 87, src/scss/_components/_header.scss */
+/* line 82, src/scss/_components/_header.scss */
 .header__nav-link {
   display: block;
   opacity: 0.4;
@@ -515,7 +683,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 97, src/scss/_components/_header.scss */
+/* line 92, src/scss/_components/_header.scss */
 .header__nav-link:hover {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -523,7 +691,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 104, src/scss/_components/_header.scss */
+/* line 99, src/scss/_components/_header.scss */
 .header__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -556,7 +724,7 @@ picture {
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 122, src/scss/_components/_header.scss */
+/* line 117, src/scss/_components/_header.scss */
 .header__btn--login:hover, .header__btn--signup:hover {
   -webkit-box-shadow: 0 1px 1px rgba(63, 54, 134, 0.1);
           box-shadow: 0 1px 1px rgba(63, 54, 134, 0.1);
@@ -567,14 +735,14 @@ picture {
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 128, src/scss/_components/_header.scss */
+/* line 123, src/scss/_components/_header.scss */
 .header__btn--login {
   margin-right: 12px;
   background: #fff;
   color: #8171FF;
 }
 
-/* line 133, src/scss/_components/_header.scss */
+/* line 128, src/scss/_components/_header.scss */
 .header__btn--login:hover {
   background: #6c63ff;
   color: #ffffff;
@@ -585,13 +753,13 @@ picture {
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 140, src/scss/_components/_header.scss */
+/* line 135, src/scss/_components/_header.scss */
 .header__btn--signup {
   background: #6c63ff;
   color: #ffffff;
 }
 
-/* line 144, src/scss/_components/_header.scss */
+/* line 139, src/scss/_components/_header.scss */
 .header__btn--signup:hover {
   background: #fff;
   color: #8171FF;
@@ -600,6 +768,135 @@ picture {
   -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 4, src/scss/_components/_footer.scss */
+.footer__wrapper {
+  min-height: 341px;
+}
+
+/* line 7, src/scss/_components/_footer.scss */
+.footer__wrapper-0 {
+  min-height: -webkit-calc(341px - 50px);
+  min-height: calc(341px - 50px);
+  padding-top: 77px;
+  background: #00206f;
+}
+
+/* line 13, src/scss/_components/_footer.scss */
+.footer__wrapper-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 50px;
+  background: #001a67;
+}
+
+/* line 22, src/scss/_components/_footer.scss */
+.footer__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 26, src/scss/_components/_footer.scss */
+.footer__col {
+  width: 100%;
+  max-width: -webkit-calc(100% / 5);
+  max-width: calc(100% / 5);
+}
+
+/* line 34, src/scss/_components/_footer.scss */
+.footer__col-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 40, src/scss/_components/_footer.scss */
+.footer__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 43, src/scss/_components/_footer.scss */
+.footer__logo a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 48, src/scss/_components/_footer.scss */
+.footer__title {
+  padding-bottom: 27px;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+}
+
+/* line 56, src/scss/_components/_footer.scss */
+.footer__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 60, src/scss/_components/_footer.scss */
+.footer__nav-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+/* line 64, src/scss/_components/_footer.scss */
+.footer__nav-item:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 69, src/scss/_components/_footer.scss */
+.footer__nav-btn {
+  opacity: 0.7;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 76, src/scss/_components/_footer.scss */
+.footer__nav-btn:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
