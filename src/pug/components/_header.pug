@@ -4,4 +4,28 @@ header#header.header
   .c-grid
     .header__wrapper
 
+      .header__content
+        .header__content-left
+
+          .header__logo
+            a(href="#" class="" title="")
+              +logotype()
+
+        .header__content-middle
+
+          ul.header__nav(class!= 'header__nav--' + pageClassName)
+            li.header__nav-item
+              a.header__nav-link(href="#" class="" title="")!= "FEATURES"
+            li.header__nav-item
+              a.header__nav-link(href="#" class="" title="")!= "PRICING"
+            li.header__nav-item
+              a.header__nav-link(href="#" class="" title="")!= "INTEGRATIONS"
+            li.header__nav-item
+              a.header__nav-link(href="#" class="" title="")!= "BLOG"
+
+        .header__content-right
+
+          a.header__btn.header__btn--login(href="#" class="" title="")!= "login"
+          a.header__btn.header__btn--signup(href="#" class="" title="")!= "sign up"
+
 // HEADER :: END

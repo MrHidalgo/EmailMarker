@@ -371,4 +371,235 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/_header.scss */
+.header {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 10, src/scss/_components/_header.scss */
+.header .c-grid {
+  max-width: 1394px;
+}
+
+/* line 14, src/scss/_components/_header.scss */
+.header__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 106px;
+}
+
+/* line 20, src/scss/_components/_header.scss */
+.header__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 40px;
+}
+
+/* line 26, src/scss/_components/_header.scss */
+.header__content-left {
+  width: 202px;
+}
+
+/* line 30, src/scss/_components/_header.scss */
+.header__content-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+}
+
+/* line 37, src/scss/_components/_header.scss */
+.header__content-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 232px;
+}
+
+/* line 46, src/scss/_components/_header.scss */
+.header__logo > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 49, src/scss/_components/_header.scss */
+.header__logo > a svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 56, src/scss/_components/_header.scss */
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 62, src/scss/_components/_header.scss */
+.header__nav--p-home .header__nav-link, .header__nav--p-datavalidation .header__nav-link {
+  opacity: 1;
+}
+
+/* line 75, src/scss/_components/_header.scss */
+.header__nav--p-features .header__nav-item:nth-of-type(1) a {
+  opacity: 1;
+}
+
+/* line 75, src/scss/_components/_header.scss */
+.header__nav--p-pricing .header__nav-item:nth-of-type(2) a {
+  opacity: 1;
+}
+
+/* line 75, src/scss/_components/_header.scss */
+.header__nav--p-integrations .header__nav-item:nth-of-type(3) a {
+  opacity: 1;
+}
+
+/* line 83, src/scss/_components/_header.scss */
+.header__nav-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 87, src/scss/_components/_header.scss */
+.header__nav-link {
+  display: block;
+  opacity: 0.4;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  text-align: left;
+  color: #464646;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 97, src/scss/_components/_header.scss */
+.header__nav-link:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 104, src/scss/_components/_header.scss */
+.header__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 110px;
+  height: 40px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 3px 3px rgba(63, 54, 134, 0.2);
+          box-shadow: 0 3px 3px rgba(63, 54, 134, 0.2);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  color: #8171ff;
+  text-transform: uppercase;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 122, src/scss/_components/_header.scss */
+.header__btn--login:hover, .header__btn--signup:hover {
+  -webkit-box-shadow: 0 1px 1px rgba(63, 54, 134, 0.1);
+          box-shadow: 0 1px 1px rgba(63, 54, 134, 0.1);
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 128, src/scss/_components/_header.scss */
+.header__btn--login {
+  margin-right: 12px;
+  background: #fff;
+  color: #8171FF;
+}
+
+/* line 133, src/scss/_components/_header.scss */
+.header__btn--login:hover {
+  background: #6c63ff;
+  color: #ffffff;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 140, src/scss/_components/_header.scss */
+.header__btn--signup {
+  background: #6c63ff;
+  color: #ffffff;
+}
+
+/* line 144, src/scss/_components/_header.scss */
+.header__btn--signup:hover {
+  background: #fff;
+  color: #8171FF;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
