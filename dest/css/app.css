@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/* line 1, src/scss/_generated/_spriteSVG.scss */
+.icon-gdpr-file {
+  width: 82.145px;
+  height: 87.885px;
+}
+
+/* line 5, src/scss/_generated/_spriteSVG.scss */
+.icon-gdpr-world {
+  width: 149.307px;
+  height: 149.31px;
+}
+
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -539,6 +551,12 @@ picture {
   line-height: 2.33333;
   text-align: center;
   color: #f8fcff;
+}
+
+/* line 3, src/scss/_shared/_iconSVG.scss */
+.icon-svg {
+  display: inline-block;
+  fill: currentColor;
 }
 
 /* line 1, src/scss/_shared/_iconFont.scss */
@@ -1107,7 +1125,107 @@ picture {
 
 /* line 6, src/scss/_components/home/_gdpr.scss */
 .gdpr__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   min-height: 178px;
+}
+
+/* line 14, src/scss/_components/home/_gdpr.scss */
+.gdpr__bg {
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, src/scss/_components/home/_gdpr.scss */
+.gdpr__bg-world {
+  z-index: 2;
+  position: relative;
+  left: -30px;
+}
+
+/* line 30, src/scss/_components/home/_gdpr.scss */
+.gdpr__bg-text {
+  z-index: 1;
+  position: relative;
+  top: 12px;
+  left: -50px;
+  font-weight: bold;
+  font-size: 151px;
+  line-height: 0.38411;
+  color: #3bd3ff;
+}
+
+/* line 42, src/scss/_components/home/_gdpr.scss */
+.gdpr__row {
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+/* line 51, src/scss/_components/home/_gdpr.scss */
+.gdpr__col-1 {
+  padding-left: 25px;
+}
+
+/* line 55, src/scss/_components/home/_gdpr.scss */
+.gdpr__col-2 {
+  padding-left: 37px;
+}
+
+/* line 60, src/scss/_components/home/_gdpr.scss */
+.gdpr__line {
+  width: 154px;
+  height: 1px;
+  background: #fff;
+}
+
+/* line 66, src/scss/_components/home/_gdpr.scss */
+.gdpr__text {
+  font-size: 15px;
+  line-height: 1.86667;
+  color: #fff;
+}
+
+/* line 72, src/scss/_components/home/_gdpr.scss */
+.gdpr__title {
+  font-size: 31px;
+  letter-spacing: 0.4em;
+  line-height: 1.87097;
+  color: #fff;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

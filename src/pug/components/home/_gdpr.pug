@@ -4,4 +4,24 @@ section#gdpr.gdpr
   .c-grid
     .gdpr__wrapper
 
+      .gdpr__bg
+
+        p.gdpr__bg-file
+          +iconSVG('gdpr-file')
+
+        p.gdpr__bg-world
+          +iconSVG('gdpr-world')
+
+        p.gdpr__bg-text!= "GDPR"
+
+      .gdpr__row
+        .gdpr__col.gdpr__col-0
+          p.gdpr__title!= "Compliant"
+
+        .gdpr__col.gdpr__col-1
+          .gdpr__line
+
+        .gdpr__col.gdpr__col-2
+          p.gdpr__text!= "EmailMarker is fully compliant with the General Data<br>Protection Regulation protocols."
+
 // SECTION gdpr :: END
