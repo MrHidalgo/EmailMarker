@@ -1,0 +1,23 @@
+// SECTION partners :: START
+
+section#partners.partners
+
+  p.partners__heading!= "Partners"
+
+  .c-grid
+    .partners__wrapper
+      .partners__wrapper-auto
+
+        p.c-title.partners__title!= "Some friends that we’ve<br>made along the way."
+
+        p.partners__desc!= "We like working with smart people at bold-visioned organizations to bring their ideas to life. Our partners bring us in to co-invent solutions, build a long-term vision, and nerd out together."
+
+      .partners__wrapper-expand
+
+        .partners__logo
+          each val, idx in [1,2,3,4,5,6,7,8]
+            div
+              img(src="./img/img-partners-" + idx + ".png" srcset="./img/img-partners-" + idx + "@2x.png 2x" alt="" title="")
+
+
+// SECTION partners :: END

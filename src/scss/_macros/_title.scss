@@ -1,13 +1,9 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
-
-  &__icon {
-    &-wrap {}
-  }
+  font-size: 35px;
+  line-height: line-height-convert(45,35);
+  color: #2d3136;
 }
 
 // TITLE :: END

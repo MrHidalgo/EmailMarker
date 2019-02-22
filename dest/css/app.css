@@ -568,6 +568,13 @@ picture {
   line-height: 1;
 }
 
+/* line 3, src/scss/_macros/_title.scss */
+.c-title {
+  font-size: 35px;
+  line-height: 1.28571;
+  color: #2d3136;
+}
+
 /* line 23, src/scss/_macros/_btn.scss */
 .c-btn {
   outline: none;
@@ -1077,6 +1084,118 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
+/* line 3, src/scss/_components/common/_partners.scss */
+.partners {
+  position: relative;
+  background-color: #f4f9fc;
+}
+
+/* line 7, src/scss/_components/common/_partners.scss */
+.partners__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+/* line 12, src/scss/_components/common/_partners.scss */
+.partners__wrapper-auto {
+  width: 440px;
+}
+
+/* line 16, src/scss/_components/common/_partners.scss */
+.partners__wrapper-expand {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+  padding-left: 143px;
+}
+
+/* line 23, src/scss/_components/common/_partners.scss */
+.partners__heading {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  font-weight: bold;
+  font-size: 167px;
+  line-height: 1;
+  color: #2d3136;
+  opacity: 0.03;
+}
+
+/* line 34, src/scss/_components/common/_partners.scss */
+.partners__title {
+  padding-bottom: 47px;
+}
+
+/* line 38, src/scss/_components/common/_partners.scss */
+.partners__desc {
+  font-size: 17px;
+  line-height: 1.82353;
+  color: #818992;
+}
+
+/* line 44, src/scss/_components/common/_partners.scss */
+.partners__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: 100%;
+  padding-top: 10px;
+}
+
+/* line 50, src/scss/_components/common/_partners.scss */
+.partners__logo > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: -webkit-calc(100% / 4);
+  max-width: calc(100% / 4);
+  padding: 5px;
+}
+
+/* line 56, src/scss/_components/common/_partners.scss */
+.partners__logo > div:nth-of-type(1), .partners__logo > div:nth-of-type(2), .partners__logo > div:nth-of-type(3), .partners__logo > div:nth-of-type(4) {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 63, src/scss/_components/common/_partners.scss */
+.partners__logo > div:nth-of-type(5), .partners__logo > div:nth-of-type(6), .partners__logo > div:nth-of-type(7), .partners__logo > div:nth-of-type(8) {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 70, src/scss/_components/common/_partners.scss */
+.partners__logo > div:nth-of-type(2), .partners__logo > div:nth-of-type(3), .partners__logo > div:nth-of-type(6), .partners__logo > div:nth-of-type(7) {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 77, src/scss/_components/common/_partners.scss */
+.partners__logo > div:nth-of-type(4), .partners__logo > div:nth-of-type(8) {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 /* line 3, src/scss/_components/common/_workflow.scss */
 .workflow {
   background-color: #6c63ff;
@@ -1163,7 +1282,7 @@ picture {
 .gdpr__bg-world {
   z-index: 2;
   position: relative;
-  left: -30px;
+  left: -33px;
 }
 
 /* line 30, src/scss/_components/home/_gdpr.scss */
@@ -1171,7 +1290,7 @@ picture {
   z-index: 1;
   position: relative;
   top: 12px;
-  left: -50px;
+  left: -58px;
   font-weight: bold;
   font-size: 151px;
   line-height: 0.38411;
