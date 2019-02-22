@@ -1,0 +1,30 @@
+// SECTION workflow :: START
+
+.workflow {
+  background-color: #6c63ff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &-expand {
+      flex: 1;
+    }
+
+    &-fixed {
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: line-height-convert(58, 44);
+    color: #fff;
+  }
+}
+
+// SECTION workflow :: END

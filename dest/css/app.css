@@ -6,7 +6,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-fb:before, .icon-gp:before, .icon-in:before, .icon-pn:before, .icon-tw:before {
+.icon-arrow-right:before, .icon-fb:before, .icon-gp:before, .icon-in:before, .icon-pn:before, .icon-tw:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,29 +17,34 @@
   text-transform: none;
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-fb:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-arrow-right:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-gp:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-fb:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-in:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-gp:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-pn:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-in:before {
   content: "";
 }
 
-/* line 50, src/scss/_generated/_spriteFont.scss */
-.icon-tw:before {
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-pn:before {
   content: "";
+}
+
+/* line 53, src/scss/_generated/_spriteFont.scss */
+.icon-tw:before {
+  content: "";
 }
 
 @font-face {
@@ -545,6 +550,161 @@ picture {
   line-height: 1;
 }
 
+/* line 23, src/scss/_macros/_btn.scss */
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 67px;
+  -webkit-box-shadow: 0px 3px 3px rgba(21, 90, 69, 0.2);
+          box-shadow: 0px 3px 3px rgba(21, 90, 69, 0.2);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* line 42, src/scss/_macros/_btn.scss */
+.c-btn:hover .c-btn__left:before {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 54, src/scss/_macros/_btn.scss */
+.c-btn__left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+  min-width: 1px;
+  height: 100%;
+  padding: 5px 30px 5px 19px;
+}
+
+/* line 64, src/scss/_macros/_btn.scss */
+.c-btn__left:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 76, src/scss/_macros/_btn.scss */
+.c-btn__left span {
+  z-index: 2;
+  position: relative;
+  top: 2px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.57895;
+  color: #fff;
+}
+
+/* line 87, src/scss/_macros/_btn.scss */
+.c-btn__right {
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 67px;
+  height: 100%;
+}
+
+/* line 96, src/scss/_macros/_btn.scss */
+.c-btn__right .icon-arrow-right {
+  color: #fff;
+  font-size: 15px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 103, src/scss/_macros/_btn.scss */
+.c-btn--blue {
+  background-color: #04c7ff;
+}
+
+/* line 107, src/scss/_macros/_btn.scss */
+.c-btn--blue .c-btn__left:before {
+  background-color: #3bd3ff;
+}
+
+/* line 112, src/scss/_macros/_btn.scss */
+.c-btn--blue .c-btn__right {
+  background-color: #3bd3ff;
+}
+
+@-webkit-keyframes offsetArrow {
+  from {
+  }
+  50% {
+  }
+  to {
+  }
+}
+
+@keyframes offsetArrow {
+  from {
+  }
+  50% {
+  }
+  to {
+  }
+}
+
 /* line 3, src/scss/_components/_header.scss */
 .header {
   z-index: 100;
@@ -897,6 +1057,57 @@ picture {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/common/_workflow.scss */
+.workflow {
+  background-color: #6c63ff;
+}
+
+/* line 6, src/scss/_components/common/_workflow.scss */
+.workflow__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 13, src/scss/_components/common/_workflow.scss */
+.workflow__wrapper-expand {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* line 17, src/scss/_components/common/_workflow.scss */
+.workflow__wrapper-fixed {
+  width: auto;
+}
+
+/* line 22, src/scss/_components/common/_workflow.scss */
+.workflow__title {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 1.31818;
+  color: #fff;
+}
+
+/* line 3, src/scss/_components/home/_gdpr.scss */
+.gdpr {
+  background-color: #04c7ff;
+}
+
+/* line 6, src/scss/_components/home/_gdpr.scss */
+.gdpr__wrapper {
+  min-height: 178px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -13,7 +13,20 @@ include ./_mixin/_nav
 include ./_mixin/_form
 
 
-// logo
+// btn with arrow
+// =========================
+mixin btn(classMod, val)
+  a.c-btn(href="#" class="c-btn--" + classMod title="")
+    .c-btn__left
+      span!= val
+    .c-btn__right
+      i.icon-font.icon-arrow-right
+// =========================
+// btn with arrow :: end
+
+
+// logo only image
+// =========================
 mixin logoImage()
   svg(id="logo-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.066" height="38" viewBox="0 0 49.066 38")
     defs
@@ -31,7 +44,11 @@ mixin logoImage()
       path(id="Path_3" data-name="Path 3" d="M45.848,36.481v3.236L35.2,44.468h0v7.777h0L53.417,44.1h.157V29.8L40.42,38.83Z" transform="translate(-35.2 -14.245)" fill="url(#linear-gradient-3)")
       path(id="Path_4" data-name="Path 4" d="M53.574,11.17V0L35.2,8.2h0V15.92h0l10.648-4.75v3.288L35.2,19.209v7.725L53.574,14.3,65.892,5.794Z" transform="translate(-35.2)" fill="url(#linear-gradient-3)")
 
+// =========================
+// logo only image :: end
 
+// logo with text
+// =========================
 mixin logotype()
   svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='201.83' height="38" viewBox="0 0 201.83 38")
     defs
@@ -74,8 +91,7 @@ mixin logotype()
               path(d="M197.25,9.74v.82h-1.17V14h-.88V10.56H194V9.74Z" style="fill: #fff")
               path(d="M198.53,9.74l1.25,1.65L201,9.74h.8V14H201V11.1l-1.2,1.54h0l-1.2-1.54V14h-.84V9.74Z" style="fill: #fff")
 
-
-
-// logo :: end
+// =========================
+// logo with text :: end
 
 //- MIXIN :: END

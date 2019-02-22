@@ -6,4 +6,6 @@ pageClassName: p-integrations
 extends shared/_layout
 
 block content
-  div.body.body--start(class!= pageClassName)
+  div.body(class!= pageClassName)
+
+    include components/common/_workflow
