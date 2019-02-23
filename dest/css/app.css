@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* line 6, src/scss/_utilities/_extend.scss */
+.blog__more span {
+  font-family: 'Eina04', sans-serif;
+  font-weight: bold;
+}
+
 /* line 1, src/scss/_generated/_spriteSVG.scss */
 .icon-gdpr-file {
   width: 82.145px;
@@ -18,7 +24,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-right:before, .icon-fb:before, .icon-gp:before, .icon-in:before, .icon-pn:before, .icon-tw:before {
+.icon-arrow-right-0:before, .icon-arrow-right:before, .icon-fb:before, .icon-gp:before, .icon-in:before, .icon-pn:before, .icon-tw:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,34 +35,39 @@
   text-transform: none;
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-arrow-right:before {
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-arrow-right-0:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-fb:before {
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-arrow-right:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-gp:before {
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-fb:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-in:before {
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-gp:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-pn:before {
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-in:before {
   content: "";
 }
 
-/* line 53, src/scss/_generated/_spriteFont.scss */
-.icon-tw:before {
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-pn:before {
   content: "";
+}
+
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-tw:before {
+  content: "";
 }
 
 @font-face {
@@ -1532,6 +1543,182 @@ picture {
   letter-spacing: 0.4em;
   line-height: 1.87097;
   color: #fff;
+}
+
+/* line 3, src/scss/_components/features/_blog.scss */
+.blog {
+  padding-top: 130px;
+  padding-bottom: 255px;
+}
+
+/* line 7, src/scss/_components/features/_blog.scss */
+.blog .c-grid {
+  position: relative;
+}
+
+/* line 12, src/scss/_components/features/_blog.scss */
+.blog__wrapper-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 16, src/scss/_components/features/_blog.scss */
+.blog__wrapper-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 21, src/scss/_components/features/_blog.scss */
+.blog__wrapper-left, .blog__wrapper-right {
+  width: 50%;
+}
+
+/* line 26, src/scss/_components/features/_blog.scss */
+.blog__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 32, src/scss/_components/features/_blog.scss */
+.blog__line {
+  margin-top: 63px;
+  margin-bottom: 63px;
+  width: 1364px;
+  height: 1px;
+  background-color: #818992;
+}
+
+/* line 40, src/scss/_components/features/_blog.scss */
+.blog__box {
+  width: 100%;
+  max-width: -webkit-calc((100% - 170px) / 3);
+  max-width: calc((100% - 170px) / 3);
+}
+
+/* line 45, src/scss/_components/features/_blog.scss */
+.blog__box:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 51, src/scss/_components/features/_blog.scss */
+.blog__box-top {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 239px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 11px 11px rgba(0, 32, 111, 0.06);
+          box-shadow: 0 11px 11px rgba(0, 32, 111, 0.06);
+}
+
+/* line 59, src/scss/_components/features/_blog.scss */
+.blog__box-top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 72, src/scss/_components/features/_blog.scss */
+.blog__box-bottom {
+  padding-top: 43px;
+}
+
+/* line 76, src/scss/_components/features/_blog.scss */
+.blog__box-data {
+  padding-bottom: 22px;
+  font-size: 15px;
+  color: #818992;
+}
+
+/* line 82, src/scss/_components/features/_blog.scss */
+.blog__box-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.45833;
+  color: #2d3136;
+}
+
+/* line 90, src/scss/_components/features/_blog.scss */
+.blog__heading {
+  z-index: -1;
+  position: absolute;
+  top: -130px;
+  left: 0;
+  font-weight: bold;
+  font-size: 234px;
+  line-height: 1;
+  color: #f4f9fc;
+}
+
+/* line 101, src/scss/_components/features/_blog.scss */
+.blog__title {
+  padding-bottom: 29px;
+}
+
+/* line 105, src/scss/_components/features/_blog.scss */
+.blog__text {
+  color: #464646;
+}
+
+/* line 109, src/scss/_components/features/_blog.scss */
+.blog__more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 113, src/scss/_components/features/_blog.scss */
+.blog__more span {
+  padding-right: 20px;
+  font-size: 15px;
+  line-height: 2.06667;
+  color: #242424;
+}
+
+/* line 121, src/scss/_components/features/_blog.scss */
+.blog__more .icon-font {
+  color: #242424;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

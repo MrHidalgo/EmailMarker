@@ -1,0 +1,37 @@
+// SECTION blog :: START
+
+mixin blogBox(classMod, imgIdx, dataVal, title)
+  a.blog__box(href="#" class="blog__box-" + classMod title="")
+    .blog__box-top
+      img(src="./img/img-features-block-" + imgIdx + ".jpg" srcset="./img/img-features-block-" + imgIdx + "@2x.jpg 2x" alt="" title="")
+
+    .blog__box-bottom
+      p.blog__box-data!= dataVal
+      p.blog__box-title!= title
+
+
+section#blog.blog
+  .c-grid
+    p.blog__heading!= "BLOG"
+
+    .blog__wrapper.blog__wrapper-0
+
+      .blog__wrapper-left
+
+        p.c-title.blog__title!= "Our latest thoughts on web design"
+        p.c-text.blog__text!= "We have an answer to every questions"
+        
+      .blog__wrapper-right
+        a.blog__more(href="#" class="" title="")
+          span!= "Read more on the EmailMarker blog"
+          i.icon-font.icon-arrow-right-0
+
+    .blog__line
+
+    .blog__wrapper.blog__wrapper-1
+
+      +blogBox(0, 0, "15th Jan 19 4:39 pm", "Make the Most of Your EmailMarker Experience!")
+      +blogBox(1, 1, "15th Jan 19 4:39 pm", "Guide to Deciphering EmailMarker’s Email Status Report")
+      +blogBox(2, 2, "15th Jan 19 4:39 pm", "How to Increase Deliverability with the Recommendations of EmailMarker")
+
+// SECTION blog :: END

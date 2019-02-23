@@ -27,23 +27,26 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrow-right {
+	@if $filename == arrow-right-0 {
 		$char: "\E001";
 	}
-	@if $filename == fb {
+	@if $filename == arrow-right {
 		$char: "\E002";
 	}
-	@if $filename == gp {
+	@if $filename == fb {
 		$char: "\E003";
 	}
-	@if $filename == in {
+	@if $filename == gp {
 		$char: "\E004";
 	}
-	@if $filename == pn {
+	@if $filename == in {
 		$char: "\E005";
 	}
-	@if $filename == tw {
+	@if $filename == pn {
 		$char: "\E006";
+	}
+	@if $filename == tw {
+		$char: "\E007";
 	}
 
 	@return $char;
@@ -60,6 +63,10 @@
 	}
 }
 
+.icon-arrow-right-0 {
+	@include icon(arrow-right-0);
+
+}
 .icon-arrow-right {
 	@include icon(arrow-right);
 
