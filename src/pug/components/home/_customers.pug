@@ -1,0 +1,36 @@
+// SECTION customers :: START
+
+section#customers.customers
+  .c-grid
+    .customers__wrapper
+      .customers__wrapper-left
+
+        p.c-title.c-title--bold.c-title--white.customers__title!= "Our Customers<br>Deserve The Best"
+
+        p.c-text.customers__text!= "We believe our customers deserve the best available service. We’re always challenging ourselves to find new ways to improve upon our premium customer service experience."
+
+        .customers__box.customers__box-0
+          .customers__box-left
+            img(src="./img/img-customers-block-0.svg" alt="" title="")
+          .customers__box-right
+            p.customers__box-title!= "Best Accuracy Rate"
+            p.customers__box-text!= "Our service provides 97% accurate<br>results in real-time."
+
+        .customers__box.customers__box-1
+          .customers__box-left
+            img(src="./img/img-customers-block-1.svg" alt="" title="")
+          .customers__box-right
+            p.customers__box-title!= "Satisfaction guaranteed"
+            p.customers__box-text!= "Unhappy with our service , just let us<br>know and we will refund you in full."
+
+      .customers__wrapper-right
+
+        img.customers__img(src="./img/img-customers.svg" alt="" title="")
+
+        .customers__row
+          p.c-title.c-title--bold.c-title--white.customers__subtitle!= "Get started now.<br>Try EmailMaker<br>for Free."
+
+          +btn('blue customers__btn', 'Clean Your List For Free')
+
+
+// SECTION customers :: END

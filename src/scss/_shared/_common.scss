@@ -1,5 +1,13 @@
 // COMMON :: START
 
+// text
+.c-text {
+  font-size: 17px;
+  line-height: line-height-convert(31,17);
+  color: #fff;
+}
+// text :: end
+
 // social
 .social {
   display: flex;
