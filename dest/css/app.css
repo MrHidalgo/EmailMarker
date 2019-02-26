@@ -1977,4 +1977,74 @@ picture {
   color: #242424;
 }
 
+/* line 3, src/scss/_components/pricing/_frequently.scss */
+.frequently {
+  padding-top: 117px;
+  padding-bottom: 116px;
+}
+
+/* line 7, src/scss/_components/pricing/_frequently.scss */
+.frequently__title {
+  padding-bottom: 29px;
+  font-size: 35px;
+  line-height: 1.28571;
+  color: #2d3136;
+}
+
+/* line 14, src/scss/_components/pricing/_frequently.scss */
+.frequently__text {
+  padding-bottom: 118px;
+  font-size: 15px;
+}
+
+/* line 19, src/scss/_components/pricing/_frequently.scss */
+.frequently__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 307px;
+  margin-bottom: 118px;
+}
+
+/* line 26, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 30, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-right: 15px;
+}
+
+/* line 37, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-title {
+  min-height: 72px;
+  margin-bottom: 42px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 1.37037;
+  color: #2d3136;
+}
+
+/* line 46, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-desc {
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

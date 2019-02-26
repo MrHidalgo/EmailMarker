@@ -1,0 +1,52 @@
+// SECTION frequently :: START
+
+.frequently {
+  padding-top: 117px;
+  padding-bottom: 116px;
+
+  &__title {
+    padding-bottom: 29px;
+    font-size: 35px;
+    line-height: line-height-convert(45,35);
+    color: #2d3136;
+  }
+
+  &__text {
+    padding-bottom: 118px;
+    font-size: 15px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 307px;
+    margin-bottom: 118px;
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      > div {
+        width: 100%;
+        max-width: calc(100% / 3);
+        padding-right: 15px;
+      }
+    }
+
+    &-title {
+      min-height: 72px;
+      margin-bottom: 42px;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: line-height-convert(37,27);
+      color: #2d3136;
+    }
+
+    &-desc {
+      font-size: 15px;
+    }
+  }
+}
+
+// SECTION frequently :: END
