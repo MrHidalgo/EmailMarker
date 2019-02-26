@@ -7,10 +7,10 @@ PageList:
 
 - file: index.html
   titleName: Home
-  ready: 5
+  ready: 10
 - file: features.html
   titleName: Features
-  ready: 5
+  ready: 10
 - file: pricing.html
   titleName: Pricing
   ready: 5

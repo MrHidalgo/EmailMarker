@@ -1,0 +1,22 @@
+// SECTION explore :: START
+
+section#explore.explore
+  .c-grid
+    .explore__wrapper
+
+      .explore__row.explore__row-0
+        .explore__col-left
+
+          p.explore__title
+            span!= "Explore other <br>features <i class='icon-font icon-arrow-right-0'></i>"
+
+        .explore__col-right
+
+          .explore__block-wrapper
+            each val, idx in [1,2,3,4,5,6]
+              div
+                a.explore__block(href="#" class="explore__block-" + idx title="")
+                  p.explore__block-title!= "Quality Domain <br>Database"
+                  p.explore__block-text!= "This ensures the most accurate condition of every email domain."
+
+// SECTION explore :: END

@@ -1545,6 +1545,102 @@ picture {
   color: #fff;
 }
 
+/* line 3, src/scss/_components/features/_explore.scss */
+.explore {
+  padding-top: 190px;
+  padding-bottom: 170px;
+}
+
+/* line 7, src/scss/_components/features/_explore.scss */
+.explore__wrapper {
+  width: 100%;
+  max-width: 1162px;
+}
+
+/* line 13, src/scss/_components/features/_explore.scss */
+.explore__row-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 19, src/scss/_components/features/_explore.scss */
+.explore__col-left {
+  width: 415px;
+}
+
+/* line 23, src/scss/_components/features/_explore.scss */
+.explore__col-right {
+  width: 100%;
+  max-width: -webkit-calc(100% - 415px);
+  max-width: calc(100% - 415px);
+}
+
+/* line 29, src/scss/_components/features/_explore.scss */
+.explore__title {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 1.31818;
+  color: #464646;
+}
+
+/* line 35, src/scss/_components/features/_explore.scss */
+.explore__title i {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 28px;
+  padding-left: 40px;
+}
+
+/* line 42, src/scss/_components/features/_explore.scss */
+.explore__block {
+  padding-bottom: 85px;
+}
+
+/* line 45, src/scss/_components/features/_explore.scss */
+.explore__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 49, src/scss/_components/features/_explore.scss */
+.explore__block-wrapper > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+
+/* line 56, src/scss/_components/features/_explore.scss */
+.explore__block-title {
+  padding-bottom: 42px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.45833;
+  color: #2d3136;
+}
+
+/* line 64, src/scss/_components/features/_explore.scss */
+.explore__block-text {
+  width: 100%;
+  max-width: 196px;
+  font-size: 15px;
+  line-height: 1.86667;
+  text-align: left;
+  color: #818992;
+}
+
 /* line 3, src/scss/_components/features/_blog.scss */
 .blog {
   padding-top: 130px;
