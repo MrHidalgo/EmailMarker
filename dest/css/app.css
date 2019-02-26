@@ -1545,6 +1545,67 @@ picture {
   color: #fff;
 }
 
+/* line 3, src/scss/_components/features/_boost.scss */
+.boost {
+  padding-top: 252px;
+  padding-bottom: 201px;
+}
+
+/* line 7, src/scss/_components/features/_boost.scss */
+.boost__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 307px;
+}
+
+/* line 13, src/scss/_components/features/_boost.scss */
+.boost__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 16, src/scss/_components/features/_boost.scss */
+.boost__block-wrapper > div {
+  width: 100%;
+  max-width: 414px;
+}
+
+/* line 22, src/scss/_components/features/_boost.scss */
+.boost__block-top {
+  width: 260px;
+  height: 260px;
+  margin-bottom: 53px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f4f9fc;
+}
+
+/* line 32, src/scss/_components/features/_boost.scss */
+.boost__block-title {
+  padding-bottom: 42px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 1.37037;
+  color: #2d3136;
+}
+
+/* line 40, src/scss/_components/features/_boost.scss */
+.boost__block-text {
+  width: 100%;
+  max-width: 260px;
+  color: #818992;
+}
+
 /* line 3, src/scss/_components/features/_explore.scss */
 .explore {
   padding-top: 190px;
@@ -1635,10 +1696,6 @@ picture {
 .explore__block-text {
   width: 100%;
   max-width: 196px;
-  font-size: 15px;
-  line-height: 1.86667;
-  text-align: left;
-  color: #818992;
 }
 
 /* line 3, src/scss/_components/features/_blog.scss */

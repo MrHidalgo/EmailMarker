@@ -1,0 +1,48 @@
+// SECTION boost :: START
+
+.boost {
+  padding-top: 252px;
+  padding-bottom: 201px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 307px;
+
+    &-wrapper {
+      display: flex;
+
+      > div {
+        width: 100%;
+        max-width: 414px;
+      }
+    }
+
+    &-top {
+      width: 260px;
+      height: 260px;
+      margin-bottom: 53px;
+      border-radius: 3px;
+      background-color: #f4f9fc;
+    }
+
+    &-bottom {}
+
+    &-title {
+      padding-bottom: 42px;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: line-height-convert(37,27);
+      color: #2d3136;
+    }
+
+    &-text {
+      width: 100%;
+      max-width: 260px;
+      color: #818992;
+    }
+  }
+}
+
+// SECTION boost :: END
