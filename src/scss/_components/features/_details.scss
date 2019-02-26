@@ -3,8 +3,6 @@
 .details {
   &__wrapper {
     padding-bottom: 249px;
-
-
   }
 
   &__row {
@@ -46,7 +44,8 @@
 
   &__block {
     position: relative;
-    width: 812px;
+    width: 100%;
+    max-width: 812px;
     height: 495px;
     border-radius: 3px;
     background: linear-gradient(#fff 0%, #f4f9fc 100%);

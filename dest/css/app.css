@@ -1615,7 +1615,7 @@ picture {
   padding-bottom: 249px;
 }
 
-/* line 10, src/scss/_components/features/_details.scss */
+/* line 8, src/scss/_components/features/_details.scss */
 .details__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1623,7 +1623,7 @@ picture {
   display: flex;
 }
 
-/* line 13, src/scss/_components/features/_details.scss */
+/* line 11, src/scss/_components/features/_details.scss */
 .details__row--normal {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1632,12 +1632,12 @@ picture {
           flex-direction: row;
 }
 
-/* line 16, src/scss/_components/features/_details.scss */
+/* line 14, src/scss/_components/features/_details.scss */
 .details__row--normal .details__col--auto {
   padding-right: 146px;
 }
 
-/* line 21, src/scss/_components/features/_details.scss */
+/* line 19, src/scss/_components/features/_details.scss */
 .details__row--reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1646,34 +1646,35 @@ picture {
           flex-direction: row-reverse;
 }
 
-/* line 24, src/scss/_components/features/_details.scss */
+/* line 22, src/scss/_components/features/_details.scss */
 .details__row--reverse .details__num {
   left: 146px;
 }
 
-/* line 28, src/scss/_components/features/_details.scss */
+/* line 26, src/scss/_components/features/_details.scss */
 .details__row--reverse .details__col--auto {
   padding-left: 146px;
 }
 
-/* line 35, src/scss/_components/features/_details.scss */
+/* line 33, src/scss/_components/features/_details.scss */
 .details__col--auto {
   position: relative;
   padding-top: 133px;
   width: 552px;
 }
 
-/* line 41, src/scss/_components/features/_details.scss */
+/* line 39, src/scss/_components/features/_details.scss */
 .details__col--expand {
   width: 100%;
   max-width: -webkit-calc(100% - 552px);
   max-width: calc(100% - 552px);
 }
 
-/* line 47, src/scss/_components/features/_details.scss */
+/* line 45, src/scss/_components/features/_details.scss */
 .details__block {
   position: relative;
-  width: 812px;
+  width: 100%;
+  max-width: 812px;
   height: 495px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -1685,7 +1686,7 @@ picture {
           box-shadow: 0px -13px 11px rgba(0, 32, 111, 0.06);
 }
 
-/* line 56, src/scss/_components/features/_details.scss */
+/* line 55, src/scss/_components/features/_details.scss */
 .details__num {
   z-index: -1;
   position: absolute;
@@ -1697,7 +1698,7 @@ picture {
   color: #f4f9fc;
 }
 
-/* line 67, src/scss/_components/features/_details.scss */
+/* line 66, src/scss/_components/features/_details.scss */
 .details__title {
   width: 100%;
   max-width: 398px;
