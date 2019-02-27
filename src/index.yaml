@@ -13,7 +13,7 @@ PageList:
   ready: 30
 - file: pricing.html
   titleName: Pricing
-  ready: 5
+  ready: 10
 - file: integrations.html
   titleName: Integrations
   ready: 5
