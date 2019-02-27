@@ -444,18 +444,43 @@ picture {
 }
 
 /* line 4, src/scss/_shared/_common.scss */
+.main {
+  position: relative;
+  padding-top: 217px;
+}
+
+/* line 8, src/scss/_shared/_common.scss */
+.main:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 583px;
+  background-color: #f4f9fc;
+}
+
+/* line 19, src/scss/_shared/_common.scss */
+.main__title {
+  font-size: 70px;
+  line-height: 1.07143;
+  color: #464646;
+}
+
+/* line 28, src/scss/_shared/_common.scss */
 .c-text {
   font-size: 17px;
   line-height: 1.82353;
   color: #fff;
 }
 
-/* line 9, src/scss/_shared/_common.scss */
+/* line 33, src/scss/_shared/_common.scss */
 .c-text--medium {
   color: #818992;
 }
 
-/* line 16, src/scss/_shared/_common.scss */
+/* line 40, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -463,7 +488,7 @@ picture {
   display: flex;
 }
 
-/* line 19, src/scss/_shared/_common.scss */
+/* line 43, src/scss/_shared/_common.scss */
 .social__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -471,17 +496,17 @@ picture {
   display: flex;
 }
 
-/* line 22, src/scss/_shared/_common.scss */
+/* line 46, src/scss/_shared/_common.scss */
 .social__list-item {
   margin-left: 15px;
 }
 
-/* line 25, src/scss/_shared/_common.scss */
+/* line 49, src/scss/_shared/_common.scss */
 .social__list-item:first-of-type {
   margin-left: 0;
 }
 
-/* line 31, src/scss/_shared/_common.scss */
+/* line 55, src/scss/_shared/_common.scss */
 .social__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -504,7 +529,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 40, src/scss/_shared/_common.scss */
+/* line 64, src/scss/_shared/_common.scss */
 .social__btn:hover {
   opacity: 0.95;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -512,62 +537,62 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 52, src/scss/_shared/_common.scss */
+/* line 76, src/scss/_shared/_common.scss */
 .social__btn--fb {
   background-color: #3B5998;
 }
 
-/* line 55, src/scss/_shared/_common.scss */
+/* line 79, src/scss/_shared/_common.scss */
 .social__btn--fb .icon-font {
   font-size: 19px;
 }
 
-/* line 52, src/scss/_shared/_common.scss */
+/* line 76, src/scss/_shared/_common.scss */
 .social__btn--tw {
   background-color: #55ACEE;
 }
 
-/* line 55, src/scss/_shared/_common.scss */
+/* line 79, src/scss/_shared/_common.scss */
 .social__btn--tw .icon-font {
   font-size: 14px;
 }
 
-/* line 52, src/scss/_shared/_common.scss */
+/* line 76, src/scss/_shared/_common.scss */
 .social__btn--in {
   background-color: #007AB9;
 }
 
-/* line 55, src/scss/_shared/_common.scss */
+/* line 79, src/scss/_shared/_common.scss */
 .social__btn--in .icon-font {
   font-size: 16px;
 }
 
-/* line 52, src/scss/_shared/_common.scss */
+/* line 76, src/scss/_shared/_common.scss */
 .social__btn--gp {
   background-color: #DC4E41;
 }
 
-/* line 55, src/scss/_shared/_common.scss */
+/* line 79, src/scss/_shared/_common.scss */
 .social__btn--gp .icon-font {
   font-size: 12px;
 }
 
-/* line 52, src/scss/_shared/_common.scss */
+/* line 76, src/scss/_shared/_common.scss */
 .social__btn--pn {
   background-color: #CB2027;
 }
 
-/* line 55, src/scss/_shared/_common.scss */
+/* line 79, src/scss/_shared/_common.scss */
 .social__btn--pn .icon-font {
   font-size: 18px;
 }
 
-/* line 61, src/scss/_shared/_common.scss */
+/* line 85, src/scss/_shared/_common.scss */
 .social__btn .icon-font {
   color: #fff;
 }
 
-/* line 70, src/scss/_shared/_common.scss */
+/* line 94, src/scss/_shared/_common.scss */
 .copyright__text {
   font-size: 12px;
   letter-spacing: 0.15em;
@@ -745,6 +770,21 @@ picture {
   background-color: #3bd3ff;
 }
 
+/* line 117, src/scss/_macros/_btn.scss */
+.c-btn--green {
+  background-color: #1BC18E;
+}
+
+/* line 121, src/scss/_macros/_btn.scss */
+.c-btn--green .c-btn__left:before {
+  background-color: #2ECE9D;
+}
+
+/* line 126, src/scss/_macros/_btn.scss */
+.c-btn--green .c-btn__right {
+  background-color: #2ECE9D;
+}
+
 @-webkit-keyframes offsetArrow {
   from {
   }
@@ -766,7 +806,7 @@ picture {
 /* line 3, src/scss/_components/_header.scss */
 .header {
   z-index: 100;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1734,6 +1774,59 @@ picture {
   letter-spacing: 0.4em;
   line-height: 1.87097;
   color: #fff;
+}
+
+/* line 4, src/scss/_components/features/_main.scss */
+.f-main .c-grid {
+  max-width: 1670px;
+}
+
+/* line 8, src/scss/_components/features/_main.scss */
+.f-main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 11, src/scss/_components/features/_main.scss */
+.f-main__wrapper-left, .f-main__wrapper-right {
+  width: 50%;
+}
+
+/* line 16, src/scss/_components/features/_main.scss */
+.f-main__wrapper-left {
+  padding-left: 138px;
+}
+
+/* line 21, src/scss/_components/features/_main.scss */
+.f-main__title {
+  padding-bottom: 57px;
+}
+
+/* line 25, src/scss/_components/features/_main.scss */
+.f-main__subtitle {
+  width: 100%;
+  max-width: 471px;
+  padding-bottom: 57px;
+  color: #464646;
+}
+
+/* line 32, src/scss/_components/features/_main.scss */
+.f-main__btn {
+  max-width: 380px;
+}
+
+/* line 36, src/scss/_components/features/_main.scss */
+.f-main__box {
+  position: relative;
+  width: 100%;
+  height: 495px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 11px 11px rgba(0, 32, 111, 0.06);
+          box-shadow: 0 11px 11px rgba(0, 32, 111, 0.06);
 }
 
 /* line 3, src/scss/_components/features/_boost.scss */

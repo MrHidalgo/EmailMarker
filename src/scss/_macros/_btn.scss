@@ -113,6 +113,20 @@ $bth-font-weight: 600;
       background-color: #3bd3ff;
     }
   }
+
+  &--green {
+    background-color: #1BC18E;
+
+    .c-btn__left {
+      &:before {
+        background-color: #2ECE9D;
+      }
+    }
+
+    .c-btn__right {
+      background-color: #2ECE9D;
+    }
+  }
 }
 
 @keyframes offsetArrow {
