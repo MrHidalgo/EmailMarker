@@ -1,0 +1,78 @@
+// SECTION main :: START
+
+.d-main {
+  padding-top: 216px;
+  padding-bottom: 161px;
+
+  .c-grid {
+    max-width: 1348px;
+  }
+
+  &__title {
+    padding-bottom: 31px;
+    text-align: center;
+
+    span {
+      position: relative;
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        bottom: 13px;
+        left: 0;
+        width: 100%;
+        height: 22px;
+        background-color: #ffc300;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__image {
+    z-index: -1;
+    position: relative;
+    top: -20px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__btn {
+    .c-btn__left {
+      justify-content: center;
+      padding-right: 19px;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      max-width: 190px;
+      left: -190px;
+      padding-right: 10px;
+
+      p {
+        @extend %fontDakota;
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// SECTION main :: END

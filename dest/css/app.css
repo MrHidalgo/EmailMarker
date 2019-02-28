@@ -5,6 +5,11 @@
   font-weight: bold;
 }
 
+/* line 10, src/scss/_utilities/_extend.scss */
+.d-main__btn-info p {
+  font-family: 'Dakota', sans-serif;
+}
+
 /* line 1, src/scss/_generated/_spriteSVG.scss */
 .icon-gdpr-file {
   width: 82.145px;
@@ -3710,6 +3715,95 @@ picture {
 /* line 46, src/scss/_components/pricing/_frequently.scss */
 .frequently__block-desc {
   font-size: 15px;
+}
+
+/* line 3, src/scss/_components/datavalidation/_main.scss */
+.d-main {
+  padding-top: 216px;
+  padding-bottom: 161px;
+}
+
+/* line 7, src/scss/_components/datavalidation/_main.scss */
+.d-main .c-grid {
+  max-width: 1348px;
+}
+
+/* line 11, src/scss/_components/datavalidation/_main.scss */
+.d-main__title {
+  padding-bottom: 31px;
+  text-align: center;
+}
+
+/* line 15, src/scss/_components/datavalidation/_main.scss */
+.d-main__title span {
+  position: relative;
+}
+
+/* line 18, src/scss/_components/datavalidation/_main.scss */
+.d-main__title span:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background-color: #ffc300;
+}
+
+/* line 31, src/scss/_components/datavalidation/_main.scss */
+.d-main__text {
+  text-align: center;
+}
+
+/* line 35, src/scss/_components/datavalidation/_main.scss */
+.d-main__image {
+  z-index: -1;
+  position: relative;
+  top: -20px;
+}
+
+/* line 40, src/scss/_components/datavalidation/_main.scss */
+.d-main__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 50, src/scss/_components/datavalidation/_main.scss */
+.d-main__btn .c-btn__left {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 19px;
+}
+
+/* line 55, src/scss/_components/datavalidation/_main.scss */
+.d-main__btn-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  max-width: 190px;
+  left: -190px;
+  padding-right: 10px;
+}
+
+/* line 69, src/scss/_components/datavalidation/_main.scss */
+.d-main__btn-wrapper {
+  position: relative;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
