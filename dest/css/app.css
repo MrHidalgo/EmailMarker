@@ -2347,6 +2347,16 @@ picture {
   color: #242424;
 }
 
+/* line 3, src/scss/_components/pricing/_main.scss */
+.p-main {
+  min-height: 712px;
+}
+
+/* line 6, src/scss/_components/pricing/_main.scss */
+.p-main__title {
+  text-align: center;
+}
+
 /* line 3, src/scss/_components/pricing/_frequently.scss */
 .frequently {
   padding-top: 117px;
