@@ -1,0 +1,126 @@
+// SECTION price :: START
+
+-
+  var priceData1 = [
+    {
+      verifications: '1,000',
+      price: '3'
+    },
+    {
+      verifications: '5,000',
+      price: '13'
+    },
+    {
+      verifications: '10,000',
+      price: '21'
+    },
+    {
+      verifications: '15,000',
+      price: '36'
+    },
+    {
+      verifications: '25,000',
+      price: '61'
+    },
+    {
+      verifications: '50,000',
+      price: '84'
+    },
+  ];
+  var priceData2 = [
+    {
+      verifications: '100,000',
+      price: '161'
+    },
+    {
+      verifications: '300,000',
+      price: '341'
+    },
+    {
+      verifications: '500,000',
+      price: '441'
+    },
+    {
+      verifications: '700,000',
+      price: '497'
+    },
+    {
+      verifications: '1M',
+      price: '589'
+    },
+    {
+      verifications: '2M',
+      price: '999'
+    },
+  ];
+
+mixin priceUnit(classMod, verVal, priceVal)
+  .price__unit(class!= "price__unit-" + classMod)
+    div
+      .price__unit-block
+        +iconSVG('i-email-hover')
+        +iconSVG('i-email')
+    div
+      .price__unit-verifications
+        p!= verVal
+        span!= "Email verifications"
+    div
+      .price__unit-sum
+        span!= "Price"
+        p!= "$" + priceVal
+    div
+      a.price__unit-btn(href="#" class="" title="")!= "Buy Now"
+
+section#price.price
+  .c-grid
+    .price__wrapper.price__wrapper-0
+
+      .price__row.price__row-0
+        .price__col.price__col-0
+
+          p.price__title!= "Our Simple Pricing"
+
+          p.price__text.c-text.c-text--medium!= "At Emailmarker, we have a simple, highly competitive pricing structure we offer a fixed amount based on the numbers of validations our pricing <span>starts at $3 for 1000 emails verification.</span>"
+
+        .price__col.price__col-1
+
+          form.c-form.c-form--price.price__form(action='' method='' autocomplete='off')
+            .price__form-field
+              +formCheckbox(dataFormObj.checkboxField1)(checked="checked")
+            .price__form-field
+              +formCheckbox(dataFormObj.checkboxField2)(checked="checked")
+            .price__form-field
+              +formCheckbox(dataFormObj.checkboxField3)(checked="checked")
+            .price__form-field
+              +formCheckbox(dataFormObj.checkboxField4)(checked="checked")
+
+    .price__wrapper.price__wrapper-1
+
+      .price__row.price__row-1
+        .price__col.price__col-0
+
+          .price__block-wrapper
+            .price__block.price__block-0
+
+              each val, idx in priceData1
+                +priceUnit(idx, priceData1[idx].verifications, priceData1[idx].price)
+
+            .price__block.price__block-1
+
+              each val, idx in priceData2
+                +priceUnit(idx, priceData2[idx].verifications, priceData2[idx].price)
+
+        .price__col.price__col-1
+
+          .price__box
+            .price__box-top
+              img.price__box-img(src="./img/img-price-box.svg" alt="" title="")
+
+            .price__box-bottom
+
+              p.price__box-title!= "More than 2 million emails to verify ?"
+              p.price__box-text.c-text.c-text--medium!= "No problem, just contact us and <br>you will get the best deals, <br>discounts and prices."
+
+              +btn('green price__box-btn', 'CONTACT US')
+
+// SECTION price :: END

@@ -17,6 +17,18 @@
   height: 149.31px;
 }
 
+/* line 9, src/scss/_generated/_spriteSVG.scss */
+.icon-i-email {
+  width: 30px;
+  height: 20.893px;
+}
+
+/* line 13, src/scss/_generated/_spriteSVG.scss */
+.icon-i-email-hover {
+  width: 30px;
+  height: 20.893px;
+}
+
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -800,6 +812,833 @@ picture {
   50% {
   }
   to {
+  }
+}
+
+/* line 103, src/scss/_macros/_form.scss */
+.c-form {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 113, src/scss/_macros/_form.scss */
+.c-form__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 117, src/scss/_macros/_form.scss */
+.c-form__group--two, .c-form__group--three {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 123, src/scss/_macros/_form.scss */
+.c-form__group--two .c-form__group-col {
+  width: -webkit-calc((100% - 15px) / 2);
+  width: calc((100% - 15px) / 2);
+}
+
+/* line 129, src/scss/_macros/_form.scss */
+.c-form__group--three .c-form__group-col {
+  width: -webkit-calc((100% - 15px) / 3);
+  width: calc((100% - 15px) / 3);
+}
+
+/* line 141, src/scss/_macros/_form.scss */
+.c-form__field {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* line 151, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__notify, .c-form__field.is-invalid .c-form__notify, .c-form__field.is-warning .c-form__notify, .c-form__field.is-info .c-form__notify {
+  display: block;
+}
+
+/* line 154, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__label, .c-form__field.is-invalid .c-form__label, .c-form__field.is-warning .c-form__label, .c-form__field.is-info .c-form__label {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 157, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__input,
+.c-form__field.is-error .c-form__textarea, .c-form__field.is-invalid .c-form__input,
+.c-form__field.is-invalid .c-form__textarea, .c-form__field.is-warning .c-form__input,
+.c-form__field.is-warning .c-form__textarea, .c-form__field.is-info .c-form__input,
+.c-form__field.is-info .c-form__textarea {
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 161, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__select-wrapper,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-invalid .c-form__select-wrapper,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-warning .c-form__select-wrapper,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-info .c-form__select-wrapper,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-icon i {
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 167, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__notify li, .c-form__field.is-invalid .c-form__notify li, .c-form__field.is-warning .c-form__notify li, .c-form__field.is-info .c-form__notify li {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 175, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__label, .c-form__field.is-error .c-form__label {
+  color: #cc0000;
+}
+
+/* line 178, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__input,
+.c-form__field.is-invalid .c-form__textarea, .c-form__field.is-error .c-form__input,
+.c-form__field.is-error .c-form__textarea {
+  border-color: #cc0000;
+  color: #cc0000;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input.placeholder,
+.c-form__field.is-invalid .c-form__textarea.placeholder, .c-form__field.is-error .c-form__input.placeholder,
+.c-form__field.is-error .c-form__textarea.placeholder {
+  color: #cc0000;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input:-moz-placeholder,
+.c-form__field.is-invalid .c-form__textarea:-moz-placeholder, .c-form__field.is-error .c-form__input:-moz-placeholder,
+.c-form__field.is-error .c-form__textarea:-moz-placeholder {
+  color: #cc0000;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input::-moz-placeholder,
+.c-form__field.is-invalid .c-form__textarea::-moz-placeholder, .c-form__field.is-error .c-form__input::-moz-placeholder,
+.c-form__field.is-error .c-form__textarea::-moz-placeholder {
+  color: #cc0000;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input:-ms-input-placeholder,
+.c-form__field.is-invalid .c-form__textarea:-ms-input-placeholder, .c-form__field.is-error .c-form__input:-ms-input-placeholder,
+.c-form__field.is-error .c-form__textarea:-ms-input-placeholder {
+  color: #cc0000;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-invalid .c-form__textarea::-webkit-input-placeholder, .c-form__field.is-error .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-error .c-form__textarea::-webkit-input-placeholder {
+  color: #cc0000;
+}
+
+/* line 186, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__select-wrapper,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-error .c-form__select-wrapper,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-icon i {
+  border-color: #cc0000;
+  color: #cc0000;
+}
+
+/* line 194, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__radio-icon i, .c-form__field.is-error .c-form__radio-icon i {
+  border-color: #cc0000;
+}
+
+/* line 197, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__radio-icon i:before, .c-form__field.is-error .c-form__radio-icon i:before {
+  background-color: #cc0000;
+}
+
+/* line 202, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__radio-text, .c-form__field.is-error .c-form__radio-text {
+  color: #cc0000;
+}
+
+/* line 208, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__checkbox-icon i, .c-form__field.is-error .c-form__checkbox-icon i {
+  border-color: #cc0000;
+}
+
+/* line 211, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__checkbox-icon i:before, .c-form__field.is-error .c-form__checkbox-icon i:before {
+  border-color: #cc0000;
+}
+
+/* line 216, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__checkbox-text, .c-form__field.is-error .c-form__checkbox-text {
+  color: #cc0000;
+}
+
+/* line 221, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__notify li, .c-form__field.is-error .c-form__notify li {
+  color: #cc0000;
+}
+
+/* line 227, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__label {
+  color: #ff8800;
+}
+
+/* line 230, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__input,
+.c-form__field.is-warning .c-form__textarea {
+  border-color: #ff8800;
+  color: #ff8800;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input.placeholder,
+.c-form__field.is-warning .c-form__textarea.placeholder {
+  color: #ff8800;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input:-moz-placeholder,
+.c-form__field.is-warning .c-form__textarea:-moz-placeholder {
+  color: #ff8800;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input::-moz-placeholder,
+.c-form__field.is-warning .c-form__textarea::-moz-placeholder {
+  color: #ff8800;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input:-ms-input-placeholder,
+.c-form__field.is-warning .c-form__textarea:-ms-input-placeholder {
+  color: #ff8800;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-warning .c-form__textarea::-webkit-input-placeholder {
+  color: #ff8800;
+}
+
+/* line 238, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__select-wrapper,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-icon i {
+  border-color: #ff8800;
+  color: #ff8800;
+}
+
+/* line 246, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__radio-icon i {
+  border-color: #ff8800;
+}
+
+/* line 249, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__radio-icon i:before {
+  background-color: #ff8800;
+}
+
+/* line 254, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__radio-text {
+  color: #ff8800;
+}
+
+/* line 260, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__checkbox-icon i {
+  border-color: #ff8800;
+}
+
+/* line 263, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__checkbox-icon i:before {
+  border-color: #ff8800;
+}
+
+/* line 268, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__checkbox-text {
+  color: #ff8800;
+}
+
+/* line 273, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__notify li {
+  color: #ff8800;
+}
+
+/* line 279, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__label {
+  color: #33b5e5;
+}
+
+/* line 282, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__input,
+.c-form__field.is-info .c-form__textarea {
+  border-color: #33b5e5;
+  color: #33b5e5;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input.placeholder,
+.c-form__field.is-info .c-form__textarea.placeholder {
+  color: #33b5e5;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input:-moz-placeholder,
+.c-form__field.is-info .c-form__textarea:-moz-placeholder {
+  color: #33b5e5;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input::-moz-placeholder,
+.c-form__field.is-info .c-form__textarea::-moz-placeholder {
+  color: #33b5e5;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input:-ms-input-placeholder,
+.c-form__field.is-info .c-form__textarea:-ms-input-placeholder {
+  color: #33b5e5;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-info .c-form__textarea::-webkit-input-placeholder {
+  color: #33b5e5;
+}
+
+/* line 290, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__select-wrapper,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-icon i {
+  border-color: #33b5e5;
+  color: #33b5e5;
+}
+
+/* line 298, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__radio-icon i {
+  border-color: #33b5e5;
+}
+
+/* line 301, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__radio-icon i:before {
+  background-color: #33b5e5;
+}
+
+/* line 306, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__radio-text {
+  color: #33b5e5;
+}
+
+/* line 312, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__checkbox-icon i {
+  border-color: #33b5e5;
+}
+
+/* line 315, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__checkbox-icon i:before {
+  border-color: #33b5e5;
+}
+
+/* line 320, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__checkbox-text {
+  color: #33b5e5;
+}
+
+/* line 325, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__notify li {
+  color: #33b5e5;
+}
+
+/* line 339, src/scss/_macros/_form.scss */
+.c-form__field--checkbox .c-form__label, .c-form__field--radio .c-form__label {
+  cursor: default;
+}
+
+/* line 345, src/scss/_macros/_form.scss */
+.c-form__label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 359, src/scss/_macros/_form.scss */
+.c-form__input-wrapper, .c-form__select-wrapper, .c-form__textarea-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 365, src/scss/_macros/_form.scss */
+.c-form__input, .c-form__select, .c-form__textarea {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__input.placeholder, .c-form__select.placeholder, .c-form__textarea.placeholder {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__input:-moz-placeholder, .c-form__select:-moz-placeholder, .c-form__textarea:-moz-placeholder {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__input::-moz-placeholder, .c-form__select::-moz-placeholder, .c-form__textarea::-moz-placeholder {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__input:-ms-input-placeholder, .c-form__select:-ms-input-placeholder, .c-form__textarea:-ms-input-placeholder {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__input::-webkit-input-placeholder, .c-form__select::-webkit-input-placeholder, .c-form__textarea::-webkit-input-placeholder {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 382, src/scss/_macros/_form.scss */
+.c-form__input {
+  padding: 0 20px;
+  border: 1px solid gray;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 391, src/scss/_macros/_form.scss */
+.c-form__input-wrapper {
+  height: 50px;
+}
+
+/* line 396, src/scss/_macros/_form.scss */
+.c-form__select {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 403, src/scss/_macros/_form.scss */
+.c-form__select-wrapper {
+  height: 50px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid gray;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 411, src/scss/_macros/_form.scss */
+.c-form__select-value {
+  z-index: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 50px;
+  width: -webkit-calc(100% - 50px);
+  width: calc(100% - 50px);
+  padding-left: 20px;
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 428, src/scss/_macros/_form.scss */
+.is-choose .c-form__select-value {
+  color: #000;
+}
+
+/* line 433, src/scss/_macros/_form.scss */
+.c-form__select-icon {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+}
+
+/* line 444, src/scss/_macros/_form.scss */
+.c-form__select-icon i {
+  padding: 3px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 451, src/scss/_macros/_form.scss */
+.is-focus .c-form__select-icon i {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 459, src/scss/_macros/_form.scss */
+.c-form__selectric {
+  opacity: 0;
+}
+
+/* line 462, src/scss/_macros/_form.scss */
+.c-form__selectric-wrapper {
+  position: relative;
+}
+
+/* line 467, src/scss/_macros/_form.scss */
+.c-form__textarea {
+  resize: none;
+  padding: 20px;
+  border: 1px solid gray;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 477, src/scss/_macros/_form.scss */
+.c-form__textarea-wrapper {
+  height: 150px;
+}
+
+/* line 482, src/scss/_macros/_form.scss */
+.c-form__radio, .c-form__checkbox {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 491, src/scss/_macros/_form.scss */
+.c-form__radio-wrapper, .c-form__checkbox-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 496, src/scss/_macros/_form.scss */
+.c-form__radio-content, .c-form__checkbox-content {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 503, src/scss/_macros/_form.scss */
+.c-form__radio-icon i, .c-form__checkbox-icon i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 515, src/scss/_macros/_form.scss */
+.c-form__radio:checked + label .c-form__radio-icon i {
+  border-color: black;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 519, src/scss/_macros/_form.scss */
+.c-form__radio:checked + label .c-form__radio-icon i:before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  background-color: black;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 529, src/scss/_macros/_form.scss */
+.c-form__radio-wrapper {
+  height: 50px;
+}
+
+/* line 533, src/scss/_macros/_form.scss */
+.c-form__radio-icon {
+  width: 30px;
+}
+
+/* line 536, src/scss/_macros/_form.scss */
+.c-form__radio-icon i {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 543, src/scss/_macros/_form.scss */
+.c-form__radio-icon i:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: transparent;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 555, src/scss/_macros/_form.scss */
+.c-form__radio-text {
+  max-width: -webkit-calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 566, src/scss/_macros/_form.scss */
+.c-form__checkbox:checked + label .c-form__checkbox-icon i {
+  border-color: black;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 570, src/scss/_macros/_form.scss */
+.c-form__checkbox:checked + label .c-form__checkbox-icon i:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 579, src/scss/_macros/_form.scss */
+.c-form__checkbox-wrapper {
+  height: 50px;
+}
+
+/* line 583, src/scss/_macros/_form.scss */
+.c-form__checkbox-icon {
+  width: 30px;
+}
+
+/* line 586, src/scss/_macros/_form.scss */
+.c-form__checkbox-icon i {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 593, src/scss/_macros/_form.scss */
+.c-form__checkbox-icon i:before {
+  content: '';
+  opacity: 0;
+  position: relative;
+  top: -2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 608, src/scss/_macros/_form.scss */
+.c-form__checkbox-text {
+  max-width: -webkit-calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 615, src/scss/_macros/_form.scss */
+.c-form__notify {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: c-fadeIn;
+          animation-name: c-fadeIn;
+}
+
+/* line 628, src/scss/_macros/_form.scss */
+.c-form__notify ul li {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 637, src/scss/_macros/_form.scss */
+.c-form #radio-error,
+.c-form #checkbox-error,
+.c-form #select-error {
+  display: none !important;
+}
+
+@-webkit-keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -2355,6 +3194,452 @@ picture {
 /* line 6, src/scss/_components/pricing/_main.scss */
 .p-main__title {
   text-align: center;
+}
+
+/* line 3, src/scss/_components/pricing/_price.scss */
+.price {
+  padding-right: 23px;
+  padding-bottom: 117px;
+}
+
+/* line 7, src/scss/_components/pricing/_price.scss */
+.price .c-grid {
+  max-width: 1399px;
+}
+
+/* line 11, src/scss/_components/pricing/_price.scss */
+.price__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 14, src/scss/_components/pricing/_price.scss */
+.price__row-0 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 18, src/scss/_components/pricing/_price.scss */
+.price__row-0 .price__col-0 {
+  width: 440px;
+}
+
+/* line 22, src/scss/_components/pricing/_price.scss */
+.price__row-0 .price__col-1 {
+  width: 100%;
+  max-width: -webkit-calc(100% - 440px);
+  max-width: calc(100% - 440px);
+  padding-left: 112px;
+}
+
+/* line 32, src/scss/_components/pricing/_price.scss */
+.price__row-1 .price__col-0 {
+  width: 100%;
+  max-width: -webkit-calc(100% - (398px + 79px));
+  max-width: calc(100% - (398px + 79px));
+}
+
+/* line 37, src/scss/_components/pricing/_price.scss */
+.price__row-1 .price__col-1 {
+  width: 477px;
+  padding-left: 79px;
+}
+
+/* line 45, src/scss/_components/pricing/_price.scss */
+.price__title {
+  padding-bottom: 40px;
+  font-size: 35px;
+  line-height: 1.28571;
+  color: #2d3136;
+}
+
+/* line 53, src/scss/_components/pricing/_price.scss */
+.price__text span {
+  padding: 3px;
+  background-color: #FFC300;
+  color: #000;
+}
+
+/* line 60, src/scss/_components/pricing/_price.scss */
+.price__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+}
+
+/* line 66, src/scss/_components/pricing/_price.scss */
+.price__form-field {
+  padding-right: 5px;
+}
+
+/* line 74, src/scss/_components/pricing/_price.scss */
+.price__form .c-form__checkbox:checked + label .c-form__checkbox-icon i {
+  border-color: #7CF9C5;
+  background-color: #7cf9c5;
+}
+
+/* line 82, src/scss/_components/pricing/_price.scss */
+.price__form .c-form__checkbox-icon i {
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border-color: #7CF9C5;
+}
+
+/* line 88, src/scss/_components/pricing/_price.scss */
+.price__form .c-form__checkbox-icon i:before {
+  border-width: 0 2px 2px 0;
+  border-color: #269165;
+}
+
+/* line 95, src/scss/_components/pricing/_price.scss */
+.price__form .c-form__checkbox-text {
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 31px;
+  color: #818992;
+}
+
+/* line 104, src/scss/_components/pricing/_price.scss */
+.price__box {
+  position: relative;
+}
+
+/* line 107, src/scss/_components/pricing/_price.scss */
+.price__box:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 74px;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100% - 74px);
+  height: calc(100% - 74px);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f4f9fc;
+}
+
+/* line 119, src/scss/_components/pricing/_price.scss */
+.price__box-bottom {
+  padding: 48px 43px 77px;
+}
+
+/* line 123, src/scss/_components/pricing/_price.scss */
+.price__box-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 131, src/scss/_components/pricing/_price.scss */
+.price__box-title {
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 1.12121;
+  color: #2d3136;
+}
+
+/* line 139, src/scss/_components/pricing/_price.scss */
+.price__box-text {
+  padding-bottom: 48px;
+}
+
+/* line 144, src/scss/_components/pricing/_price.scss */
+.price__box-btn .c-btn__left {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 19px;
+}
+
+/* line 151, src/scss/_components/pricing/_price.scss */
+.price__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 404px;
+}
+
+/* line 157, src/scss/_components/pricing/_price.scss */
+.price__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 68px;
+}
+
+/* line 164, src/scss/_components/pricing/_price.scss */
+.price__unit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  min-height: 85px;
+  margin-bottom: 10px;
+}
+
+/* line 171, src/scss/_components/pricing/_price.scss */
+.price__unit:before {
+  content: '';
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: -webkit-calc(100% - 44px);
+  max-width: calc(100% - 44px);
+  height: 100%;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 13px rgba(98, 118, 203, 0.15);
+          box-shadow: 0 5px 13px rgba(98, 118, 203, 0.15);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 187, src/scss/_components/pricing/_price.scss */
+.price__unit:hover {
+  cursor: pointer;
+}
+
+/* line 190, src/scss/_components/pricing/_price.scss */
+.price__unit:hover:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 196, src/scss/_components/pricing/_price.scss */
+.price__unit:hover .price__unit-block {
+  background-color: #6C63FF;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 200, src/scss/_components/pricing/_price.scss */
+.price__unit:hover .price__unit-block svg {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 203, src/scss/_components/pricing/_price.scss */
+.price__unit:hover .price__unit-block svg.icon-i-email {
+  opacity: 0;
+}
+
+/* line 209, src/scss/_components/pricing/_price.scss */
+.price__unit:hover .price__unit-btn {
+  background-color: #6c63ff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 216, src/scss/_components/pricing/_price.scss */
+.price__unit > div {
+  width: 100%;
+}
+
+/* line 219, src/scss/_components/pricing/_price.scss */
+.price__unit > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 88px;
+}
+
+/* line 224, src/scss/_components/pricing/_price.scss */
+.price__unit > div:nth-of-type(2) {
+  max-width: 177px;
+}
+
+/* line 227, src/scss/_components/pricing/_price.scss */
+.price__unit > div:nth-of-type(3) {
+  max-width: 50px;
+}
+
+/* line 230, src/scss/_components/pricing/_price.scss */
+.price__unit > div:nth-of-type(4) {
+  max-width: 88px;
+}
+
+/* line 235, src/scss/_components/pricing/_price.scss */
+.price__unit-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f4f9fc;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 246, src/scss/_components/pricing/_price.scss */
+.price__unit-block svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 255, src/scss/_components/pricing/_price.scss */
+.price__unit-verifications {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 260, src/scss/_components/pricing/_price.scss */
+.price__unit-verifications p {
+  font-size: 17px;
+  line-height: 1.41176;
+  color: #2d3136;
+}
+
+/* line 266, src/scss/_components/pricing/_price.scss */
+.price__unit-verifications span {
+  font-size: 11px;
+  color: #818992;
+}
+
+/* line 272, src/scss/_components/pricing/_price.scss */
+.price__unit-sum {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 277, src/scss/_components/pricing/_price.scss */
+.price__unit-sum span {
+  font-size: 11px;
+  color: #818992;
+}
+
+/* line 282, src/scss/_components/pricing/_price.scss */
+.price__unit-sum p {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.41176;
+  color: #273951;
+}
+
+/* line 290, src/scss/_components/pricing/_price.scss */
+.price__unit-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 32px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #04C7FF;
+  -webkit-box-shadow: 0 3px 3px rgba(52, 35, 108, 0.2);
+          box-shadow: 0 3px 3px rgba(52, 35, 108, 0.2);
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/pricing/_frequently.scss */
