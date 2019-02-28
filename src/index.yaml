@@ -19,7 +19,7 @@ PageList:
   ready: 5
 - file: datavalidation.html
   titleName: Datavalidation
-  ready: 5
+  ready: 40
 
 - file:
   titleName: DASHBOARD
