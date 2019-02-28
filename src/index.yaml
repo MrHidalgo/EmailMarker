@@ -10,7 +10,7 @@ PageList:
   ready: 10
 - file: features.html
   titleName: Features
-  ready: 30
+  ready: 55
 - file: pricing.html
   titleName: Pricing
   ready: 10

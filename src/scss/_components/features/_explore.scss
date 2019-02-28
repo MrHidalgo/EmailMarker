@@ -2,7 +2,7 @@
 
 .explore {
   padding-top: 190px;
-  padding-bottom: 170px;
+  padding-bottom: 215px;
 
   &__wrapper {
     width: 100%;
@@ -33,14 +33,26 @@
     color: #464646;
 
     i {
+      position: relative;
+      top: 5px;
       display: inline-flex;
       font-size: 28px;
-      padding-left: 40px;
+      padding-left: 37px;
     }
   }
 
   &__block {
-    padding-bottom: 85px;
+    padding-bottom: 73px;
+
+    &-1,
+    &-4 {
+      padding-left: 26px;
+    }
+
+    &-2,
+    &-5 {
+      padding-left: 52px;
+    }
 
     &-wrapper {
       display: flex;
@@ -54,10 +66,10 @@
     }
 
     &-title {
-      padding-bottom: 42px;
+      padding-bottom: 29px;
       font-weight: bold;
       font-size: 24px;
-      line-height: line-height-convert(35,24);
+      line-height: 1.5;
       color: #2d3136;
     }
 
@@ -65,6 +77,7 @@
       width: 100%;
       max-width: 196px;
       font-size: 15px;
+      line-height: 1.9;
     }
   }
 }

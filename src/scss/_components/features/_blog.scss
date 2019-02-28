@@ -2,7 +2,7 @@
 
 .blog {
   padding-top: 130px;
-  padding-bottom: 255px;
+  padding-bottom: 258px;
 
   .c-grid {
     position: relative;
@@ -30,7 +30,7 @@
   }
 
   &__line {
-    margin-top: 63px;
+    margin-top: 56px;
     margin-bottom: 63px;
     width: 1364px;
     height: 1px;
@@ -70,11 +70,11 @@
     }
 
     &-bottom {
-      padding-top: 43px;
+      padding-top: 39px;
     }
 
     &-data {
-      padding-bottom: 22px;
+      padding-bottom: 14px;
       font-size: 15px;
       color: #818992;
     }
@@ -90,7 +90,7 @@
   &__heading {
     z-index: -1;
     position: absolute;
-    top: -130px;
+    top: -125px;
     left: 0;
     font-weight: bold;
     font-size: 234px;
@@ -99,7 +99,7 @@
   }
 
   &__title {
-    padding-bottom: 29px;
+    padding-bottom: 17px;
   }
 
   &__text {
@@ -109,9 +109,10 @@
   &__more {
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
 
     span {
-      padding-right: 20px;
+      padding-right: 16px;
       @extend %fontEina04Bold;
       font-size: 15px;
       line-height: line-height-convert(31,15);

@@ -2,7 +2,7 @@
 
 .boost {
   padding-top: 252px;
-  padding-bottom: 201px;
+  padding-bottom: 215px;
 
   &__block {
     display: flex;
@@ -22,15 +22,13 @@
     &-top {
       width: 260px;
       height: 260px;
-      margin-bottom: 53px;
+      margin-bottom: 49px;
       border-radius: 3px;
       background-color: #f4f9fc;
     }
 
-    &-bottom {}
-
     &-title {
-      padding-bottom: 42px;
+      padding-bottom: 30px;
       font-weight: bold;
       font-size: 27px;
       line-height: line-height-convert(37,27);
@@ -40,6 +38,8 @@
     &-text {
       width: 100%;
       max-width: 260px;
+      line-height: 1.95;
+      font-size: 15px;
     }
   }
 }

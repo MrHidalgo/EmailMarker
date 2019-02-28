@@ -8,29 +8,35 @@
   &__wrapper {
     display: flex;
 
-    &-left,
-    &-right {
-      width: 50%;
+    &-left {
+      width: calc(50% + 8px);
+      padding-left: 138px;
     }
 
-    &-left {
-      padding-left: 138px;
+    &-right {
+      width: calc(50% - 8px);
     }
   }
 
   &__title {
-    padding-bottom: 57px;
+    padding-bottom: 45px;
   }
 
   &__subtitle {
     width: 100%;
     max-width: 471px;
-    padding-bottom: 57px;
+    padding-bottom: 50px;
     color: #464646;
+    line-height: 1.75;
   }
 
   &__btn {
     max-width: 380px;
+
+    .c-btn__left {
+      justify-content: center;
+      padding: 5px 19px;
+    }
   }
 
   &__box {
