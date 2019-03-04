@@ -4022,7 +4022,7 @@ picture {
 
 /* line 3, src/scss/_components/datavalidation/_main.scss */
 .d-main {
-  padding-top: 216px;
+  padding-top: 214px;
   padding-bottom: 161px;
 }
 
@@ -4033,40 +4033,48 @@ picture {
 
 /* line 11, src/scss/_components/datavalidation/_main.scss */
 .d-main__title {
-  padding-bottom: 31px;
+  padding-bottom: 23px;
   text-align: center;
 }
 
 /* line 15, src/scss/_components/datavalidation/_main.scss */
+.d-main__title p {
+  display: inline-block;
+  padding-left: 18px;
+}
+
+/* line 20, src/scss/_components/datavalidation/_main.scss */
 .d-main__title span {
   position: relative;
 }
 
-/* line 18, src/scss/_components/datavalidation/_main.scss */
+/* line 23, src/scss/_components/datavalidation/_main.scss */
 .d-main__title span:before {
   content: '';
   z-index: -1;
   position: absolute;
-  bottom: 13px;
-  left: 0;
-  width: 100%;
-  height: 22px;
+  bottom: 14px;
+  left: -2px;
+  width: -webkit-calc(100% + 10px);
+  width: calc(100% + 10px);
+  height: 21px;
   background-color: #ffc300;
 }
 
-/* line 31, src/scss/_components/datavalidation/_main.scss */
+/* line 36, src/scss/_components/datavalidation/_main.scss */
 .d-main__text {
   text-align: center;
+  line-height: 1.7;
 }
 
-/* line 35, src/scss/_components/datavalidation/_main.scss */
+/* line 41, src/scss/_components/datavalidation/_main.scss */
 .d-main__image {
   z-index: -1;
   position: relative;
-  top: -20px;
+  top: -15px;
 }
 
-/* line 40, src/scss/_components/datavalidation/_main.scss */
+/* line 46, src/scss/_components/datavalidation/_main.scss */
 .d-main__image img {
   display: block;
   max-width: 100%;
@@ -4075,7 +4083,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 50, src/scss/_components/datavalidation/_main.scss */
+/* line 56, src/scss/_components/datavalidation/_main.scss */
 .d-main__btn .c-btn__left {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -4084,7 +4092,7 @@ picture {
   padding-right: 19px;
 }
 
-/* line 55, src/scss/_components/datavalidation/_main.scss */
+/* line 61, src/scss/_components/datavalidation/_main.scss */
 .d-main__btn-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4101,17 +4109,26 @@ picture {
   padding-right: 10px;
 }
 
-/* line 69, src/scss/_components/datavalidation/_main.scss */
+/* line 74, src/scss/_components/datavalidation/_main.scss */
+.d-main__btn-info img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+/* line 82, src/scss/_components/datavalidation/_main.scss */
 .d-main__btn-wrapper {
   position: relative;
   max-width: 380px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 9px;
 }
 
 /* line 3, src/scss/_components/datavalidation/_table.scss */
 .table {
-  padding-bottom: 189px;
+  padding-bottom: 184px;
 }
 
 /* line 6, src/scss/_components/datavalidation/_table.scss */
@@ -4165,49 +4182,55 @@ picture {
   color: #2d3136;
 }
 
-/* line 43, src/scss/_components/datavalidation/_table.scss */
-.table__block-body .table__block-tr--first > div:nth-of-type(2), .table__block-body .table__block-tr--first > div:nth-of-type(3) {
+/* line 45, src/scss/_components/datavalidation/_table.scss */
+.table__block-body .table__block-tr--first > div:nth-of-type(2) span, .table__block-body .table__block-tr--first > div:nth-of-type(3) span {
   font-size: 40px;
   line-height: 1;
   color: #2d3136;
 }
 
-/* line 50, src/scss/_components/datavalidation/_table.scss */
+/* line 52, src/scss/_components/datavalidation/_table.scss */
 .table__block-body .table__block-tr--first > div:nth-of-type(2) {
   background-color: #e9ecfc;
 }
 
-/* line 53, src/scss/_components/datavalidation/_table.scss */
+/* line 55, src/scss/_components/datavalidation/_table.scss */
 .table__block-body .table__block-tr--first > div:nth-of-type(3) {
   background-color: #edf0ff;
 }
 
-/* line 61, src/scss/_components/datavalidation/_table.scss */
+/* line 63, src/scss/_components/datavalidation/_table.scss */
 .table__block-tr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 87px;
+  min-height: 88px;
 }
 
-/* line 65, src/scss/_components/datavalidation/_table.scss */
+/* line 67, src/scss/_components/datavalidation/_table.scss */
 .table__block-tr > div {
   width: 100%;
 }
 
-/* line 68, src/scss/_components/datavalidation/_table.scss */
+/* line 70, src/scss/_components/datavalidation/_table.scss */
 .table__block-tr > div:nth-of-type(1) {
   max-width: 568px;
 }
 
-/* line 71, src/scss/_components/datavalidation/_table.scss */
+/* line 73, src/scss/_components/datavalidation/_table.scss */
 .table__block-tr > div:nth-of-type(2), .table__block-tr > div:nth-of-type(3) {
   max-width: -webkit-calc((100% - 568px) / 2);
   max-width: calc((100% - 568px) / 2);
 }
 
-/* line 78, src/scss/_components/datavalidation/_table.scss */
+/* line 81, src/scss/_components/datavalidation/_table.scss */
+.table__block-tr--big .table__block-td:first-of-type {
+  padding-top: 29px;
+  padding-bottom: 21px;
+}
+
+/* line 89, src/scss/_components/datavalidation/_table.scss */
 .table__block-th {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4220,17 +4243,17 @@ picture {
   padding-left: 40px;
 }
 
-/* line 83, src/scss/_components/datavalidation/_table.scss */
+/* line 94, src/scss/_components/datavalidation/_table.scss */
 .table__block-th:nth-of-type(2) {
   background-color: #6C63FF;
 }
 
-/* line 86, src/scss/_components/datavalidation/_table.scss */
+/* line 97, src/scss/_components/datavalidation/_table.scss */
 .table__block-th:nth-of-type(3) {
   background-color: #766eff;
 }
 
-/* line 90, src/scss/_components/datavalidation/_table.scss */
+/* line 101, src/scss/_components/datavalidation/_table.scss */
 .table__block-th p {
   font-weight: bold;
   font-size: 27px;
@@ -4238,7 +4261,7 @@ picture {
   color: #fff;
 }
 
-/* line 98, src/scss/_components/datavalidation/_table.scss */
+/* line 109, src/scss/_components/datavalidation/_table.scss */
 .table__block-td {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4251,28 +4274,28 @@ picture {
   padding: 10px 40px;
 }
 
-/* line 103, src/scss/_components/datavalidation/_table.scss */
+/* line 114, src/scss/_components/datavalidation/_table.scss */
 .table__block-td p {
   font-size: 20px;
   line-height: 1.85;
   color: #2d3136;
 }
 
-/* line 109, src/scss/_components/datavalidation/_table.scss */
+/* line 120, src/scss/_components/datavalidation/_table.scss */
 .table__block-td span {
   font-size: 20px;
   line-height: 1.85;
   color: #818992;
 }
 
-/* line 115, src/scss/_components/datavalidation/_table.scss */
+/* line 126, src/scss/_components/datavalidation/_table.scss */
 .table__block-td h6 {
   font-size: 40px;
   line-height: 1;
   color: #2d3136;
 }
 
-/* line 122, src/scss/_components/datavalidation/_table.scss */
+/* line 133, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4295,12 +4318,12 @@ picture {
   border-style: solid;
 }
 
-/* line 133, src/scss/_components/datavalidation/_table.scss */
+/* line 144, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon--check {
   border-color: #1BC18E;
 }
 
-/* line 136, src/scss/_components/datavalidation/_table.scss */
+/* line 147, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon--check:before {
   content: '';
   position: relative;
@@ -4314,12 +4337,12 @@ picture {
           transform: rotate(45deg);
 }
 
-/* line 148, src/scss/_components/datavalidation/_table.scss */
+/* line 159, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon--close {
   border-color: #FF4252;
 }
 
-/* line 151, src/scss/_components/datavalidation/_table.scss */
+/* line 162, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon--close:before, .table__block-icon--close:after {
   content: '';
   position: absolute;
@@ -4328,14 +4351,14 @@ picture {
   background-color: #FF4252;
 }
 
-/* line 160, src/scss/_components/datavalidation/_table.scss */
+/* line 171, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon--close:before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-/* line 164, src/scss/_components/datavalidation/_table.scss */
+/* line 175, src/scss/_components/datavalidation/_table.scss */
 .table__block-icon--close:after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);

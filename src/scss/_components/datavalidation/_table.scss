@@ -1,7 +1,7 @@
 // SECTION table :: START
 
 .table {
-  padding-bottom: 189px;
+  padding-bottom: 184px;
 
   .c-grid {
     max-width: 1395px;
@@ -42,9 +42,11 @@
             }
             &:nth-of-type(2),
             &:nth-of-type(3) {
-              font-size: 40px;
-              line-height: 1;
-              color: #2d3136;
+              span {
+                font-size: 40px;
+                line-height: 1;
+                color: #2d3136;
+              }
             }
 
             &:nth-of-type(2) {
@@ -60,7 +62,7 @@
 
     &-tr {
       display: flex;
-      min-height: 87px;
+      min-height: 88px;
 
       > div {
         width: 100%;
@@ -71,6 +73,15 @@
         &:nth-of-type(2),
         &:nth-of-type(3) {
           max-width: calc((100% - 568px) / 2);
+        }
+      }
+
+      &--big {
+        .table__block-td {
+          &:first-of-type {
+            padding-top: 29px;
+            padding-bottom: 21px;
+          }
         }
       }
     }

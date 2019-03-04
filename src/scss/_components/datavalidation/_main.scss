@@ -1,7 +1,7 @@
 // SECTION main :: START
 
 .d-main {
-  padding-top: 216px;
+  padding-top: 214px;
   padding-bottom: 161px;
 
   .c-grid {
@@ -9,8 +9,13 @@
   }
 
   &__title {
-    padding-bottom: 31px;
+    padding-bottom: 23px;
     text-align: center;
+
+    p {
+      display: inline-block;
+      padding-left: 18px;
+    }
 
     span {
       position: relative;
@@ -19,10 +24,10 @@
         content: '';
         z-index: -1;
         position: absolute;
-        bottom: 13px;
-        left: 0;
-        width: 100%;
-        height: 22px;
+        bottom: 14px;
+        left: -2px;
+        width: calc(100% + 10px);
+        height: 21px;
         background-color: #ffc300;
       }
     }
@@ -30,12 +35,13 @@
 
   &__text {
     text-align: center;
+    line-height: 1.7;
   }
 
   &__image {
     z-index: -1;
     position: relative;
-    top: -20px;
+    top: -15px;
 
     img {
       display: block;
@@ -64,6 +70,13 @@
       p {
         @extend %fontDakota;
       }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 5px;
+      }
     }
 
     &-wrapper {
@@ -71,6 +84,7 @@
       max-width: 380px;
       margin-left: auto;
       margin-right: auto;
+      padding-top: 9px;
     }
   }
 }
