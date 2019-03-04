@@ -1,0 +1,63 @@
+// SECTION integrations main :: START
+
+mixin mainBlockEmpty()
+  .i-main__block.i-main__block--empty
+    span
+    span
+    i
+    i
+    i
+    i
+
+mixin mainBlock(classMod, imgType, imgName, title, text)
+  a.i-main__block(href="#" class!= "i-main__block--" + classMod)
+    .i-main__block-img
+      if(imgType === 'svg')
+        +iconSVG(imgName)
+      else
+        i.icon-png(class!= imgName)
+
+    p.i-main__block-title!= title
+    p.i-main__block-text!= text
+
+
+section#i-main.i-main.main
+  .c-grid
+    .i-main__wrapper
+
+      h1.i-main__title.main__title!= "We connect with your <br>favorite email marketing tools"
+      p.i-main__text.c-text.c-text--medium!= "Connect with all your favorite tools to ensure that you <br>always reach out to real prospects"
+
+
+      .i-main__block-wrapper
+
+        .i-main__block-row.i-main__block-row--first
+          +mainBlockEmpty()
+          +mainBlockEmpty()
+
+        .i-main__block-row.i-main__block-row--1
+          +mainBlock('mailchimp', 'svg', 'integrations-mailchimp', 'Mailchimp', 'Marketing Automation <br>Platform for Small <br>Businesses')
+          +mainBlock('sendloop', 'png', 'integrations-sendloop', 'Sendloop', 'Manage your contacts and <br>send beautiful email <br>marketing emails to your <br>contacts in minutes')
+          +mainBlock('mailgun', 'svg', 'integrations-mailgun', 'Mailgun', 'Transactional Email APIs <br>that enable you to send, <br>receive, and track emails')
+
+        .i-main__block-row.i-main__block-row--2
+          +mainBlockEmpty()
+          +mainBlock('hubspot', 'svg', 'integrations-hubspot', 'Hubspot', 'HubSpot offers a full <br>platform of marketing, <br>sales, customer service, <br>and CRM software')
+          +mainBlock('aweber', 'svg', 'integrations-aweber', 'Aweber', 'Affordable and easy to use <br>email marketing and <br>autoresponder tools')
+          +mainBlockEmpty()
+
+        .i-main__block-row.i-main__block-row--3
+          +mainBlockEmpty()
+          +mainBlock('sendgrid', 'svg', 'integrations-sendgrid', 'Sendgrid', 'SendGrid’s cloud-based <br>email infrastructure and <br>delivery Service')
+          +mainBlock('activeCampaign', 'svg', 'integrations-activeCampaign', 'Active Campaign', 'Integrated email <br>marketing, marketing <br>automation, and small <br>business CRM')
+          +mainBlock('campaignMonitor', 'svg', 'integrations-campaignMonitor', 'Campaign Monitor', 'Email Marketing & <br>Automation for Your <br>Business')
+
+        .i-main__block-row.i-main__block-row--last
+          +mainBlockEmpty()
+          +mainBlock('verticalResponse', 'svg', 'integrations-verticalResponse', 'Vertical Response', 'VerticalResponse gives you <br>the tools to quickly build <br>powerful marketing <br>campaigns.')
+          +mainBlock('constantContact', 'svg', 'integrations-constantContact', 'Constant Contact', 'Effective Email Marketing')
+          +mainBlockEmpty()
+          +mainBlockEmpty()
+
+
+// SECTION integrations main :: END

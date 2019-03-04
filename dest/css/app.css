@@ -10,6 +10,24 @@
   font-family: 'Dakota', sans-serif;
 }
 
+/* line 56, src/scss/_generated/_spritePNG.scss */
+.integrations-sendloop:before {
+  background-image: url("../img/sprite.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 81px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 56, src/scss/_generated/_spritePNG.scss */
+  .integrations-sendloop:before {
+    -webkit-background-size: 120px 81px;
+            background-size: 120px 81px;
+    background-image: url("../img/sprite@2x.png");
+  }
+}
+
 /* line 1, src/scss/_generated/_spriteSVG.scss */
 .icon-gdpr-file {
   width: 82.145px;
@@ -32,6 +50,60 @@
 .icon-i-email-hover {
   width: 30px;
   height: 20.893px;
+}
+
+/* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-activeCampaign {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 21, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-aweber {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 25, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-campaignMonitor {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 29, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-constantContact {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 33, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-hubspot {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 37, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-mailchimp {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 41, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-mailgun {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 45, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-sendgrid {
+  width: 120px;
+  height: 81px;
+}
+
+/* line 49, src/scss/_generated/_spriteSVG.scss */
+.icon-integrations-verticalResponse {
+  width: 120px;
+  height: 81px;
 }
 
 @font-face {
@@ -623,6 +695,12 @@ picture {
   width: 100%;
   max-width: 500px;
   min-height: 484px;
+}
+
+/* line 4, src/scss/_shared/_iconPNG.scss */
+.icon-png:before {
+  content: "";
+  display: block;
 }
 
 /* line 3, src/scss/_shared/_iconSVG.scss */
@@ -4363,6 +4441,209 @@ picture {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/* line 3, src/scss/_components/integrations/_main.scss */
+.i-main {
+  padding-bottom: 147px;
+}
+
+/* line 6, src/scss/_components/integrations/_main.scss */
+.i-main .c-grid {
+  max-width: 1394px;
+}
+
+/* line 10, src/scss/_components/integrations/_main.scss */
+.i-main__title {
+  padding-bottom: 57px;
+}
+
+/* line 14, src/scss/_components/integrations/_main.scss */
+.i-main__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 335px;
+  margin-bottom: 17px;
+  padding: 38px 10px 5px 25px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid rgba(0, 32, 111, 0.1);
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--mailchimp .i-main__block-img {
+  background-color: #FDE04C;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--sendloop .i-main__block-img {
+  background-color: #F07639;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--mailgun .i-main__block-img {
+  background-color: #AF272A;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--hubspot .i-main__block-img {
+  background-color: #F37316;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--aweber .i-main__block-img {
+  background-color: #246FAC;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--sendgrid .i-main__block-img {
+  background-color: #1F2E38;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--activeCampaign .i-main__block-img {
+  background-color: #356AE6;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--campaignMonitor .i-main__block-img {
+  background-color: #7954F6;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--verticalResponse .i-main__block-img {
+  background-color: #4F1042;
+}
+
+/* line 36, src/scss/_components/integrations/_main.scss */
+.i-main__block--constantContact .i-main__block-img {
+  background-color: #3C4A57;
+}
+
+/* line 42, src/scss/_components/integrations/_main.scss */
+.i-main__block-img {
+  position: relative;
+  display: block;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 81px;
+  margin-bottom: 38px;
+}
+
+/* line 52, src/scss/_components/integrations/_main.scss */
+.i-main__block-title {
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.45833;
+  color: #2d3136;
+}
+
+/* line 60, src/scss/_components/integrations/_main.scss */
+.i-main__block-text {
+  font-size: 15px;
+  line-height: 1.86667;
+  color: #818992;
+}
+
+/* line 66, src/scss/_components/integrations/_main.scss */
+.i-main__block--empty {
+  padding-top: 82px;
+  padding-bottom: 51px;
+}
+
+/* line 70, src/scss/_components/integrations/_main.scss */
+.i-main__block--empty span,
+.i-main__block--empty i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 32, 111, 0.1);
+}
+
+/* line 76, src/scss/_components/integrations/_main.scss */
+.i-main__block--empty span {
+  width: 185px;
+  height: 21px;
+  margin-bottom: 12px;
+}
+
+/* line 81, src/scss/_components/integrations/_main.scss */
+.i-main__block--empty span:nth-of-type(2) {
+  width: 84px;
+  margin-bottom: 49px;
+}
+
+/* line 87, src/scss/_components/integrations/_main.scss */
+.i-main__block--empty i {
+  width: 157px;
+  height: 6px;
+  margin-bottom: 25px;
+}
+
+/* line 92, src/scss/_components/integrations/_main.scss */
+.i-main__block--empty i:nth-of-type(4) {
+  width: 109px;
+  margin-bottom: 0;
+}
+
+/* line 99, src/scss/_components/integrations/_main.scss */
+.i-main__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 105, src/scss/_components/integrations/_main.scss */
+.i-main__block-row {
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc((100% - (16px * 4)) / 5);
+  max-width: calc((100% - (16px * 4)) / 5);
+}
+
+/* line 110, src/scss/_components/integrations/_main.scss */
+.i-main__block-row--first {
+  padding-top: 348px;
+}
+
+/* line 114, src/scss/_components/integrations/_main.scss */
+.i-main__block-row--1 {
+  padding-top: 163px;
+}
+
+/* line 118, src/scss/_components/integrations/_main.scss */
+.i-main__block-row--3 {
+  top: -185px;
+}
+
+/* line 122, src/scss/_components/integrations/_main.scss */
+.i-main__block-row--last {
+  top: -475px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -1,0 +1,129 @@
+// SECTION integrations main :: START
+
+.i-main {
+  padding-bottom: 147px;
+
+  .c-grid {
+    max-width: 1394px;
+  }
+
+  &__title {
+    padding-bottom: 57px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    min-height: 335px;
+    margin-bottom: 17px;
+    padding: 38px 10px 5px 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(#00206f, 0.1);
+
+    @each $classMod, $bgVal in
+        ('mailchimp', #FDE04C),
+        ('sendloop', #F07639),
+        ('mailgun', #AF272A),
+        ('hubspot', #F37316),
+        ('aweber', #246FAC),
+        ('sendgrid', #1F2E38),
+        ('activeCampaign', #356AE6),
+        ('campaignMonitor', #7954F6),
+        ('verticalResponse', #4F1042),
+        ('constantContact', #3C4A57)
+    {
+      &--#{$classMod} {
+        .i-main__block-img {
+          background-color: #{$bgVal};
+        }
+      }
+    }
+
+    &-img {
+      position: relative;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 81px;
+      margin-bottom: 38px;
+    }
+
+    &-title {
+      padding-bottom: 30px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: line-height-convert(35,24);
+      color: #2d3136;
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: line-height-convert(28,15);
+      color: #818992;
+    }
+
+    &--empty {
+      padding-top: 82px;
+      padding-bottom: 51px;
+
+      span,
+      i {
+        display: flex;
+        background-color: rgba(#00206f, 0.1);
+      }
+
+      span {
+        width: 185px;
+        height: 21px;
+        margin-bottom: 12px;
+
+        &:nth-of-type(2) {
+          width: 84px;
+          margin-bottom: 49px;
+        }
+      }
+
+      i {
+        width: 157px;
+        height: 6px;
+        margin-bottom: 25px;
+
+        &:nth-of-type(4) {
+          width: 109px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &-row {
+      position: relative;
+      width: 100%;
+      max-width: calc((100% - (16px * 4)) / 5);
+
+      &--first {
+        padding-top: 348px;
+      }
+
+      &--1 {
+        padding-top: 163px;
+      }
+
+      &--3 {
+        top: -185px;
+      }
+
+      &--last {
+        top: -475px;
+      }
+    }
+  }
+}
+
+// SECTION integrations main :: END
