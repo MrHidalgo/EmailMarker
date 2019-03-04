@@ -35,96 +35,114 @@
 }
 
 /* line 1, src/scss/_generated/_spriteSVG.scss */
+.icon-check-circle {
+  width: 44px;
+  height: 42.866px;
+}
+
+/* line 5, src/scss/_generated/_spriteSVG.scss */
+.icon-database {
+  width: 44px;
+  height: 48.445px;
+}
+
+/* line 9, src/scss/_generated/_spriteSVG.scss */
 .icon-gdpr-file {
   width: 82.145px;
   height: 87.885px;
 }
 
-/* line 5, src/scss/_generated/_spriteSVG.scss */
+/* line 13, src/scss/_generated/_spriteSVG.scss */
 .icon-gdpr-world {
   width: 149.307px;
   height: 149.31px;
 }
 
-/* line 9, src/scss/_generated/_spriteSVG.scss */
+/* line 17, src/scss/_generated/_spriteSVG.scss */
 .icon-i-email {
   width: 30px;
   height: 20.893px;
 }
 
-/* line 13, src/scss/_generated/_spriteSVG.scss */
+/* line 21, src/scss/_generated/_spriteSVG.scss */
 .icon-i-email-hover {
   width: 30px;
   height: 20.893px;
 }
 
-/* line 17, src/scss/_generated/_spriteSVG.scss */
+/* line 25, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-activeCampaign {
   width: 120px;
   height: 81px;
 }
 
-/* line 21, src/scss/_generated/_spriteSVG.scss */
+/* line 29, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-aweber {
   width: 120px;
   height: 81px;
 }
 
-/* line 25, src/scss/_generated/_spriteSVG.scss */
+/* line 33, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-campaignMonitor {
   width: 120px;
   height: 81px;
 }
 
-/* line 29, src/scss/_generated/_spriteSVG.scss */
+/* line 37, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-constantContact {
   width: 120px;
   height: 81px;
 }
 
-/* line 33, src/scss/_generated/_spriteSVG.scss */
+/* line 41, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-hubspot {
   width: 120px;
   height: 81px;
 }
 
-/* line 37, src/scss/_generated/_spriteSVG.scss */
+/* line 45, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-mailchimp {
   width: 120px;
   height: 81px;
 }
 
-/* line 41, src/scss/_generated/_spriteSVG.scss */
+/* line 49, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-mailgun {
   width: 120px;
   height: 81px;
 }
 
-/* line 45, src/scss/_generated/_spriteSVG.scss */
+/* line 53, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-sendgrid {
   width: 120px;
   height: 81px;
 }
 
-/* line 49, src/scss/_generated/_spriteSVG.scss */
+/* line 57, src/scss/_generated/_spriteSVG.scss */
 .icon-integrations-verticalResponse {
   width: 120px;
   height: 81px;
 }
 
-/* line 53, src/scss/_generated/_spriteSVG.scss */
+/* line 61, src/scss/_generated/_spriteSVG.scss */
+.icon-mail {
+  width: 44px;
+  height: 36px;
+}
+
+/* line 65, src/scss/_generated/_spriteSVG.scss */
 .icon-mouse {
   width: 12px;
   height: 16px;
 }
 
-/* line 57, src/scss/_generated/_spriteSVG.scss */
+/* line 69, src/scss/_generated/_spriteSVG.scss */
 .icon-rating-hand {
   width: 38.402px;
   height: 39.963px;
 }
 
-/* line 61, src/scss/_generated/_spriteSVG.scss */
+/* line 73, src/scss/_generated/_spriteSVG.scss */
 .icon-star {
   width: 15.371px;
   height: 14.713px;
@@ -2756,6 +2774,122 @@ picture {
   font-size: 14px;
   line-height: 1;
   color: rgba(129, 137, 146, 0.51);
+}
+
+/* line 3, src/scss/_components/home/_description.scss */
+.description {
+  padding-bottom: 144px;
+}
+
+/* line 6, src/scss/_components/home/_description.scss */
+.description__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 13, src/scss/_components/home/_description.scss */
+.description__block {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: -webkit-calc(100% / 4);
+  max-width: calc(100% / 4);
+  min-height: 566px;
+}
+
+/* line 21, src/scss/_components/home/_description.scss */
+.description__block-0 {
+  background-color: #f4f9fc;
+  -webkit-border-radius: 3px 0 0 3px;
+          border-radius: 3px 0 0 3px;
+}
+
+/* line 25, src/scss/_components/home/_description.scss */
+.description__block-0 .description__block-top {
+  background-color: #635aff;
+}
+
+/* line 30, src/scss/_components/home/_description.scss */
+.description__block-1 {
+  background-color: rgba(244, 249, 252, 0.6);
+}
+
+/* line 33, src/scss/_components/home/_description.scss */
+.description__block-1 .description__block-top {
+  background-color: #6C63FF;
+}
+
+/* line 36, src/scss/_components/home/_description.scss */
+.description__block-1 .description__block-top svg {
+  opacity: 0.5;
+}
+
+/* line 42, src/scss/_components/home/_description.scss */
+.description__block-2 {
+  background-color: rgba(244, 249, 252, 0.3);
+}
+
+/* line 45, src/scss/_components/home/_description.scss */
+.description__block-2 .description__block-top {
+  background-color: #766EFF;
+}
+
+/* line 50, src/scss/_components/home/_description.scss */
+.description__block-3 {
+  background-color: rgba(244, 249, 252, 0.1);
+  -webkit-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+}
+
+/* line 54, src/scss/_components/home/_description.scss */
+.description__block-3 .description__block-top {
+  background-color: #827BFF;
+}
+
+/* line 59, src/scss/_components/home/_description.scss */
+.description__block-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 133px;
+  padding: 10px 10px 10px 35px;
+}
+
+/* line 66, src/scss/_components/home/_description.scss */
+.description__block-bottom {
+  padding: 47px 36px 15px 35px;
+}
+
+/* line 70, src/scss/_components/home/_description.scss */
+.description__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 74, src/scss/_components/home/_description.scss */
+.description__block-title {
+  padding-bottom: 56px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 1.44444;
+  color: #2d3136;
 }
 
 /* line 3, src/scss/_components/home/_trial.scss */
