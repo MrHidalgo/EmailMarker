@@ -42,11 +42,14 @@
 	@if $filename == in {
 		$char: "\E005";
 	}
-	@if $filename == pn {
+	@if $filename == plus {
 		$char: "\E006";
 	}
-	@if $filename == tw {
+	@if $filename == pn {
 		$char: "\E007";
+	}
+	@if $filename == tw {
+		$char: "\E008";
 	}
 
 	@return $char;
@@ -81,6 +84,10 @@
 }
 .icon-in {
 	@include icon(in);
+
+}
+.icon-plus {
+	@include icon(plus);
 
 }
 .icon-pn {

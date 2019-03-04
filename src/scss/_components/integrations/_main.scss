@@ -1,6 +1,8 @@
 // SECTION integrations main :: START
 
 .i-main {
+  max-height: 2000px;
+  padding-top: 215px;
   padding-bottom: 147px;
 
   .c-grid {
@@ -8,7 +10,11 @@
   }
 
   &__title {
-    padding-bottom: 57px;
+    padding-bottom: 49px;
+  }
+
+  &__text {
+    line-height: 1.7;
   }
 
   &__block {
@@ -18,7 +24,8 @@
     margin-bottom: 17px;
     padding: 38px 10px 5px 25px;
     border-radius: 3px;
-    border: 1px solid rgba(#00206f, 0.1);
+    background-color: #fff;
+    box-shadow: 0 13px 26px rgba(0, 32, 111, 0.05);
 
     @each $classMod, $bgVal in
         ('mailchimp', #FDE04C),
@@ -33,6 +40,11 @@
         ('constantContact', #3C4A57)
     {
       &--#{$classMod} {
+        @if($classMod == 'aweber') {
+          margin-bottom: 15px;
+        }
+
+
         .i-main__block-img {
           background-color: #{$bgVal};
         }
@@ -46,11 +58,11 @@
       justify-content: center;
       width: 120px;
       height: 81px;
-      margin-bottom: 38px;
+      margin-bottom: 33px;
     }
 
     &-title {
-      padding-bottom: 30px;
+      padding-bottom: 19px;
       font-weight: bold;
       font-size: 24px;
       line-height: line-height-convert(35,24);
@@ -64,8 +76,12 @@
     }
 
     &--empty {
-      padding-top: 82px;
-      padding-bottom: 51px;
+      padding-top: 81px;
+      padding-left: 24px;
+      padding-bottom: 50px;
+      box-shadow: none;
+      background-color: transparent;
+      border: 1px solid rgba(#00206f, 0.1);
 
       span,
       i {
@@ -108,19 +124,52 @@
       max-width: calc((100% - (16px * 4)) / 5);
 
       &--first {
-        padding-top: 348px;
+        padding-top: 342px;
       }
 
       &--1 {
-        padding-top: 163px;
+        padding-top: 157px;
+      }
+
+      &--2 {
+        top: -10px;
       }
 
       &--3 {
-        top: -185px;
+        top: -195px;
       }
 
       &--last {
-        top: -475px;
+        top: -362px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      margin-top: 84px;
+
+      > div {
+        &:nth-of-type(1) {
+          width: 54px;
+        }
+
+        &:nth-of-type(2) {
+          width: 100%;
+          max-width: calc(100% - 54px);
+        }
+
+        .icon-plus {
+          color: #04C7FF;
+          font-size: 32px;
+        }
+
+        span {
+          font-weight: bold;
+          font-size: 25px;
+          line-height: line-height-convert(30, 25);
+          color: #464646;
+        }
       }
     }
   }
