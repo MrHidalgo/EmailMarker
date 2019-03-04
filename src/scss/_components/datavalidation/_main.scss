@@ -60,15 +60,18 @@
 
     &-info {
       display: flex;
+      align-items: center;
       justify-content: center;
       position: absolute;
       width: 100%;
-      max-width: 190px;
-      left: -190px;
+      max-width: 225px;
+      left: -225px;
       padding-right: 10px;
 
       p {
         @extend %fontDakota;
+        color: #818992;
+        text-align: center;
       }
 
       img {

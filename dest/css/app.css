@@ -6,6 +6,12 @@
 }
 
 /* line 10, src/scss/_utilities/_extend.scss */
+.h-main__badge > div i {
+  font-family: 'Eina01', sans-serif;
+  font-weight: bold;
+}
+
+/* line 14, src/scss/_utilities/_extend.scss */
 .d-main__btn-info p {
   font-family: 'Dakota', sans-serif;
 }
@@ -104,6 +110,24 @@
 .icon-integrations-verticalResponse {
   width: 120px;
   height: 81px;
+}
+
+/* line 53, src/scss/_generated/_spriteSVG.scss */
+.icon-mouse {
+  width: 12px;
+  height: 16px;
+}
+
+/* line 57, src/scss/_generated/_spriteSVG.scss */
+.icon-rating-hand {
+  width: 38.402px;
+  height: 39.963px;
+}
+
+/* line 61, src/scss/_generated/_spriteSVG.scss */
+.icon-star {
+  width: 15.371px;
+  height: 14.713px;
 }
 
 @font-face {
@@ -2517,6 +2541,223 @@ picture {
   left: 2px;
 }
 
+/* line 3, src/scss/_components/home/_main.scss */
+.h-main {
+  position: relative;
+  min-height: 1100px;
+  padding-top: 174px;
+}
+
+/* line 8, src/scss/_components/home/_main.scss */
+.h-main .d-main__btn-wrapper {
+  padding-bottom: 149px;
+}
+
+/* line 12, src/scss/_components/home/_main.scss */
+.h-main__bg {
+  z-index: -1;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 20, src/scss/_components/home/_main.scss */
+.h-main__bg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 27, src/scss/_components/home/_main.scss */
+.h-main__badge {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 460px;
+  min-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 67px;
+}
+
+/* line 38, src/scss/_components/home/_main.scss */
+.h-main__badge > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47px;
+  height: 20px;
+  background-image: url("../img/img-main-badge-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+/* line 50, src/scss/_components/home/_main.scss */
+.h-main__badge > div:nth-of-type(2) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 50px);
+  max-width: calc(100% - 50px);
+  padding-left: 3px;
+}
+
+/* line 56, src/scss/_components/home/_main.scss */
+.h-main__badge > div i {
+  position: relative;
+  top: 1px;
+  left: -1px;
+  font-size: 12px;
+  color: #6c5300;
+  line-height: 1;
+}
+
+/* line 66, src/scss/_components/home/_main.scss */
+.h-main__badge > div p {
+  font-size: 11px;
+  color: #464646;
+}
+
+/* line 70, src/scss/_components/home/_main.scss */
+.h-main__badge > div p span {
+  color: #005adc;
+}
+
+/* line 77, src/scss/_components/home/_main.scss */
+.h-main__title {
+  padding-bottom: 67px;
+  text-align: center;
+}
+
+/* line 82, src/scss/_components/home/_main.scss */
+.h-main__text {
+  padding-bottom: 97px;
+  text-align: center;
+}
+
+/* line 87, src/scss/_components/home/_main.scss */
+.h-main__rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 280px;
+  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 115px;
+}
+
+/* line 98, src/scss/_components/home/_main.scss */
+.h-main__rating > div:nth-of-type(1) {
+  width: 39px;
+  height: 40px;
+}
+
+/* line 103, src/scss/_components/home/_main.scss */
+.h-main__rating > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: -webkit-calc(100% - 39px);
+  max-width: calc(100% - 39px);
+  min-height: 40px;
+  padding-left: 8px;
+}
+
+/* line 113, src/scss/_components/home/_main.scss */
+.h-main__rating > div p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 116, src/scss/_components/home/_main.scss */
+.h-main__rating > div p svg {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* line 122, src/scss/_components/home/_main.scss */
+.h-main__rating > div span {
+  font-size: 15px;
+  line-height: 1;
+  color: #242424;
+}
+
+/* line 130, src/scss/_components/home/_main.scss */
+.h-main__scroll {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 62px;
+}
+
+/* line 139, src/scss/_components/home/_main.scss */
+.h-main__scroll > div:nth-of-type(1) {
+  width: 27px;
+}
+
+/* line 143, src/scss/_components/home/_main.scss */
+.h-main__scroll > div:nth-of-type(2) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 27px);
+  max-width: calc(100% - 27px);
+}
+
+/* line 148, src/scss/_components/home/_main.scss */
+.h-main__scroll > div p {
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #242424;
+}
+
+/* line 154, src/scss/_components/home/_main.scss */
+.h-main__scroll > div span {
+  font-size: 14px;
+  line-height: 1;
+  color: rgba(129, 137, 146, 0.51);
+}
+
 /* line 3, src/scss/_components/home/_trial.scss */
 .trial {
   padding-top: 82px;
@@ -4181,18 +4422,28 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
   width: 100%;
-  max-width: 190px;
-  left: -190px;
+  max-width: 225px;
+  left: -225px;
   padding-right: 10px;
 }
 
-/* line 74, src/scss/_components/datavalidation/_main.scss */
+/* line 71, src/scss/_components/datavalidation/_main.scss */
+.d-main__btn-info p {
+  color: #818992;
+  text-align: center;
+}
+
+/* line 77, src/scss/_components/datavalidation/_main.scss */
 .d-main__btn-info img {
   display: block;
   max-width: 100%;
@@ -4200,7 +4451,7 @@ picture {
   margin-top: 5px;
 }
 
-/* line 82, src/scss/_components/datavalidation/_main.scss */
+/* line 85, src/scss/_components/datavalidation/_main.scss */
 .d-main__btn-wrapper {
   position: relative;
   max-width: 380px;

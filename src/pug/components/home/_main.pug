@@ -1,0 +1,48 @@
+// SECTION homepage main :: START
+
+section#h-main.h-main
+
+  .h-main__bg
+    img(src="./img/img-main-bg.svg" alt="" title="")
+
+  .c-grid
+    .h-main__wrapper
+
+      .h-main__badge
+        div
+          i!= "INFO"
+        div
+          p!= "We want to give you a 25% Discount for your first order ? USE CODE: <span>25OFF07</span>"
+
+      h1.h-main__title.main__title!= "Full-Featured Email Verification. <br>But half the price :)"
+      p.h-main__text.c-text.c-text--medium!= "A trusted solution for your digital marketing needs. Many Organizations Trust Emailmarker for Their <br>Real-time Email verification and email cleaning services."
+
+      .d-main__btn-wrapper
+        .d-main__btn-info
+          p!= "No credit card required"
+          img(src="./img/img-d-main-arrow.svg" alt="" title="")
+
+        +btn('green d-main__btn', 'CLEAN YOUR LIST FOR FREE')
+
+
+      .h-main__rating
+        div
+          +iconSVG('rating-hand')
+        div
+          p
+            +iconSVG('star')
+            +iconSVG('star')
+            +iconSVG('star')
+            +iconSVG('star')
+            +iconSVG('star')
+
+          span!= "4.7 Rating based on 240 reviews"
+
+      .h-main__scroll
+        div
+          +iconSVG('mouse')
+        div
+          p!= "Discover EmailMarker"
+          span!= "Scroll down"
+
+// SECTION homepage main :: END
