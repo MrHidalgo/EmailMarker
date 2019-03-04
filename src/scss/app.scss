@@ -25,7 +25,7 @@
 @import "_shared/common";
 //@import "_shared/viewPortChecker";
 //@import "_shared/magnificPopup";
-//@import "_shared/swiper";
+@import "_shared/swiper";
 //@import "_shared/objectFitImages";
 //@import "_shared/iconPNG";
 @import "_shared/iconSVG";
@@ -46,6 +46,7 @@
 @import "_components/header";
 @import "_components/footer";
 
+@import "_components/common/questions";
 @import "_components/common/partners";
 @import "_components/common/workflow";
 

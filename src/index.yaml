@@ -13,13 +13,13 @@ PageList:
   ready: 55
 - file: pricing.html
   titleName: Pricing
-  ready: 40
+  ready: 55
 - file: integrations.html
   titleName: Integrations
   ready: 5
 - file: datavalidation.html
   titleName: Datavalidation
-  ready: 40
+  ready: 55
 
 - file:
   titleName: DASHBOARD

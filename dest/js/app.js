@@ -45,6 +45,31 @@ var initSvg4everybody = function initSvg4everybody() {
 };
 
 /**
+ * @name initSwiper
+ *
+ * @description initialize Swiper
+ */
+var initSwiper = function initSwiper() {
+  var mySwiper = new Swiper('.swiper-container-questions', {
+    loop: false,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    slidesPerView: 1,
+    spaceBetween: 8,
+    navigation: {
+      prevEl: '.questions__slider-btn--prev',
+      nextEl: '.questions__slider-btn--next'
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true
+    }
+  });
+};
+
+/**
  * @name initWebFontLoader
  *
  * @description Loading fonts regardless of the source, then adds a standard set of events you may use to control the loading experience... for more details => https://github.com/typekit/fvd
@@ -105,6 +130,7 @@ $(document).ready(function (ev) {
 
     // lib
     // ==========================================
+    initSwiper();
 
     // callback
     // ==========================================
