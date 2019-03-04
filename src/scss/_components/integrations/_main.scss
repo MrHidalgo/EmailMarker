@@ -26,6 +26,7 @@
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 13px 26px rgba(0, 32, 111, 0.05);
+    @include transition(box-shadow);
 
     @each $classMod, $bgVal in
         ('mailchimp', #FDE04C),
@@ -122,6 +123,13 @@
       position: relative;
       width: 100%;
       max-width: calc((100% - (16px * 4)) / 5);
+
+      a {
+        &:hover {
+          box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
+          @include transition(box-shadow);
+        }
+      }
 
       &--first {
         padding-top: 342px;
