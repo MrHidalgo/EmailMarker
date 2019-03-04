@@ -2,7 +2,7 @@
 
 .questions {
   position: relative;
-  padding-bottom: 148px;
+  padding-bottom: 79px;
   min-height: 632px;
 
   &__bg {
@@ -16,14 +16,14 @@
   }
 
   &__title {
-    padding-bottom: 29px;
+    padding-bottom: 17px;
     font-size: 35px;
     line-height: line-height-convert(45,35);
     color: #2d3136;
   }
 
   &__text {
-    padding-bottom: 129px;
+    padding-bottom: 122px;
   }
 
   &__slider {
@@ -32,14 +32,14 @@
     &-container {
       display: flex;
       width: 100%;
-      max-width: 1682px;
+      max-width: 1782px;
       min-height: 484px;
       margin-left: auto;
     }
 
     &-btn {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       width: 140px;
       padding-right: 16px;
@@ -172,11 +172,11 @@
     &-bottom {
       position: relative;
       height: calc(100% - 239px);
-      padding: 39px 70px 42px 71px;
+      padding: 34px 70px 42px 71px;
     }
 
     &-title {
-      padding-bottom: 25px;
+      padding-bottom: 14px;
       font-weight: bold;
       font-size: 24px;
       line-height: line-height-convert(35,24);

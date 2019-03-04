@@ -16,7 +16,7 @@ PageList:
   ready: 55
 - file: integrations.html
   titleName: Integrations
-  ready: 5
+  ready: 25
 - file: datavalidation.html
   titleName: Datavalidation
   ready: 55

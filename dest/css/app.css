@@ -474,7 +474,7 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
-  height: 583px;
+  height: 582px;
   background-color: #f4f9fc;
 }
 
@@ -2012,7 +2012,7 @@ picture {
 /* line 3, src/scss/_components/common/_questions.scss */
 .questions {
   position: relative;
-  padding-bottom: 148px;
+  padding-bottom: 79px;
   min-height: 632px;
 }
 
@@ -2030,7 +2030,7 @@ picture {
 
 /* line 18, src/scss/_components/common/_questions.scss */
 .questions__title {
-  padding-bottom: 29px;
+  padding-bottom: 17px;
   font-size: 35px;
   line-height: 1.28571;
   color: #2d3136;
@@ -2038,7 +2038,7 @@ picture {
 
 /* line 25, src/scss/_components/common/_questions.scss */
 .questions__text {
-  padding-bottom: 129px;
+  padding-bottom: 122px;
 }
 
 /* line 29, src/scss/_components/common/_questions.scss */
@@ -2053,7 +2053,7 @@ picture {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1682px;
+  max-width: 1782px;
   min-height: 484px;
   margin-left: auto;
 }
@@ -2064,10 +2064,10 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -2250,12 +2250,12 @@ picture {
   position: relative;
   height: -webkit-calc(100% - 239px);
   height: calc(100% - 239px);
-  padding: 39px 70px 42px 71px;
+  padding: 34px 70px 42px 71px;
 }
 
 /* line 178, src/scss/_components/common/_questions.scss */
 .questions__slide-title {
-  padding-bottom: 25px;
+  padding-bottom: 14px;
   font-weight: bold;
   font-size: 24px;
   line-height: 1.45833;
@@ -3465,10 +3465,11 @@ picture {
 
 /* line 3, src/scss/_components/pricing/_main.scss */
 .p-main {
-  min-height: 712px;
+  min-height: 731px;
+  padding-top: 215px;
 }
 
-/* line 6, src/scss/_components/pricing/_main.scss */
+/* line 7, src/scss/_components/pricing/_main.scss */
 .p-main__title {
   text-align: center;
 }
@@ -3482,9 +3483,11 @@ picture {
 /* line 7, src/scss/_components/pricing/_price.scss */
 .price .c-grid {
   max-width: 1399px;
+  padding-left: 30px;
+  padding-right: 0;
 }
 
-/* line 11, src/scss/_components/pricing/_price.scss */
+/* line 13, src/scss/_components/pricing/_price.scss */
 .price__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3492,7 +3495,7 @@ picture {
   display: flex;
 }
 
-/* line 14, src/scss/_components/pricing/_price.scss */
+/* line 16, src/scss/_components/pricing/_price.scss */
 .price__row-0 {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -3500,48 +3503,51 @@ picture {
           align-items: center;
 }
 
-/* line 18, src/scss/_components/pricing/_price.scss */
+/* line 20, src/scss/_components/pricing/_price.scss */
 .price__row-0 .price__col-0 {
-  width: 440px;
+  width: 441px;
+  padding-left: 2px;
 }
 
-/* line 22, src/scss/_components/pricing/_price.scss */
+/* line 25, src/scss/_components/pricing/_price.scss */
 .price__row-0 .price__col-1 {
   width: 100%;
-  max-width: -webkit-calc(100% - 440px);
-  max-width: calc(100% - 440px);
-  padding-left: 112px;
+  max-width: -webkit-calc(100% - 441px);
+  max-width: calc(100% - 441px);
+  padding-top: 8px;
+  padding-left: 113px;
 }
 
-/* line 32, src/scss/_components/pricing/_price.scss */
+/* line 36, src/scss/_components/pricing/_price.scss */
 .price__row-1 .price__col-0 {
   width: 100%;
-  max-width: -webkit-calc(100% - (398px + 79px));
-  max-width: calc(100% - (398px + 79px));
+  max-width: -webkit-calc(100% - 479px);
+  max-width: calc(100% - 479px);
 }
 
-/* line 37, src/scss/_components/pricing/_price.scss */
+/* line 41, src/scss/_components/pricing/_price.scss */
 .price__row-1 .price__col-1 {
-  width: 477px;
-  padding-left: 79px;
+  width: 479px;
+  padding-left: 78px;
+  padding-right: 3px;
 }
 
-/* line 45, src/scss/_components/pricing/_price.scss */
+/* line 50, src/scss/_components/pricing/_price.scss */
 .price__title {
-  padding-bottom: 40px;
+  padding-bottom: 28px;
   font-size: 35px;
   line-height: 1.28571;
   color: #2d3136;
 }
 
-/* line 53, src/scss/_components/pricing/_price.scss */
+/* line 58, src/scss/_components/pricing/_price.scss */
 .price__text span {
-  padding: 3px;
+  padding: 2px 7px 2px 0px;
   background-color: #FFC300;
   color: #000;
 }
 
-/* line 60, src/scss/_components/pricing/_price.scss */
+/* line 65, src/scss/_components/pricing/_price.scss */
 .price__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3558,18 +3564,18 @@ picture {
   max-width: 100%;
 }
 
-/* line 66, src/scss/_components/pricing/_price.scss */
+/* line 71, src/scss/_components/pricing/_price.scss */
 .price__form-field {
   padding-right: 5px;
 }
 
-/* line 74, src/scss/_components/pricing/_price.scss */
+/* line 79, src/scss/_components/pricing/_price.scss */
 .price__form .c-form__checkbox:checked + label .c-form__checkbox-icon i {
   border-color: #7CF9C5;
   background-color: #7cf9c5;
 }
 
-/* line 82, src/scss/_components/pricing/_price.scss */
+/* line 87, src/scss/_components/pricing/_price.scss */
 .price__form .c-form__checkbox-icon i {
   width: 22px;
   height: 22px;
@@ -3578,13 +3584,13 @@ picture {
   border-color: #7CF9C5;
 }
 
-/* line 88, src/scss/_components/pricing/_price.scss */
+/* line 93, src/scss/_components/pricing/_price.scss */
 .price__form .c-form__checkbox-icon i:before {
   border-width: 0 2px 2px 0;
   border-color: #269165;
 }
 
-/* line 95, src/scss/_components/pricing/_price.scss */
+/* line 100, src/scss/_components/pricing/_price.scss */
 .price__form .c-form__checkbox-text {
   white-space: nowrap;
   font-size: 17px;
@@ -3592,12 +3598,13 @@ picture {
   color: #818992;
 }
 
-/* line 104, src/scss/_components/pricing/_price.scss */
+/* line 109, src/scss/_components/pricing/_price.scss */
 .price__box {
   position: relative;
+  top: -10px;
 }
 
-/* line 107, src/scss/_components/pricing/_price.scss */
+/* line 113, src/scss/_components/pricing/_price.scss */
 .price__box:before {
   content: '';
   z-index: -1;
@@ -3612,12 +3619,12 @@ picture {
   background-color: #f4f9fc;
 }
 
-/* line 119, src/scss/_components/pricing/_price.scss */
+/* line 125, src/scss/_components/pricing/_price.scss */
 .price__box-bottom {
-  padding: 48px 43px 77px;
+  padding: 47px 43px 77px;
 }
 
-/* line 123, src/scss/_components/pricing/_price.scss */
+/* line 129, src/scss/_components/pricing/_price.scss */
 .price__box-img {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3629,21 +3636,21 @@ picture {
   margin-right: auto;
 }
 
-/* line 131, src/scss/_components/pricing/_price.scss */
+/* line 137, src/scss/_components/pricing/_price.scss */
 .price__box-title {
-  padding-bottom: 32px;
+  padding-bottom: 24px;
   font-weight: bold;
   font-size: 33px;
   line-height: 1.12121;
   color: #2d3136;
 }
 
-/* line 139, src/scss/_components/pricing/_price.scss */
+/* line 145, src/scss/_components/pricing/_price.scss */
 .price__box-text {
-  padding-bottom: 48px;
+  padding-bottom: 46px;
 }
 
-/* line 144, src/scss/_components/pricing/_price.scss */
+/* line 150, src/scss/_components/pricing/_price.scss */
 .price__box-btn .c-btn__left {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -3652,7 +3659,7 @@ picture {
   padding-right: 19px;
 }
 
-/* line 151, src/scss/_components/pricing/_price.scss */
+/* line 157, src/scss/_components/pricing/_price.scss */
 .price__block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3664,10 +3671,10 @@ picture {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 404px;
+  max-width: 407px;
 }
 
-/* line 157, src/scss/_components/pricing/_price.scss */
+/* line 163, src/scss/_components/pricing/_price.scss */
 .price__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3677,10 +3684,10 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 68px;
+  padding-top: 64px;
 }
 
-/* line 164, src/scss/_components/pricing/_price.scss */
+/* line 170, src/scss/_components/pricing/_price.scss */
 .price__unit {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3692,10 +3699,10 @@ picture {
           align-items: center;
   position: relative;
   min-height: 85px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
-/* line 171, src/scss/_components/pricing/_price.scss */
+/* line 177, src/scss/_components/pricing/_price.scss */
 .price__unit:before {
   content: '';
   opacity: 0;
@@ -3704,8 +3711,8 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
-  max-width: -webkit-calc(100% - 44px);
-  max-width: calc(100% - 44px);
+  max-width: -webkit-calc(100% - 43px);
+  max-width: calc(100% - 43px);
   height: 100%;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -3717,12 +3724,12 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 187, src/scss/_components/pricing/_price.scss */
+/* line 193, src/scss/_components/pricing/_price.scss */
 .price__unit:hover {
   cursor: pointer;
 }
 
-/* line 190, src/scss/_components/pricing/_price.scss */
+/* line 196, src/scss/_components/pricing/_price.scss */
 .price__unit:hover:before {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -3730,7 +3737,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 196, src/scss/_components/pricing/_price.scss */
+/* line 202, src/scss/_components/pricing/_price.scss */
 .price__unit:hover .price__unit-block {
   background-color: #6C63FF;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3738,19 +3745,19 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 200, src/scss/_components/pricing/_price.scss */
+/* line 206, src/scss/_components/pricing/_price.scss */
 .price__unit:hover .price__unit-block svg {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 203, src/scss/_components/pricing/_price.scss */
+/* line 209, src/scss/_components/pricing/_price.scss */
 .price__unit:hover .price__unit-block svg.icon-i-email {
   opacity: 0;
 }
 
-/* line 209, src/scss/_components/pricing/_price.scss */
+/* line 215, src/scss/_components/pricing/_price.scss */
 .price__unit:hover .price__unit-btn {
   background-color: #6c63ff;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3758,12 +3765,12 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 216, src/scss/_components/pricing/_price.scss */
+/* line 222, src/scss/_components/pricing/_price.scss */
 .price__unit > div {
   width: 100%;
 }
 
-/* line 219, src/scss/_components/pricing/_price.scss */
+/* line 225, src/scss/_components/pricing/_price.scss */
 .price__unit > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3773,25 +3780,32 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 88px;
-}
-
-/* line 224, src/scss/_components/pricing/_price.scss */
-.price__unit > div:nth-of-type(2) {
-  max-width: 177px;
-}
-
-/* line 227, src/scss/_components/pricing/_price.scss */
-.price__unit > div:nth-of-type(3) {
-  max-width: 50px;
+  max-width: 91px;
 }
 
 /* line 230, src/scss/_components/pricing/_price.scss */
+.price__unit > div:nth-of-type(2) {
+  position: relative;
+  top: -3px;
+  max-width: 173px;
+  padding-left: 9px;
+}
+
+/* line 236, src/scss/_components/pricing/_price.scss */
+.price__unit > div:nth-of-type(3) {
+  position: relative;
+  top: 2px;
+  max-width: 54px;
+}
+
+/* line 241, src/scss/_components/pricing/_price.scss */
 .price__unit > div:nth-of-type(4) {
+  position: relative;
+  top: 2px;
   max-width: 88px;
 }
 
-/* line 235, src/scss/_components/pricing/_price.scss */
+/* line 248, src/scss/_components/pricing/_price.scss */
 .price__unit-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3816,7 +3830,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 246, src/scss/_components/pricing/_price.scss */
+/* line 259, src/scss/_components/pricing/_price.scss */
 .price__unit-block svg {
   position: absolute;
   top: 50%;
@@ -3829,7 +3843,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 255, src/scss/_components/pricing/_price.scss */
+/* line 268, src/scss/_components/pricing/_price.scss */
 .price__unit-verifications {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3846,20 +3860,20 @@ picture {
           justify-content: center;
 }
 
-/* line 260, src/scss/_components/pricing/_price.scss */
+/* line 273, src/scss/_components/pricing/_price.scss */
 .price__unit-verifications p {
   font-size: 17px;
   line-height: 1.41176;
   color: #2d3136;
 }
 
-/* line 266, src/scss/_components/pricing/_price.scss */
+/* line 279, src/scss/_components/pricing/_price.scss */
 .price__unit-verifications span {
   font-size: 11px;
   color: #818992;
 }
 
-/* line 272, src/scss/_components/pricing/_price.scss */
+/* line 285, src/scss/_components/pricing/_price.scss */
 .price__unit-sum {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3876,13 +3890,13 @@ picture {
           justify-content: center;
 }
 
-/* line 277, src/scss/_components/pricing/_price.scss */
+/* line 290, src/scss/_components/pricing/_price.scss */
 .price__unit-sum span {
   font-size: 11px;
   color: #818992;
 }
 
-/* line 282, src/scss/_components/pricing/_price.scss */
+/* line 295, src/scss/_components/pricing/_price.scss */
 .price__unit-sum p {
   font-weight: 600;
   font-size: 17px;
@@ -3890,7 +3904,7 @@ picture {
   color: #273951;
 }
 
-/* line 290, src/scss/_components/pricing/_price.scss */
+/* line 303, src/scss/_components/pricing/_price.scss */
 .price__unit-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3921,13 +3935,13 @@ picture {
 
 /* line 3, src/scss/_components/pricing/_frequently.scss */
 .frequently {
-  padding-top: 117px;
-  padding-bottom: 116px;
+  padding-top: 103px;
+  padding-bottom: 144px;
 }
 
 /* line 7, src/scss/_components/pricing/_frequently.scss */
 .frequently__title {
-  padding-bottom: 29px;
+  padding-bottom: 18px;
   font-size: 35px;
   line-height: 1.28571;
   color: #2d3136;
@@ -3935,11 +3949,10 @@ picture {
 
 /* line 14, src/scss/_components/pricing/_frequently.scss */
 .frequently__text {
-  padding-bottom: 118px;
-  font-size: 15px;
+  padding-bottom: 106px;
 }
 
-/* line 19, src/scss/_components/pricing/_frequently.scss */
+/* line 18, src/scss/_components/pricing/_frequently.scss */
 .frequently__block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3951,11 +3964,16 @@ picture {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 307px;
-  margin-bottom: 118px;
+  max-width: 351px;
+  margin-bottom: 107px;
 }
 
-/* line 26, src/scss/_components/pricing/_frequently.scss */
+/* line 25, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-3, .frequently__block-4, .frequently__block-5 {
+  margin-bottom: 135px;
+}
+
+/* line 31, src/scss/_components/pricing/_frequently.scss */
 .frequently__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3966,7 +3984,7 @@ picture {
           flex-wrap: wrap;
 }
 
-/* line 30, src/scss/_components/pricing/_frequently.scss */
+/* line 35, src/scss/_components/pricing/_frequently.scss */
 .frequently__block-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 3);
@@ -3974,19 +3992,32 @@ picture {
   padding-right: 15px;
 }
 
-/* line 37, src/scss/_components/pricing/_frequently.scss */
+/* line 40, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-wrapper > div:nth-of-type(3n + 2) {
+  padding-left: 52px;
+}
+
+/* line 43, src/scss/_components/pricing/_frequently.scss */
+.frequently__block-wrapper > div:nth-of-type(3n + 3) {
+  padding-left: 104px;
+}
+
+/* line 49, src/scss/_components/pricing/_frequently.scss */
 .frequently__block-title {
+  width: 100%;
+  max-width: 307px;
   min-height: 72px;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
   font-weight: bold;
   font-size: 27px;
   line-height: 1.37037;
   color: #2d3136;
 }
 
-/* line 46, src/scss/_components/pricing/_frequently.scss */
+/* line 60, src/scss/_components/pricing/_frequently.scss */
 .frequently__block-desc {
   font-size: 15px;
+  line-height: 1.9;
 }
 
 /* line 3, src/scss/_components/datavalidation/_main.scss */

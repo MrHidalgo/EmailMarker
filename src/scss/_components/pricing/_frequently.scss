@@ -1,27 +1,32 @@
 // SECTION frequently :: START
 
 .frequently {
-  padding-top: 117px;
-  padding-bottom: 116px;
+  padding-top: 103px;
+  padding-bottom: 144px;
 
   &__title {
-    padding-bottom: 29px;
+    padding-bottom: 18px;
     font-size: 35px;
     line-height: line-height-convert(45,35);
     color: #2d3136;
   }
 
   &__text {
-    padding-bottom: 118px;
-    font-size: 15px;
+    padding-bottom: 106px;
   }
 
   &__block {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 307px;
-    margin-bottom: 118px;
+    max-width: 351px;
+    margin-bottom: 107px;
+
+    &-3,
+    &-4,
+    &-5 {
+      margin-bottom: 135px;
+    }
 
     &-wrapper {
       display: flex;
@@ -31,12 +36,21 @@
         width: 100%;
         max-width: calc(100% / 3);
         padding-right: 15px;
+
+        &:nth-of-type(3n + 2) {
+          padding-left: 52px;
+        }
+        &:nth-of-type(3n + 3) {
+          padding-left: 104px;
+        }
       }
     }
 
     &-title {
+      width: 100%;
+      max-width: 307px;
       min-height: 72px;
-      margin-bottom: 42px;
+      margin-bottom: 32px;
       font-weight: bold;
       font-size: 27px;
       line-height: line-height-convert(37,27);
@@ -45,6 +59,7 @@
 
     &-desc {
       font-size: 15px;
+      line-height: 1.9;
     }
   }
 }
