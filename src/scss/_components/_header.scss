@@ -8,6 +8,18 @@
   left: 0;
   width: 100%;
 
+  &--home {
+    &.header {
+      .c-grid {
+        max-width: 1830px;
+      }
+
+      .header__content-middle {
+        padding-left: 0;
+      }
+    }
+  }
+
   .c-grid {
     max-width: 1394px;
   }

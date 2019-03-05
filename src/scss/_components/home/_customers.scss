@@ -2,7 +2,7 @@
 
 .customers {
   background-color: #6c63ff;
-  padding-bottom: 109px;
+  padding-bottom: 108px;
 
   &__wrapper {
     display: flex;
@@ -13,22 +13,23 @@
     }
 
     &-left {
-      padding-top: 157px;
+      padding-top: 154px;
+      padding-right: 8px;
     }
 
     &-right {
-      padding-left: 15px;
+      padding-left: 8px;
     }
   }
 
   &__title {
-    padding-bottom: 40px;
+    padding-bottom: 28px;
   }
 
   &__text {
     width: 100%;
     max-width: 440px;
-    padding-bottom: 42px;
+    padding-bottom: 38px;
   }
 
   &__img {
@@ -38,12 +39,12 @@
   }
 
   &__row {
-    padding-top: 64px;
+    padding-top: 57px;
     padding-left: 139px;
   }
 
   &__subtitle {
-    padding-bottom: 49px;
+    padding-bottom: 47px;
     font-size: 44px;
   }
 
@@ -103,7 +104,7 @@
     }
 
     &-title {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       font-size: 24px;
       font-weight: bold;
       line-height: line-height-convert(35,24);
