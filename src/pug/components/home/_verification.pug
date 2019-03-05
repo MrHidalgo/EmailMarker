@@ -27,19 +27,19 @@ section#verification.verification
 
       .verification__wrapper-right
 
-        .verification__block-wrapper
-          .verification__block-row.verification__block-row--first
+        .verification__block-wrapper(parallax-js)
+          .verification__block-row.verification__block-row--first(data-stellar-ratio="1.1")
             +mainBlockEmpty()
             +mainBlock('syntax', 'Accurate Syntax <br>Engine', 'Detect invalid email <br>formats and lets the good <br>ones through.')
             +mainBlockEmpty()
 
-          .verification__block-row.verification__block-row--1
+          .verification__block-row.verification__block-row--1(data-stellar-ratio="0.925")
             +mainBlockEmpty()
             +mainBlock('deduplication', 'Email <br>Deduplication', 'Identify and merge <br>duplicate records ensuring <br>data quality improvement.')
             +mainBlock('validation', 'Domain <br>validation', 'Removes all email <br>addresses containing <br>invalid/inactive/parked <br>domains.')
             +mainBlock('check', 'Active Mail <br>Check', 'Verify whether mail to a <br>mailbox will bounce or <br>deliver.')
 
-          .verification__block-row.verification__block-row--last
+          .verification__block-row.verification__block-row--last(data-stellar-ratio="1.015")
             +mainBlockEmpty()
             +mainBlock('control', 'Systematic Spam <br>Trap control', 'Remove spamtraps and <br>complainers through <br>various control processes')
             +mainBlock('quality', 'Quality Domain <br>Database', 'This ensures the most <br>accurate condition of every <br>email domain.')

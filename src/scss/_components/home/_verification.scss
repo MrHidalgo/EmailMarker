@@ -59,6 +59,13 @@
       width: 100%;
       max-width: calc((100% - (16px * 2)) / 3);
 
+      a {
+        &:hover {
+          box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
+          @include transition(box-shadow);
+        }
+      }
+
       &--first {
         padding-top: 292px;
       }

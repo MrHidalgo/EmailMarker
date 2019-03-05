@@ -157,23 +157,23 @@
       }
 
       &--first {
-        padding-top: 342px;
+        transform: translateY(0);
       }
 
       &--1 {
-        padding-top: 157px;
+        transform: translateY(-157px);
       }
 
       &--2 {
-        top: -10px;
+        transform: translateY(-200px);
       }
 
       &--3 {
-        top: -195px;
+        transform: translateY(-300px);
       }
 
       &--last {
-        top: -362px;
+        transform: translateY(-400px);
       }
     }
 
@@ -181,6 +181,10 @@
       display: flex;
       align-items: center;
       margin-top: 84px;
+
+      &:hover {
+        box-shadow: none !important;
+      }
 
       > div {
         &:nth-of-type(1) {

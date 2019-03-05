@@ -6,6 +6,8 @@
 * - svg4everybody;
 * - jquery;
 * - swiper;
-* - TweenMax.min.js;
+* - TweenMax;
+* - jquery-migrate;
+* - stellar;
 *
 * */

@@ -121,12 +121,13 @@ $(document).ready((ev) => {
     // lib
     // ==========================================
     initSwiper();
-    initLogoAnimation();
+    initStellar();
 
     // callback
     // ==========================================
     initCookie();
     initFollow();
+    initLogoAnimation();
   };
   initJquery();
 });

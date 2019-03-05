@@ -3394,17 +3394,28 @@ picture {
   max-width: calc((100% - (16px * 2)) / 3);
 }
 
-/* line 62, src/scss/_components/home/_verification.scss */
+/* line 63, src/scss/_components/home/_verification.scss */
+.verification__block-row a:hover {
+  -webkit-box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
+          box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 69, src/scss/_components/home/_verification.scss */
 .verification__block-row--first {
   padding-top: 292px;
 }
 
-/* line 66, src/scss/_components/home/_verification.scss */
+/* line 73, src/scss/_components/home/_verification.scss */
 .verification__block-row--1 {
   top: -60px;
 }
 
-/* line 70, src/scss/_components/home/_verification.scss */
+/* line 77, src/scss/_components/home/_verification.scss */
 .verification__block-row--last {
   top: -227px;
 }
@@ -5629,27 +5640,37 @@ picture {
 
 /* line 159, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--first {
-  padding-top: 342px;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /* line 163, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--1 {
-  padding-top: 157px;
+  -webkit-transform: translateY(-157px);
+      -ms-transform: translateY(-157px);
+          transform: translateY(-157px);
 }
 
 /* line 167, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--2 {
-  top: -10px;
+  -webkit-transform: translateY(-200px);
+      -ms-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 /* line 171, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--3 {
-  top: -195px;
+  -webkit-transform: translateY(-300px);
+      -ms-transform: translateY(-300px);
+          transform: translateY(-300px);
 }
 
 /* line 175, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--last {
-  top: -362px;
+  -webkit-transform: translateY(-400px);
+      -ms-transform: translateY(-400px);
+          transform: translateY(-400px);
 }
 
 /* line 180, src/scss/_components/integrations/_main.scss */
@@ -5665,25 +5686,31 @@ picture {
   margin-top: 84px;
 }
 
-/* line 186, src/scss/_components/integrations/_main.scss */
+/* line 185, src/scss/_components/integrations/_main.scss */
+.i-main__block-btn:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+/* line 190, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div:nth-of-type(1) {
   width: 54px;
 }
 
-/* line 190, src/scss/_components/integrations/_main.scss */
+/* line 194, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 54px);
   max-width: calc(100% - 54px);
 }
 
-/* line 195, src/scss/_components/integrations/_main.scss */
+/* line 199, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div .icon-plus {
   color: #04C7FF;
   font-size: 32px;
 }
 
-/* line 200, src/scss/_components/integrations/_main.scss */
+/* line 204, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div span {
   font-weight: bold;
   font-size: 25px;
