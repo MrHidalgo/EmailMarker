@@ -230,7 +230,8 @@ $(document).ready(function (ev) {
   };
 
   var initLogoAnimation = function initLogoAnimation() {
-    _tlLogo.staggerTo($('#EmailMarker path'), 0.5, { opacity: 0, ease: Power1.easeInOut }, 0.05).to($('#logoImage'), 0.95, { x: 150 }, -0.1);
+    _tlLogo.staggerTo($('#EmailMarker path'), 0.45, { opacity: 0, ease: Power1.easeInOut }, 0.05);
+    // .to($('#logoImage'), 0.95, {x:150}, -0.1)
   };
   /*
   * CALLBACK :: end
