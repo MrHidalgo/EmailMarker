@@ -8,12 +8,14 @@
 const initHeaderFixed = () => {
 
   let countScroll = $(window).scrollTop(),
-    headerElement = $('.header');
+    headerElement = $('#header');
 
   if (countScroll > 10) {
     headerElement.addClass("header--fixed");
+    _tlLogo.play();
   } else {
     headerElement.removeClass("header--fixed");
+    _tlLogo.reverse();
   }
 
 };

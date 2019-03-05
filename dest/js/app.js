@@ -16,6 +16,25 @@
 * */
 
 /**
+ * @name initHeaderFixed
+ *
+ * @description Fixing the site header in the scrolling page.
+ */
+var initHeaderFixed = function initHeaderFixed() {
+
+  var countScroll = $(window).scrollTop(),
+      headerElement = $('#header');
+
+  if (countScroll > 10) {
+    headerElement.addClass("header--fixed");
+    _tlLogo.play();
+  } else {
+    headerElement.removeClass("header--fixed");
+    _tlLogo.reverse();
+  }
+};
+
+/**
  * @name initPreventBehavior
  *
  * @description
@@ -96,6 +115,33 @@ var initWebFontLoader = function initWebFontLoader() {
     }
   };
 };
+
+/**
+ * @description Window on load.
+ */
+$(window).on("load", function (ev) {
+  initHeaderFixed();
+});
+
+/**
+ * @description Window on resize.
+ */
+$(window).on("resize", function (ev) {});
+
+/**
+ * @description Window on scroll.
+ */
+$(window).on("scroll", function (ev) {
+  initHeaderFixed();
+});
+
+/**
+ * Animation variable
+ */
+var _tlLogo = new TimelineMax({
+  paused: true
+});
+
 /**
  * @description Document DOM ready.
  */
@@ -182,6 +228,10 @@ $(document).ready(function (ev) {
       }
     });
   };
+
+  var initLogoAnimation = function initLogoAnimation() {
+    _tlLogo.staggerTo($('#EmailMarker path'), 0.5, { opacity: 0, ease: Power1.easeInOut }, 0.05).to($('#logoImage'), 0.95, { x: 150 }, -0.1);
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -199,6 +249,7 @@ $(document).ready(function (ev) {
     // lib
     // ==========================================
     initSwiper();
+    initLogoAnimation();
 
     // callback
     // ==========================================

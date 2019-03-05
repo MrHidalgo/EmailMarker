@@ -8,18 +8,18 @@ header#header.header(class!= (pageClassName === 'p-home') ? 'header--home':'')
         .header__content-left
 
           .header__logo
-            a(href="#" class="" title="")
+            a(href="/" class="" title="")
               +logotype()
 
         .header__content-middle
 
           ul.header__nav(class!= 'header__nav--' + pageClassName)
             li.header__nav-item
-              a.header__nav-link(href="#" class="" title="")!= "FEATURES"
+              a.header__nav-link(href="features.html" class="" title="")!= "FEATURES"
             li.header__nav-item
-              a.header__nav-link(href="#" class="" title="")!= "PRICING"
+              a.header__nav-link(href="pricing.html" class="" title="")!= "PRICING"
             li.header__nav-item
-              a.header__nav-link(href="#" class="" title="")!= "INTEGRATIONS"
+              a.header__nav-link(href="integrations.html" class="" title="")!= "INTEGRATIONS"
             li.header__nav-item
               a.header__nav-link(href="#" class="" title="")!= "BLOG"
 
@@ -27,5 +27,6 @@ header#header.header(class!= (pageClassName === 'p-home') ? 'header--home':'')
 
           a.header__btn.header__btn--login(href="#" class="" title="")!= "login"
           a.header__btn.header__btn--signup(href="#" class="" title="")!= "sign up"
+          a.header__btn.header__btn--get(href="#" class="" title="")!= "GET STARTED"
 
 // HEADER :: END
