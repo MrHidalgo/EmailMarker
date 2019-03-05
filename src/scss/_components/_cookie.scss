@@ -13,6 +13,13 @@
   background-color: #fff;
   box-shadow: 0 0 21px rgba(0, 32, 111, 0.06);
 
+  &:hover {
+    .cookie__right {
+      background-color: rgba(#6c63ff, 0.95);
+      @include transition(background-color);
+    }
+  }
+
   &__left {
     display: flex;
     justify-content: center;
@@ -42,6 +49,7 @@
     justify-content: center;
     width: 70px;
     background-color: #6c63ff;
+    @include transition(background-color);
 
     p {
       font-family: "SFProDisplay", sans-serif;
