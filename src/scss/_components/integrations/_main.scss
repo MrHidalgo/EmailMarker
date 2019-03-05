@@ -52,6 +52,21 @@
       }
     }
 
+    @each $classMod, $bgVal in
+        ('syntax', #FF4252),
+        ('deduplication', #4AE3C1),
+        ('validation', #04C7FF),
+        ('check', #96D400),
+        ('control', #FFC300),
+        ('quality', #6C63FF)
+    {
+      &--#{$classMod} {
+        .i-main__block-color {
+          background-color: $bgVal;
+        }
+      }
+    }
+
     &-img {
       position: relative;
       display: block;
@@ -60,6 +75,12 @@
       width: 120px;
       height: 81px;
       margin-bottom: 33px;
+    }
+
+    &-color {
+      width: 22px;
+      height: 22px;
+      margin-bottom: 20px;
     }
 
     &-title {

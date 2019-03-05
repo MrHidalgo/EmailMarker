@@ -1,0 +1,65 @@
+// SECTION verification :: START
+
+.verification {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+
+    &-left,
+    &-right {
+      width: 50%;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__title {
+    padding-top: 198px;
+    padding-left: 140px;
+    padding-bottom: 43px;
+    font-size: 45px;
+    line-height: line-height-convert(65,45);
+    color: #2d3136;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 388px;
+    margin-left: 140px;
+  }
+
+  &__block {
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 812px;
+    }
+
+    &-row {
+      position: relative;
+      width: 100%;
+      max-width: calc((100% - (16px * 2)) / 3);
+
+      &--first {
+        padding-top: 290px;
+      }
+
+      &--1 {
+        top: -60px;
+      }
+
+      &--last {
+        top: -229px;
+      }
+    }
+  }
+}
+
+// SECTION verification :: END

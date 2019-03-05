@@ -3009,6 +3009,85 @@ picture {
   color: #2d3136;
 }
 
+/* line 3, src/scss/_components/home/_verification.scss */
+.verification {
+  position: relative;
+}
+
+/* line 6, src/scss/_components/home/_verification.scss */
+.verification__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 9, src/scss/_components/home/_verification.scss */
+.verification__wrapper-left, .verification__wrapper-right {
+  width: 50%;
+}
+
+/* line 13, src/scss/_components/home/_verification.scss */
+.verification__wrapper-left img, .verification__wrapper-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 21, src/scss/_components/home/_verification.scss */
+.verification__title {
+  padding-top: 198px;
+  padding-left: 140px;
+  padding-bottom: 43px;
+  font-size: 45px;
+  line-height: 1.44444;
+  color: #2d3136;
+}
+
+/* line 30, src/scss/_components/home/_verification.scss */
+.verification__text {
+  width: 100%;
+  max-width: 388px;
+  margin-left: 140px;
+}
+
+/* line 38, src/scss/_components/home/_verification.scss */
+.verification__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 812px;
+}
+
+/* line 45, src/scss/_components/home/_verification.scss */
+.verification__block-row {
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc((100% - (16px * 2)) / 3);
+  max-width: calc((100% - (16px * 2)) / 3);
+}
+
+/* line 50, src/scss/_components/home/_verification.scss */
+.verification__block-row--first {
+  padding-top: 290px;
+}
+
+/* line 54, src/scss/_components/home/_verification.scss */
+.verification__block-row--1 {
+  top: -60px;
+}
+
+/* line 58, src/scss/_components/home/_verification.scss */
+.verification__block-row--last {
+  top: -229px;
+}
+
 /* line 3, src/scss/_components/home/_trial.scss */
 .trial {
   padding-top: 82px;
@@ -5053,7 +5132,37 @@ picture {
   background-color: #3C4A57;
 }
 
-/* line 55, src/scss/_components/integrations/_main.scss */
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__block--syntax .i-main__block-color {
+  background-color: #FF4252;
+}
+
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__block--deduplication .i-main__block-color {
+  background-color: #4AE3C1;
+}
+
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__block--validation .i-main__block-color {
+  background-color: #04C7FF;
+}
+
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__block--check .i-main__block-color {
+  background-color: #96D400;
+}
+
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__block--control .i-main__block-color {
+  background-color: #FFC300;
+}
+
+/* line 64, src/scss/_components/integrations/_main.scss */
+.i-main__block--quality .i-main__block-color {
+  background-color: #6C63FF;
+}
+
+/* line 70, src/scss/_components/integrations/_main.scss */
 .i-main__block-img {
   position: relative;
   display: block;
@@ -5070,7 +5179,14 @@ picture {
   margin-bottom: 33px;
 }
 
-/* line 65, src/scss/_components/integrations/_main.scss */
+/* line 80, src/scss/_components/integrations/_main.scss */
+.i-main__block-color {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 20px;
+}
+
+/* line 86, src/scss/_components/integrations/_main.scss */
 .i-main__block-title {
   padding-bottom: 19px;
   font-weight: bold;
@@ -5079,14 +5195,14 @@ picture {
   color: #2d3136;
 }
 
-/* line 73, src/scss/_components/integrations/_main.scss */
+/* line 94, src/scss/_components/integrations/_main.scss */
 .i-main__block-text {
   font-size: 15px;
   line-height: 1.86667;
   color: #818992;
 }
 
-/* line 79, src/scss/_components/integrations/_main.scss */
+/* line 100, src/scss/_components/integrations/_main.scss */
 .i-main__block--empty {
   padding-top: 81px;
   padding-left: 24px;
@@ -5097,7 +5213,7 @@ picture {
   border: 1px solid rgba(0, 32, 111, 0.1);
 }
 
-/* line 87, src/scss/_components/integrations/_main.scss */
+/* line 108, src/scss/_components/integrations/_main.scss */
 .i-main__block--empty span,
 .i-main__block--empty i {
   display: -webkit-box;
@@ -5107,33 +5223,33 @@ picture {
   background-color: rgba(0, 32, 111, 0.1);
 }
 
-/* line 93, src/scss/_components/integrations/_main.scss */
+/* line 114, src/scss/_components/integrations/_main.scss */
 .i-main__block--empty span {
   width: 185px;
   height: 21px;
   margin-bottom: 12px;
 }
 
-/* line 98, src/scss/_components/integrations/_main.scss */
+/* line 119, src/scss/_components/integrations/_main.scss */
 .i-main__block--empty span:nth-of-type(2) {
   width: 84px;
   margin-bottom: 49px;
 }
 
-/* line 104, src/scss/_components/integrations/_main.scss */
+/* line 125, src/scss/_components/integrations/_main.scss */
 .i-main__block--empty i {
   width: 157px;
   height: 6px;
   margin-bottom: 25px;
 }
 
-/* line 109, src/scss/_components/integrations/_main.scss */
+/* line 130, src/scss/_components/integrations/_main.scss */
 .i-main__block--empty i:nth-of-type(4) {
   width: 109px;
   margin-bottom: 0;
 }
 
-/* line 116, src/scss/_components/integrations/_main.scss */
+/* line 137, src/scss/_components/integrations/_main.scss */
 .i-main__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5149,7 +5265,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 122, src/scss/_components/integrations/_main.scss */
+/* line 143, src/scss/_components/integrations/_main.scss */
 .i-main__block-row {
   position: relative;
   width: 100%;
@@ -5157,7 +5273,7 @@ picture {
   max-width: calc((100% - (16px * 4)) / 5);
 }
 
-/* line 128, src/scss/_components/integrations/_main.scss */
+/* line 149, src/scss/_components/integrations/_main.scss */
 .i-main__block-row a:hover {
   -webkit-box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
           box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
@@ -5168,32 +5284,32 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 134, src/scss/_components/integrations/_main.scss */
+/* line 155, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--first {
   padding-top: 342px;
 }
 
-/* line 138, src/scss/_components/integrations/_main.scss */
+/* line 159, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--1 {
   padding-top: 157px;
 }
 
-/* line 142, src/scss/_components/integrations/_main.scss */
+/* line 163, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--2 {
   top: -10px;
 }
 
-/* line 146, src/scss/_components/integrations/_main.scss */
+/* line 167, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--3 {
   top: -195px;
 }
 
-/* line 150, src/scss/_components/integrations/_main.scss */
+/* line 171, src/scss/_components/integrations/_main.scss */
 .i-main__block-row--last {
   top: -362px;
 }
 
-/* line 155, src/scss/_components/integrations/_main.scss */
+/* line 176, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5206,25 +5322,25 @@ picture {
   margin-top: 84px;
 }
 
-/* line 161, src/scss/_components/integrations/_main.scss */
+/* line 182, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div:nth-of-type(1) {
   width: 54px;
 }
 
-/* line 165, src/scss/_components/integrations/_main.scss */
+/* line 186, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 54px);
   max-width: calc(100% - 54px);
 }
 
-/* line 170, src/scss/_components/integrations/_main.scss */
+/* line 191, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div .icon-plus {
   color: #04C7FF;
   font-size: 32px;
 }
 
-/* line 175, src/scss/_components/integrations/_main.scss */
+/* line 196, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div span {
   font-weight: bold;
   font-size: 25px;

@@ -1,0 +1,50 @@
+// SECTION verification :: START
+
+mixin mainBlockEmpty()
+  .i-main__block.i-main__block--empty
+    span
+    span
+    i
+    i
+    i
+    i
+
+mixin mainBlock(classMod, title, text)
+  a.i-main__block(href="#" class!= "i-main__block--" + classMod)
+    .i-main__block-color
+    p.i-main__block-title!= title
+    p.i-main__block-text!= text
+
+section#verification.verification
+  .c-grid-fluid
+
+    .verification__wrapper
+      .verification__wrapper-left
+        p.verification__title!= "Email Verification <br>Process"
+        p.verification__text.c-text.c-text--medium!= "Our online system verifies your email addresses through various validation processes, from RFC syntax inspection to the SMTP testing of user account existence validation."
+
+        img(src="./img/img-verification.svg" alt="" title="")
+
+      .verification__wrapper-right
+
+        .verification__block-wrapper
+          .verification__block-row.verification__block-row--first
+            +mainBlockEmpty()
+            +mainBlock('syntax', 'Accurate Syntax <br>Engine', 'Detect invalid email <br>formats and lets the good <br>ones through.')
+            +mainBlockEmpty()
+
+          .verification__block-row.verification__block-row--1
+            +mainBlockEmpty()
+            +mainBlock('deduplication', 'Email <br>Deduplication', 'Identify and merge <br>duplicate records ensuring <br>data quality improvement.')
+            +mainBlock('validation', 'Domain <br>validation', 'Removes all email <br>addresses containing <br>invalid/inactive/parked <br>domains.')
+            +mainBlock('check', 'Active Mail <br>Check', 'Verify whether mail to a <br>mailbox will bounce or <br>deliver.')
+
+          .verification__block-row.verification__block-row--last
+            +mainBlockEmpty()
+            +mainBlock('control', 'Systematic Spam <br>Trap control', 'Remove spamtraps and <br>complainers through <br>various control processes')
+            +mainBlock('quality', 'Quality Domain <br>Database', 'This ensures the most <br>accurate condition of every <br>email domain.')
+            +mainBlockEmpty()
+            +mainBlockEmpty()
+
+
+// SECTION verification :: END
