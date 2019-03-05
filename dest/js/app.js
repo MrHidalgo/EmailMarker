@@ -96,7 +96,6 @@ var initWebFontLoader = function initWebFontLoader() {
     }
   };
 };
-
 /**
  * @description Document DOM ready.
  */
@@ -113,7 +112,51 @@ $(document).ready(function (ev) {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
+  var initCookie = function initCookie() {
 
+    /**
+     *
+     * @param name
+     * @param value
+     * @param expires
+     * @param path
+     * @param domain
+     * @param secure
+     */
+    var setCookieStore = function setCookieStore(name, value, expires, path, domain, secure) {
+      document.cookie = name + "=" + escape(value) + (expires ? "; expires=" + expires : "") + (path ? "; path=" + path : "") + (domain ? "; domain=" + domain : "") + (secure ? "; secure" : "");
+    };
+
+    /**
+     *
+     * @param cookieName
+     * @returns {*}
+     */
+    var getCookieStore = function getCookieStore(cookieName) {
+      var results = document.cookie.match('(^|;) ?' + cookieName + '=([^;]*)(;|$)');
+
+      if (results) {
+        return unescape(results[2]);
+      } else {
+        return null;
+      }
+    };
+
+    if (getCookieStore('cookieAgree') === 'true') {
+      $('#cookie').hide();
+    } else {
+      $('#cookie').fadeIn(350).css({
+        'display': 'flex'
+      });
+    }
+
+    $('.cookie__right').on('click', function (ev) {
+      if (getCookieStore('cookieAgree') !== 'true') {
+        $('#cookie').fadeOut(350);
+        setCookieStore('cookieAgree', 'true');
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -134,6 +177,7 @@ $(document).ready(function (ev) {
 
     // callback
     // ==========================================
+    initCookie();
   };
   initJquery();
 });

@@ -87,3 +87,5 @@
 @include mixinFontFace("Brandon Grotesque", "-Bold", "../fonts/", bold, woff2 woff ttf);
 @include mixinFontFace("Brandon Grotesque", "-Bold_1", "../fonts/", bold, woff2 woff ttf);
 @include mixinFontFace("Brandon Grotesque", "-Bold_2", "../fonts/", bold, woff2 woff ttf);
+
+@include mixinFontFace("SFProDisplay", "-Regular", "../fonts/", normal, woff2 woff ttf);

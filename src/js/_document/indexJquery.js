@@ -1,5 +1,3 @@
-
-
 /**
  * @description Document DOM ready.
  */
@@ -13,15 +11,62 @@ $(document).ready((ev) => {
     _window = $(window);
 
 
-	/*
-	* =============================================
-	* CALLBACK :: start
-	* ============================================= */
+  /*
+  * =============================================
+  * CALLBACK :: start
+  * ============================================= */
+  const initCookie = () => {
 
-	/*
-	* CALLBACK :: end
-	* ============================================= */
+    /**
+     *
+     * @param name
+     * @param value
+     * @param expires
+     * @param path
+     * @param domain
+     * @param secure
+     */
+    const setCookieStore = (name, value, expires, path, domain, secure) => {
+      document.cookie = name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+    };
 
+    /**
+     *
+     * @param cookieName
+     * @returns {*}
+     */
+    const getCookieStore = (cookieName) => {
+      const results = document.cookie.match('(^|;) ?' + cookieName + '=([^;]*)(;|$)');
+
+      if (results) {
+        return (unescape(results[2]));
+      } else {
+        return null;
+      }
+    };
+
+    if (getCookieStore('cookieAgree') === 'true') {
+      $('#cookie').hide();
+    } else {
+      $('#cookie').fadeIn(350).css({
+        'display': 'flex'
+      });
+    }
+
+    $('.cookie__right').on('click', (ev) => {
+      if (getCookieStore('cookieAgree') !== 'true') {
+        $('#cookie').fadeOut(350);
+        setCookieStore('cookieAgree', 'true');
+      }
+    });
+  };
+  /*
+  * CALLBACK :: end
+  * ============================================= */
 
 
   /**
@@ -32,14 +77,15 @@ $(document).ready((ev) => {
     initWebFontLoader();
     initPreventBehavior();
     initSvg4everybody();
-		// ==========================================
+    // ==========================================
 
     // lib
-		// ==========================================
+    // ==========================================
     initSwiper();
 
     // callback
-		// ==========================================
+    // ==========================================
+    initCookie();
   };
   initJquery();
 });
