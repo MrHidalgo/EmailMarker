@@ -2058,7 +2058,7 @@ picture {
   max-width: calc(100% / 5);
 }
 
-/* line 34, src/scss/_components/_footer.scss */
+/* line 30, src/scss/_components/_footer.scss */
 .footer__col-4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2070,7 +2070,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 40, src/scss/_components/_footer.scss */
+/* line 36, src/scss/_components/_footer.scss */
 .footer__logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2078,7 +2078,7 @@ picture {
   display: flex;
 }
 
-/* line 43, src/scss/_components/_footer.scss */
+/* line 39, src/scss/_components/_footer.scss */
 .footer__logo a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2086,7 +2086,7 @@ picture {
   display: flex;
 }
 
-/* line 48, src/scss/_components/_footer.scss */
+/* line 44, src/scss/_components/_footer.scss */
 .footer__title {
   padding-bottom: 13px;
   font-size: 17px;
@@ -2095,7 +2095,7 @@ picture {
   color: #fff;
 }
 
-/* line 56, src/scss/_components/_footer.scss */
+/* line 52, src/scss/_components/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2108,7 +2108,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 60, src/scss/_components/_footer.scss */
+/* line 56, src/scss/_components/_footer.scss */
 .footer__nav-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2117,12 +2117,12 @@ picture {
   margin-bottom: 10px;
 }
 
-/* line 64, src/scss/_components/_footer.scss */
+/* line 60, src/scss/_components/_footer.scss */
 .footer__nav-item:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 69, src/scss/_components/_footer.scss */
+/* line 65, src/scss/_components/_footer.scss */
 .footer__nav-btn {
   opacity: 0.7;
   font-size: 14px;
@@ -2133,7 +2133,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 76, src/scss/_components/_footer.scss */
+/* line 72, src/scss/_components/_footer.scss */
 .footer__nav-btn:hover {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2247,7 +2247,32 @@ picture {
   width: 20px;
 }
 
-/* line 10, src/scss/_components/_follow.scss */
+/* line 18, src/scss/_components/_follow.scss */
+.follow--fb .icon-font {
+  font-size: 19px;
+}
+
+/* line 18, src/scss/_components/_follow.scss */
+.follow--tw .icon-font {
+  font-size: 14px;
+}
+
+/* line 18, src/scss/_components/_follow.scss */
+.follow--in .icon-font {
+  font-size: 16px;
+}
+
+/* line 18, src/scss/_components/_follow.scss */
+.follow--gp .icon-font {
+  font-size: 12px;
+}
+
+/* line 18, src/scss/_components/_follow.scss */
+.follow--pn .icon-font {
+  font-size: 18px;
+}
+
+/* line 24, src/scss/_components/_follow.scss */
 .follow ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2264,7 +2289,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 16, src/scss/_components/_follow.scss */
+/* line 30, src/scss/_components/_follow.scss */
 .follow ul li a {
   display: -webkit-box;
   display: -webkit-flex;

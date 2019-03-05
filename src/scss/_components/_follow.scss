@@ -7,6 +7,20 @@
   right: 60px;
   width: 20px;
 
+  @each $classMod, $iconH in
+      ('fb', 19px),
+      ('tw', 14px),
+      ('in', 16px),
+      ('gp', 12px),
+      ('pn', 18px)
+  {
+    &--#{$classMod} {
+      .icon-font {
+        font-size: $iconH;
+      }
+    }
+  }
+
   ul {
     display: flex;
     align-items: center;

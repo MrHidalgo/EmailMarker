@@ -64,6 +64,32 @@ $(document).ready((ev) => {
       }
     });
   };
+
+
+  const initFollow = () => {
+    /**
+     *
+     * @param el
+     * @returns {boolean}
+     */
+    const isAnyPartOfElementInViewport = (el) => {
+      const rect = $(el)[0].getBoundingClientRect();
+      const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+      const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+      const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+      const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+      return (vertInView && horInView);
+    };
+
+    $(window).on('scroll resize load', () => {
+      if(isAnyPartOfElementInViewport('#footer')) {
+        $('#follow').fadeOut(350);
+      } else {
+        $('#follow').fadeIn(350);
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -86,6 +112,7 @@ $(document).ready((ev) => {
     // callback
     // ==========================================
     initCookie();
+    initFollow();
   };
   initJquery();
 });
