@@ -2892,6 +2892,123 @@ picture {
   color: #2d3136;
 }
 
+/* line 3, src/scss/_components/home/_validate.scss */
+.validate {
+  position: relative;
+}
+
+/* line 6, src/scss/_components/home/_validate.scss */
+.validate__bg {
+  z-index: -1;
+  position: absolute;
+  top: 165px;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100% - 165px);
+  height: calc(100% - 165px);
+  background-color: #f4f9fc;
+}
+
+/* line 16, src/scss/_components/home/_validate.scss */
+.validate__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 19, src/scss/_components/home/_validate.scss */
+.validate__wrapper-0 {
+  padding-bottom: 107px;
+}
+
+/* line 22, src/scss/_components/home/_validate.scss */
+.validate__wrapper-0 .validate__wrapper-left {
+  width: 757px;
+  padding-top: 277px;
+  padding-left: 140px;
+}
+
+/* line 28, src/scss/_components/home/_validate.scss */
+.validate__wrapper-0 .validate__wrapper-right {
+  width: 100%;
+  max-width: -webkit-calc(100% - 757px);
+  max-width: calc(100% - 757px);
+}
+
+/* line 32, src/scss/_components/home/_validate.scss */
+.validate__wrapper-0 .validate__wrapper-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 41, src/scss/_components/home/_validate.scss */
+.validate__wrapper-1 .validate__wrapper-left,
+.validate__wrapper-1 .validate__wrapper-right {
+  width: 50%;
+}
+
+/* line 46, src/scss/_components/home/_validate.scss */
+.validate__wrapper-1 .validate__wrapper-left {
+  padding-left: 66px;
+  padding-right: 15px;
+}
+
+/* line 50, src/scss/_components/home/_validate.scss */
+.validate__wrapper-1 .validate__wrapper-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 57, src/scss/_components/home/_validate.scss */
+.validate__wrapper-1 .validate__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 49px;
+}
+
+/* line 65, src/scss/_components/home/_validate.scss */
+.validate__box {
+  width: 100%;
+  max-width: 350px;
+  padding-bottom: 116px;
+}
+
+/* line 70, src/scss/_components/home/_validate.scss */
+.validate__box:last-of-type {
+  padding-bottom: 171px;
+}
+
+/* line 74, src/scss/_components/home/_validate.scss */
+.validate__box-title {
+  padding-bottom: 42px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 1.37037;
+  color: #2d3136;
+}
+
+/* line 82, src/scss/_components/home/_validate.scss */
+.validate__box-tetx {
+  font-size: 15px;
+}
+
+/* line 87, src/scss/_components/home/_validate.scss */
+.validate__title {
+  font-size: 45px;
+  line-height: 1.44444;
+  color: #2d3136;
+}
+
 /* line 3, src/scss/_components/home/_trial.scss */
 .trial {
   padding-top: 82px;

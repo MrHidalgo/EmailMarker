@@ -7,7 +7,7 @@ PageList:
 
 - file: index.html
   titleName: Home
-  ready: 10
+  ready: 20
 - file: features.html
   titleName: Features
   ready: 55
