@@ -9,6 +9,9 @@
     min-height: 200px;
     padding-top: 15px;
     padding-bottom: 15px;
+    @include adaptive(575) {
+      flex-wrap: wrap;
+    }
 
     &-expand {
       flex: 1;
@@ -16,16 +19,19 @@
 
     &-fixed {
       width: auto;
+      @include adaptive(575) {
+        width: 100%;
+        padding-top: 15px;
+      }
     }
   }
 
   &__title {
     padding-top: 8px;
     font-weight: bold;
-    //font-size: 44px;
     line-height: 1.35;
     color: #fff;
-    @include fluid(font-size, 320px, 1366px, 33px, 44px);
+    @include fluid(font-size, 320px, 1366px, 30px, 44px);
   }
 
   &__btn {

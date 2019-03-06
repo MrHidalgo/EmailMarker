@@ -20,7 +20,7 @@
     //font-size: 70px;
     line-height: line-height-convert(75,70);
     color: #464646;
-    @include fluid(font-size, 320px, 1600px, 40px, 70px);
+    @include fluid(font-size, 320px, 1600px, 36px, 70px);
   }
 }
 // main :: end
@@ -30,6 +30,9 @@
   font-size: 17px;
   line-height: line-height-convert(31,17);
   color: #fff;
+  @include adaptive(575) {
+    font-size: 15px;
+  }
 
   &--medium {
     color: #818992;

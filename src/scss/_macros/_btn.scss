@@ -34,8 +34,9 @@ $bth-font-weight: 600;
   box-shadow: $bth-box-shadow;
   border-radius: $bth-border-radius;
   color: $bth-color;
-  font-size: $bth-font-size;
+  //font-size: $bth-font-size;
   font-weight: $bth-font-weight;
+  @include fluid(font-size, 320px, 768px, 16px, 19px);
 
   &:hover {
     .c-btn__left {
@@ -60,6 +61,10 @@ $bth-font-weight: 600;
     min-width: 1px;
     height: 100%;
     padding: 5px 30px 5px 19px;
+    @include adaptive(575) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 
     &:before {
       content: '';
@@ -78,9 +83,10 @@ $bth-font-weight: 600;
       position: relative;
       top: 2px;
       font-weight: 600;
-      font-size: 19px;
+      //font-size: 19px;
       line-height: line-height-convert(30, 19);
       color: #fff;
+      @include fluid(font-size, 320px, 768px, 16px, 19px);
     }
   }
 
@@ -127,12 +133,6 @@ $bth-font-weight: 600;
       background-color: #2ECE9D;
     }
   }
-}
-
-@keyframes offsetArrow {
-  from {}
-  50% {}
-  to {}
 }
 
 // BUTTON :: END

@@ -28,7 +28,6 @@
       &.header__btn--signup {
         opacity: 0;
         visibility: hidden;
-        @include transition(opacity, visibility);
         @include adaptive(991) {
           opacity: 1;
           visibility: visible;
@@ -37,7 +36,7 @@
       &.header__btn--get {
         z-index: 2;
         opacity: 1;
-        @include transition(opacity);
+        @include transition(opacity, background-color);
         @include adaptive(991) {
           opacity: 0;
         }
@@ -257,11 +256,11 @@
     text-align: left;
     color: #8171ff;
     text-transform: uppercase;
-    @include transition(background, box-shadow, color);
+    @include transition(opacity, visibility, background, box-shadow, color);
 
     &--login,
     &--signup {
-      @include transition(opacity, visibility);
+      @include transition(opacity, visibility, background, box-shadow, color);
       @include adaptive(991) {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -269,7 +268,7 @@
 
       &:hover {
         box-shadow: 0 1px 1px rgba(63, 54, 134, 0.1);
-        @include transition(background, box-shadow, color);
+        @include transition(opacity, visibility, background, box-shadow, color);
       }
     }
 
@@ -284,7 +283,7 @@
       &:hover {
         background: #6c63ff;
         color: #ffffff;
-        @include transition(background, box-shadow, color);
+        @include transition(opacity, visibility, background, box-shadow, color);
       }
     }
 
@@ -295,7 +294,7 @@
       &:hover {
         background: #fff;
         color: #8171FF;
-        @include transition(background, box-shadow, color);
+        @include transition(opacity, visibility, background, box-shadow, color);
       }
     }
 
@@ -309,11 +308,11 @@
       background-color: #1bc18e;
       box-shadow: 0 3px 3px rgba(40, 22, 100, 0.2);
       color: #fff;
-      @include transition(opacity);
+      @include transition(opacity, background-color);
 
       &:hover {
         background-color: rgba(#1bc18e, 0.9);
-        @include transition(background-color);
+        @include transition(opacity, background-color);
       }
     }
   }

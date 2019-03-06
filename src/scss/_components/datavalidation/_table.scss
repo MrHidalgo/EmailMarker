@@ -1,11 +1,18 @@
 // SECTION table :: START
 
 .table {
-  //padding-bottom: 184px;
   @include fluid(padding-bottom, 320px, 1440px, 92px, 184px);
 
   .c-grid {
     max-width: 1395px;
+  }
+
+  &__wrapper {
+    @include adaptive(575) {
+      overflow-y: auto;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
   }
 
   &__block {
@@ -14,6 +21,10 @@
     @include adaptive(991) {
       width: calc(100% + 30px);
       margin-left: -15px;
+    }
+    @include adaptive(575) {
+      width: 575px;
+      margin-left: 0;
     }
 
     &-body {
@@ -39,17 +50,17 @@
 
               span {
                 font-weight: bold;
-                font-size: 20px;
                 line-height: line-height-convert(37,20);
                 color: #2d3136;
+                @include fluid(font-size, 320px, 992px, 16px, 20px);
               }
             }
             &:nth-of-type(2),
             &:nth-of-type(3) {
               span {
-                font-size: 40px;
                 line-height: 1;
                 color: #2d3136;
+                @include fluid(font-size, 320px, 992px, 26px, 40px);
               }
             }
 
@@ -79,6 +90,9 @@
           @include adaptive(991) {
             max-width: 300px;
           }
+          @include adaptive(767) {
+            width: 200px;
+          }
         }
         &:nth-of-type(2),
         &:nth-of-type(3) {
@@ -88,6 +102,9 @@
           }
           @include adaptive(991) {
             max-width: calc((100% - 300px) / 2);
+          }
+          @include adaptive(767) {
+            max-width: calc((100% - 200px) / 2);
           }
         }
       }
@@ -121,7 +138,6 @@
 
       p {
         font-weight: bold;
-        //font-size: 27px;
         line-height: line-height-convert(39,27);
         color: #fff;
         @include fluid(font-size, 320px, 1200px, 22px, 27px);
@@ -132,23 +148,27 @@
       display: flex;
       align-items: center;
       padding: 10px 40px;
+      @include adaptive(767) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
 
       p {
-        font-size: 20px;
         line-height: line-height-convert(37,20);
         color: #2d3136;
+        @include fluid(font-size, 320px, 992px, 16px, 20px);
       }
 
       span {
-        font-size: 20px;
         line-height: line-height-convert(37,20);
         color: #818992;
+        @include fluid(font-size, 320px, 992px, 16px, 20px);
       }
 
       h6 {
-        font-size: 40px;
         line-height: 1;
         color: #2d3136;
+        @include fluid(font-size, 320px, 992px, 26px, 40px);
       }
     }
 

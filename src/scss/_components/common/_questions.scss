@@ -2,8 +2,11 @@
 
 .questions {
   position: relative;
-  padding-bottom: 79px;
   min-height: 632px;
+  @include fluid(padding-bottom, 320px, 768px, 30px, 79px);
+  @include adaptive(575) {
+    min-height: 0;
+  }
 
   &__bg {
     z-index: -1;
@@ -17,9 +20,9 @@
 
   &__title {
     padding-bottom: 17px;
-    font-size: 35px;
     line-height: line-height-convert(45,35);
     color: #2d3136;
+    @include fluid(font-size, 320px, 768px, 28px, 35px);
   }
 
   &__text {
@@ -46,6 +49,9 @@
       padding-top: 159px;
       @include adaptive(1199) {
         width: 100px;
+      }
+      @include adaptive(575) {
+        display: none;
       }
 
       &--prev {
@@ -87,6 +93,12 @@
       @include adaptive(1199) {
         max-width: calc(100% - 100px);
       }
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
+      @include adaptive(575) {
+        max-width: 100%;
+      }
 
       &--left {
         width: 398px;
@@ -95,6 +107,16 @@
         }
         @include adaptive(1365) {
           width: 308px;
+        }
+        @include adaptive(767) {
+          width: 100%;
+          max-width: 398px;
+        }
+        @include adaptive(575) {
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .swiper-container {
@@ -148,6 +170,15 @@
         @include adaptive(1365) {
           max-width: calc(100% - 308px);
         }
+        @include adaptive(767) {
+          align-items: flex-start;
+          width: calc(100% + 100px);
+          max-width: calc(100% + 100px);
+          margin-left: -100px;
+        }
+        @include adaptive(575) {
+          display: none;
+        }
 
         .questions__slide {
           &:last-of-type {
@@ -170,10 +201,12 @@
     border-radius: 3px;
     background-color: #fff;
 
-    &-0 {}
     &-1 {
       @include adaptive(991) {
         display: none;
+      }
+      @include adaptive(767) {
+        display: block;
       }
     }
     &-2 {

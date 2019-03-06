@@ -1,9 +1,7 @@
 // SECTION main :: START
 
 .d-main {
-  //padding-top: 214px;
-  //padding-bottom: 161px;
-  @include fluid(padding-top, 320px, 1920px, 100px, 214px);
+  @include fluid(padding-top, 320px, 1920px, 75px, 214px);
   @include fluid(padding-bottom, 320px, 1600px, 81px, 161px);
 
   .c-grid {
@@ -41,6 +39,9 @@
         width: calc(100% + 10px);
         height: 21px;
         background-color: #ffc300;
+        @include adaptive(575) {
+          bottom: 0;
+        }
       }
     }
   }
@@ -60,6 +61,11 @@
     z-index: -1;
     position: relative;
     top: -15px;
+    @include adaptive(575) {
+      top: 0;
+      margin-left: -15px;
+      width: calc(100% + 30px);
+    }
 
     img {
       display: block;
@@ -74,6 +80,9 @@
     .c-btn__left {
       justify-content: center;
       padding-right: 19px;
+      @include adaptive(575) {
+        padding-right: 10px;
+      }
     }
 
     &-info {

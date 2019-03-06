@@ -1,9 +1,10 @@
 // TITLE :: START
 
 .c-title {
-  font-size: 35px;
+  //font-size: 35px;
   line-height: line-height-convert(45,35);
   color: #2d3136;
+  @include fluid(font-size, 320px, 768px, 28px, 35px);
 
   &--white {
     color: #ffffff;

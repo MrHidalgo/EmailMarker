@@ -6,8 +6,6 @@
 
   &__wrapper {
     display: flex;
-    //padding-top: 124px;
-    //padding-bottom: 123px;
     @include fluid(padding-top, 320px, 1200px, 62px, 124px);
     @include fluid(padding-bottom, 320px, 1200px, 62px, 123px);
     @include adaptive(991) {
@@ -38,7 +36,6 @@
     top: 15px;
     left: 0;
     font-weight: bold;
-    //font-size: 167px;
     line-height: 1;
     color: #2d3136;
     @include fluid(font-size, 320px, 1600px, 83px, 167px);
@@ -52,6 +49,9 @@
     font-size: 17px;
     line-height: line-height-convert(31,17);
     color: #818992;
+    @include adaptive(575) {
+      font-size: 15px;
+    }
   }
 
   &__logo {
@@ -71,6 +71,16 @@
       @include adaptive(991) {
         padding-right: 10px;
         padding-bottom: 10px;
+      }
+      @include adaptive(575) {
+        max-width: calc(100% / 2);
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin: 15px auto;
+        }
       }
 
       &:nth-of-type(1),
