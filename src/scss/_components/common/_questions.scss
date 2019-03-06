@@ -44,6 +44,9 @@
       width: 140px;
       padding-right: 16px;
       padding-top: 159px;
+      @include adaptive(1199) {
+        width: 100px;
+      }
 
       &--prev {
         .icon-font {
@@ -72,6 +75,7 @@
           color: #fff;
           font-size: 27px;
           @include transition(color, opacity);
+          @include fluid(font-size, 320px, 1440px, 20px, 27px);
         }
       }
     }
@@ -80,9 +84,18 @@
       display: flex;
       width: 100%;
       max-width: calc(100% - 140px);
+      @include adaptive(1199) {
+        max-width: calc(100% - 100px);
+      }
 
       &--left {
         width: 398px;
+        @include adaptive(1535) {
+          width: 348px;
+        }
+        @include adaptive(1365) {
+          width: 308px;
+        }
 
         .swiper-container {
           position: relative;
@@ -129,6 +142,12 @@
         max-width: calc(100% - 398px);
         padding-left: 8px;
         padding-right: 2px;
+        @include adaptive(1535) {
+          max-width: calc(100% - 348px);
+        }
+        @include adaptive(1365) {
+          max-width: calc(100% - 308px);
+        }
 
         .questions__slide {
           &:last-of-type {
@@ -150,6 +169,18 @@
     margin-right: 8px;
     border-radius: 3px;
     background-color: #fff;
+
+    &-0 {}
+    &-1 {
+      @include adaptive(991) {
+        display: none;
+      }
+    }
+    &-2 {
+      @include adaptive(1199) {
+        display: none;
+      }
+    }
 
     &-top {
       overflow: hidden;
@@ -173,6 +204,14 @@
       position: relative;
       height: calc(100% - 239px);
       padding: 34px 70px 42px 71px;
+      @include adaptive(1535) {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+      @include adaptive(1365) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
 
     &-title {

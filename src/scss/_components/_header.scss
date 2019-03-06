@@ -62,9 +62,30 @@
     align-items: center;
     width: 100%;
     min-height: 40px;
+    @include adaptive(991) {
+      justify-content: space-between;
+    }
+
+    .hamburger {
+      display: none;
+      @include adaptive(991) {
+        display: flex;
+      }
+    }
 
     &-left {
       width: 202px;
+    }
+
+    &-mobile {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      max-width: 100%;
+      min-width: 1px;
+      @include adaptive(991) {
+        display: none;
+      }
     }
 
     &-middle {
@@ -73,6 +94,9 @@
       flex: 1;
       max-width: 100%;
       padding-left: 193px;
+      @include adaptive(1199) {
+        padding-left: 0;
+      }
     }
 
     &-right {

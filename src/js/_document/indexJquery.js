@@ -122,6 +122,7 @@ $(document).ready((ev) => {
     // ==========================================
     initSwiper();
     initStellar();
+    initHamburger();
 
     // callback
     // ==========================================

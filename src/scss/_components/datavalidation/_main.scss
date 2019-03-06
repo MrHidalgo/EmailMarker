@@ -1,8 +1,10 @@
 // SECTION main :: START
 
 .d-main {
-  padding-top: 214px;
-  padding-bottom: 161px;
+  //padding-top: 214px;
+  //padding-bottom: 161px;
+  @include fluid(padding-top, 320px, 1920px, 100px, 214px);
+  @include fluid(padding-bottom, 320px, 1600px, 81px, 161px);
 
   .c-grid {
     max-width: 1348px;
@@ -12,9 +14,19 @@
     padding-bottom: 23px;
     text-align: center;
 
+    br {
+      @include adaptive(991) {
+        display: none;
+      }
+    }
+
     p {
       display: inline-block;
       padding-left: 18px;
+      @include adaptive(991) {
+        display: inline;
+        padding-left: 0;
+      }
     }
 
     span {
@@ -36,6 +48,12 @@
   &__text {
     text-align: center;
     line-height: 1.7;
+
+    br {
+      @include adaptive(991) {
+        display: none;
+      }
+    }
   }
 
   &__image {
@@ -67,6 +85,13 @@
       max-width: 225px;
       left: -225px;
       padding-right: 10px;
+      @include adaptive(991) {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        padding-right: 0;
+      }
 
       p {
         @extend %fontDakota;
@@ -79,6 +104,10 @@
         max-width: 100%;
         height: auto;
         margin-top: 5px;
+        @include adaptive(991) {
+          margin-top: 0;
+          transform: rotate(45deg);
+        }
       }
     }
 

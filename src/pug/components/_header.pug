@@ -11,22 +11,26 @@ header#header.header(class!= (pageClassName === 'p-home') ? 'header--home':'')
             a(href="/" class="" title="")
               +logotype()
 
-        .header__content-middle
+        +hamburger()
 
-          ul.header__nav(class!= 'header__nav--' + pageClassName)
-            li.header__nav-item
-              a.header__nav-link(href="features.html" class="" title="")!= "FEATURES"
-            li.header__nav-item
-              a.header__nav-link(href="pricing.html" class="" title="")!= "PRICING"
-            li.header__nav-item
-              a.header__nav-link(href="integrations.html" class="" title="")!= "INTEGRATIONS"
-            li.header__nav-item
-              a.header__nav-link(href="#" class="" title="")!= "BLOG"
+        .header__content-mobile(mobile-block-js)
 
-        .header__content-right
+          .header__content-middle
 
-          a.header__btn.header__btn--login(href="#" class="" title="")!= "login"
-          a.header__btn.header__btn--signup(href="#" class="" title="")!= "sign up"
-          a.header__btn.header__btn--get(href="#" class="" title="")!= "GET STARTED"
+            ul.header__nav(class!= 'header__nav--' + pageClassName)
+              li.header__nav-item
+                a.header__nav-link(href="features.html" class="" title="")!= "FEATURES"
+              li.header__nav-item
+                a.header__nav-link(href="pricing.html" class="" title="")!= "PRICING"
+              li.header__nav-item
+                a.header__nav-link(href="integrations.html" class="" title="")!= "INTEGRATIONS"
+              li.header__nav-item
+                a.header__nav-link(href="#" class="" title="")!= "BLOG"
+
+          .header__content-right
+
+            a.header__btn.header__btn--login(href="#" class="" title="")!= "login"
+            a.header__btn.header__btn--signup(href="#" class="" title="")!= "sign up"
+            a.header__btn.header__btn--get(href="#" class="" title="")!= "GET STARTED"
 
 // HEADER :: END

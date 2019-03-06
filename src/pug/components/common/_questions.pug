@@ -39,7 +39,7 @@ section#questions.questions
 
         .questions__slider-content--right
           each val1, idx1 in [1,2,3]
-            .questions__slide
+            .questions__slide(class!= "questions__slide-" + idx1)
               .questions__slide-top
                 img(
                   src="./img/img-questions-slide-" + ((idx1 % 2 === 0) ? 0 : 1) + ".png"

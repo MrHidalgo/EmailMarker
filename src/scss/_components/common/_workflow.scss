@@ -22,9 +22,10 @@
   &__title {
     padding-top: 8px;
     font-weight: bold;
-    font-size: 44px;
+    //font-size: 44px;
     line-height: 1.35;
     color: #fff;
+    @include fluid(font-size, 320px, 1366px, 33px, 44px);
   }
 
   &__btn {

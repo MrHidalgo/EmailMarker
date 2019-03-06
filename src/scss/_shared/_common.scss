@@ -17,9 +17,10 @@
   }
 
   &__title {
-    font-size: 70px;
+    //font-size: 70px;
     line-height: line-height-convert(75,70);
     color: #464646;
+    @include fluid(font-size, 320px, 1600px, 40px, 70px);
   }
 }
 // main :: end
