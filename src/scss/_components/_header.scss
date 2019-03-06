@@ -3,7 +3,6 @@
 .header {
   z-index: 1001;
   position: fixed;
-  //position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -19,17 +18,29 @@
       @include transition(min-height);
     }
 
+    .header__content-mobile {
+      top: 76px;
+      height: calc(100% - 76px);
+    }
+
     .header__btn {
       &.header__btn--login,
       &.header__btn--signup {
         opacity: 0;
         visibility: hidden;
         @include transition(opacity, visibility);
+        @include adaptive(991) {
+          opacity: 1;
+          visibility: visible;
+        }
       }
       &.header__btn--get {
         z-index: 2;
         opacity: 1;
         @include transition(opacity);
+        @include adaptive(991) {
+          opacity: 0;
+        }
       }
     }
   }
@@ -85,6 +96,30 @@
       min-width: 1px;
       @include adaptive(991) {
         display: none;
+        flex-direction: column;
+        overflow-y: auto;
+        position: fixed;
+        top: 106px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 106px);
+        background-color: rgba(#000, 0.925);
+
+        &.is-open {
+          display: flex;
+          animation-fill-mode: both;
+          animation-duration: 0.4s;
+          animation-name: zoomIn;
+
+          @keyframes zoomIn {
+            from {
+              opacity: 0;
+              transform: scale3d(0.3, 0.3, 0.3);
+            }
+
+            50% { opacity: 1; }
+          }
+        }
       }
     }
 
@@ -97,6 +132,10 @@
       @include adaptive(1199) {
         padding-left: 0;
       }
+      @include adaptive(991) {
+        flex: 1;
+        min-height: 300px;
+      }
     }
 
     &-right {
@@ -104,11 +143,18 @@
       display: flex;
       justify-content: flex-end;
       width: 232px;
+      @include adaptive(991) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        min-height: 200px;
+      }
     }
   }
 
   &__logo {
-
     > a {
       display: flex;
     }
@@ -117,6 +163,10 @@
   &__nav {
     display: flex;
     align-items: center;
+    @include adaptive(991) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     &--p-home,
     &--p-datavalidation {
@@ -156,6 +206,16 @@
       text-align: left;
       color: #464646;
       @include transition(color, opacity);
+      @include adaptive(991) {
+        display: flex;
+        align-items: center;
+        min-height: 45px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+      }
 
       &:hover {
         opacity: 1;
@@ -202,6 +262,11 @@
     &--login,
     &--signup {
       @include transition(opacity, visibility);
+      @include adaptive(991) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
       &:hover {
         box-shadow: 0 1px 1px rgba(63, 54, 134, 0.1);
         @include transition(background, box-shadow, color);
@@ -212,6 +277,9 @@
       margin-right: 12px;
       background: #fff;
       color: #8171FF;
+      @include adaptive(991) {
+        margin-right: 0;
+      }
 
       &:hover {
         background: #6c63ff;
