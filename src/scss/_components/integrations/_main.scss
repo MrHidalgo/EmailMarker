@@ -2,8 +2,11 @@
 
 .i-main {
   max-height: 2000px;
-  padding-top: 215px;
   padding-bottom: 147px;
+  @include fluid(padding-top, 320px, 992px, 100px, 215px);
+  @include adaptive(767) {
+    max-height: 100%;
+  }
 
   .c-grid {
     max-width: 1394px;
@@ -15,6 +18,9 @@
 
   &__text {
     line-height: 1.7;
+    @include adaptive(374) {
+      padding-bottom: 50px;
+    }
   }
 
   &__block {
@@ -27,6 +33,17 @@
     background-color: #fff;
     box-shadow: 0 13px 26px rgba(0, 32, 111, 0.05);
     @include transition(box-shadow);
+    @include adaptive(991) {
+      padding: 30px 15px 5px 15px;
+    }
+    @include adaptive(423) {
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+    @include adaptive(374) {
+      min-height: 0;
+      padding-bottom: 15px;
+    }
 
     @each $classMod, $bgVal in
         ('mailchimp', #FDE04C),
@@ -86,9 +103,9 @@
     &-title {
       padding-bottom: 19px;
       font-weight: bold;
-      font-size: 24px;
       line-height: line-height-convert(35,24);
       color: #2d3136;
+      @include fluid(font-size, 320px, 1199px, 20px, 24px);
 
       .verification & {
         padding-bottom: 32px;
@@ -96,9 +113,16 @@
     }
 
     &-text {
-      font-size: 15px;
       line-height: line-height-convert(28,15);
       color: #818992;
+      @include adaptive(991) {
+        font-size: 14px;
+      }
+      @include adaptive(374) {
+        br {
+          display: none;
+        }
+      }
     }
 
     &--empty {
@@ -108,6 +132,16 @@
       box-shadow: none;
       background-color: transparent;
       border: 1px solid rgba(#00206f, 0.1);
+      @include adaptive(991) {
+        padding-left: 15px;
+      }
+      @include adaptive(423) {
+        padding-left: 10px;
+      }
+      @include adaptive(374) {
+        padding-top: 30px;
+        padding-bottom: 15px;
+      }
 
       span,
       i {
@@ -116,7 +150,8 @@
       }
 
       span {
-        width: 185px;
+        width: 100%;
+        max-width: 185px;
         height: 21px;
         margin-bottom: 12px;
 
@@ -127,7 +162,8 @@
       }
 
       i {
-        width: 157px;
+        width: 100%;
+        max-width: 157px;
         height: 6px;
         margin-bottom: 25px;
 
@@ -142,12 +178,26 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
     }
 
     &-row {
       position: relative;
       width: 100%;
       max-width: calc((100% - (16px * 4)) / 5);
+      @include adaptive(1199) {
+        max-width: calc((100% - (16px * 3)) / 4);
+      }
+      @include adaptive(767) {
+        top: 0 !important;
+        transform: translateY(0) !important;
+        max-width: calc((100% - (16px * 1)) / 2);
+      }
+      @include adaptive(374) {
+        max-width: 100%;
+      }
 
       a {
         &:hover {
@@ -158,29 +208,87 @@
 
       &--first {
         transform: translateY(0);
+        @include adaptive(1199) {
+          display: none !important;
+        }
       }
 
       &--1 {
         transform: translateY(-157px);
+        @include adaptive(991) {
+          transform: translateY(-107px);
+        }
+        @include adaptive(767) {
+          order: 4;
+          margin-top: -50px;
+          @include adaptive(374) {
+            margin-top: 0;
+          }
+        }
       }
 
       &--2 {
         transform: translateY(-200px);
+        @include adaptive(991) {
+          transform: translateY(-150px);
+        }
+        @include adaptive(767) {
+          order: 1;
+          margin-top: 100px;
+          @include adaptive(374) {
+            margin-top: 0;
+          }
+
+          .i-main__block {
+            &:first-child {
+              display: none;
+            }
+          }
+        }
       }
 
       &--3 {
         transform: translateY(-300px);
+        @include adaptive(991) {
+          transform: translateY(-200px);
+        }
+        @include adaptive(767) {
+          order: 2;
+          margin-top: 50px;
+          @include adaptive(374) {
+            margin-top: 0;
+          }
+
+          .i-main__block {
+            &:first-child {
+              display: none;
+            }
+          }
+        }
       }
 
       &--last {
         transform: translateY(-400px);
+        @include adaptive(991) {
+          transform: translateY(-300px);
+        }
+        @include adaptive(767) {
+          order: 3;
+
+          .i-main__block {
+            &:first-child,
+            &:last-child {
+              display: none;
+            }
+          }
+        }
       }
     }
 
     &-btn {
       display: flex;
       align-items: center;
-      margin-top: 84px;
+      @include fluid(margin-top, 320px, 768px, 42px, 84px);
 
       &:hover {
         box-shadow: none !important;
@@ -198,14 +306,14 @@
 
         .icon-plus {
           color: #04C7FF;
-          font-size: 32px;
+          @include fluid(font-size, 320px, 768px, 25px, 32px);
         }
 
         span {
           font-weight: bold;
-          font-size: 25px;
           line-height: line-height-convert(30, 25);
           color: #464646;
+          @include fluid(font-size, 320px, 768px, 20px, 25px);
         }
       }
     }
