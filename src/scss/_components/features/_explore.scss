@@ -1,8 +1,8 @@
 // SECTION explore :: START
 
 .explore {
-  padding-top: 190px;
-  padding-bottom: 215px;
+  @include fluid(padding-top, 320px, 1600px, 75px, 190px);
+  @include fluid(padding-bottom, 320px, 1600px, 75px, 215px);
 
   &__wrapper {
     width: 100%;
@@ -12,32 +12,48 @@
   &__row {
     &-0 {
       display: flex;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
   }
 
   &__col {
     &-left {
       width: 415px;
+      @include adaptive(1199) {
+        width: 300px;
+      }
+      @include adaptive(991) {
+        width: 100%;
+        padding-bottom: 50px;
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 415px);
+      @include adaptive(1199) {
+        max-width: calc(100% - 300px);
+      }
+      @include adaptive(991) {
+        max-width: 100%;
+      }
     }
   }
 
   &__title {
     font-weight: bold;
-    font-size: 44px;
     line-height: line-height-convert(58,44);
     color: #464646;
+    @include fluid(font-size, 320px, 1440px, 33px, 44px);
 
     i {
       position: relative;
       top: 5px;
       display: inline-flex;
-      font-size: 28px;
       padding-left: 37px;
+      @include fluid(font-size, 320px, 1440px, 20px, 28px);
     }
   }
 
@@ -47,30 +63,43 @@
     &-1,
     &-4 {
       padding-left: 26px;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
     }
 
     &-2,
     &-5 {
       padding-left: 52px;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
     }
 
     &-wrapper {
       display: flex;
       flex-wrap: wrap;
+      margin-left: -15px;
 
       > div {
         display: flex;
         width: 100%;
         max-width: calc(100% / 3);
+        @include adaptive(767) {
+          padding-left: 15px;
+        }
+        @include adaptive(575) {
+          max-width: calc(100% / 2);
+        }
       }
     }
 
     &-title {
       padding-bottom: 29px;
       font-weight: bold;
-      font-size: 24px;
       line-height: 1.5;
       color: #2d3136;
+      @include fluid(font-size, 320px, 1440px, 20px, 24px);
     }
 
     &-text {

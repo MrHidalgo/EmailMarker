@@ -1,26 +1,43 @@
 // SECTION boost :: START
 
 .boost {
-  padding-top: 252px;
-  padding-bottom: 215px;
+  @include fluid(padding-top, 320px, 1600px, 125px, 252px);
+  @include fluid(padding-bottom, 320px, 1600px, 100px, 215px);
 
   &__block {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 307px;
+    @include adaptive(575) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
 
     &-wrapper {
       display: flex;
+      margin-left: -15px;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+        margin-left: 0;
+      }
 
       > div {
         width: 100%;
         max-width: 414px;
+        padding-left: 15px;
+        @include adaptive(575) {
+          padding-left: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
     &-top {
-      width: 260px;
+      width: 100%;
+      max-width: 260px;
       height: 260px;
       margin-bottom: 49px;
       border-radius: 3px;
@@ -30,9 +47,9 @@
     &-title {
       padding-bottom: 30px;
       font-weight: bold;
-      font-size: 27px;
       line-height: line-height-convert(37,27);
       color: #2d3136;
+      @include fluid(font-size, 320px, 1440px, 22px, 27px);
     }
 
     &-text {
