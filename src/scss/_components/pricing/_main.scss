@@ -1,11 +1,22 @@
 // SECTION :: START
 
 .p-main {
-  min-height: 731px;
-  padding-top: 215px;
+  @include fluid(padding-top, 320px, 1440px, 100px, 215px);
+  @include fluid(min-height, 320px, 768px, 400px, 731px);
+  @include adaptive(767) {
+    &:before {
+      height: calc(90% + 106px);
+    }
+  }
 
   &__title {
     text-align: center;
+
+    @include adaptive(767) {
+      br {
+        display: none;
+      }
+    }
   }
 }
 

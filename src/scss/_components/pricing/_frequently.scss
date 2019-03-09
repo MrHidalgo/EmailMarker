@@ -1,18 +1,21 @@
 // SECTION frequently :: START
 
 .frequently {
-  padding-top: 103px;
-  padding-bottom: 144px;
+  @include fluid(padding-top, 320px, 1366px, 50px, 103px);
+  @include fluid(padding-bottom, 320px, 1366px, 75px, 144px);
 
   &__title {
     padding-bottom: 18px;
-    font-size: 35px;
     line-height: line-height-convert(45,35);
     color: #2d3136;
+    @include fluid(font-size, 320px, 1440px, 24px, 35px);
   }
 
   &__text {
     padding-bottom: 106px;
+    @include adaptive(1199) {
+      padding-bottom: 75px;
+    }
   }
 
   &__block {
@@ -21,27 +24,52 @@
     width: 100%;
     max-width: 351px;
     margin-bottom: 107px;
+    @include adaptive(575) {
+      margin-bottom: 50px;
+    }
 
     &-3,
     &-4,
     &-5 {
       margin-bottom: 135px;
+      @include adaptive(575) {
+        margin-bottom: 50px;
+      }
     }
 
     &-wrapper {
       display: flex;
       flex-wrap: wrap;
+      @include adaptive(1199) {
+        justify-content: space-between;
+      }
 
       > div {
         width: 100%;
         max-width: calc(100% / 3);
         padding-right: 15px;
+        @include adaptive(1199) {
+          max-width: calc((100% - 30px) / 3);
+          padding-right: 0;
+        }
+        @include adaptive(767) {
+          max-width: calc((100% - 15px) / 2);
+        }
+        @include adaptive(575) {
+          max-width: 100%;
+        }
 
         &:nth-of-type(3n + 2) {
           padding-left: 52px;
+          @include adaptive(1199) {
+            padding-left: 0;
+          }
         }
         &:nth-of-type(3n + 3) {
           padding-left: 104px;
+          @include adaptive(1199) {
+            padding-left: 0;
+          }
         }
       }
     }
@@ -52,9 +80,12 @@
       min-height: 72px;
       margin-bottom: 32px;
       font-weight: bold;
-      font-size: 27px;
       line-height: line-height-convert(37,27);
       color: #2d3136;
+      @include fluid(font-size, 320px, 1440px, 22px, 27px);
+      @include adaptive(575) {
+        min-height: 0;
+      }
     }
 
     &-desc {

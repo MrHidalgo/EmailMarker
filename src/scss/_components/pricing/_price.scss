@@ -2,12 +2,19 @@
 
 .price {
   padding-right: 23px;
-  padding-bottom: 117px;
+  @include fluid(padding-bottom, 320px, 1440px, 50px, 117px);
+  @include adaptive(1599) {
+    padding-right: 0;
+  }
 
   .c-grid {
     max-width: 1399px;
     padding-left: 30px;
     padding-right: 0;
+    @include adaptive(1559) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__row {
@@ -15,11 +22,18 @@
 
     &-0 {
       align-items: center;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
 
       .price__col {
         &-0 {
           width: 441px;
           padding-left: 2px;
+          @include adaptive(991) {
+            width: 100%;
+            padding-bottom: 30px;
+          }
         }
 
         &-1 {
@@ -27,21 +41,50 @@
           max-width: calc(100% - 441px);
           padding-top: 8px;
           padding-left: 113px;
+          @include adaptive(991) {
+            padding-left: 15px;
+          }
+          @include adaptive(991) {
+            max-width: 100%;
+            padding-top: 0;
+            padding-left: 0;
+          }
         }
       }
     }
 
     &-1 {
+      @include adaptive(1199) {
+        flex-wrap: wrap;
+      }
+
       .price__col {
         &-0 {
           width: 100%;
           max-width: calc(100% - 479px);
+          @include adaptive(1439) {
+            max-width: calc(100% - 416px);
+          }
+          @include adaptive(1199) {
+            max-width: 100%;
+          }
         }
 
         &-1 {
           width: 479px;
           padding-left: 78px;
           padding-right: 3px;
+          @include adaptive(1439) {
+            width: 416px;
+            padding-left: 15px;
+          }
+          @include adaptive(1199) {
+            width: 100%;
+          }
+          @include adaptive(767) {
+            padding-left: 0;
+            padding-right: 0;
+          }
         }
       }
     }
@@ -49,14 +92,14 @@
 
   &__title {
     padding-bottom: 28px;
-    font-size: 35px;
     line-height: line-height-convert(45,35);
     color: #2d3136;
+    @include fluid(font-size, 320px, 1600px, 26px, 35px);
   }
 
   &__text {
     span {
-      padding: 2px 7px 2px 0px;
+      padding: 2px 7px 2px 0;
       background-color: #FFC300;
       color: #000;
     }
@@ -64,12 +107,31 @@
 
   &__form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
 
     &-field {
       padding-right: 5px;
+      @include adaptive(1365) {
+        width: 50%;
+        padding-right: 0;
+      }
+      @include adaptive(1199) {
+        width: 100%;
+        padding-right: 0;
+
+        .c-form__field {
+          margin-bottom: 0;
+        }
+      }
+      @include adaptive(767) {
+        width: 50%;
+      }
+      @include adaptive(575) {
+        width: 100%;
+      }
     }
 
     .c-form__checkbox {
@@ -102,6 +164,9 @@
         font-size: 17px;
         line-height: 31px;
         color: #818992;
+        @include adaptive(767) {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -109,6 +174,13 @@
   &__box {
     position: relative;
     top: -10px;
+    @include adaptive(1199) {
+      top: 0;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &:before {
       content: '';
@@ -124,6 +196,9 @@
 
     &-bottom {
       padding: 47px 43px 77px;
+      @include adaptive(575) {
+        padding: 30px 15px 50px;
+      }
     }
 
     &-img {
@@ -137,9 +212,9 @@
     &-title {
       padding-bottom: 24px;
       font-weight: bold;
-      font-size: 33px;
       line-height:line-height-convert(37,33);
       color: #2d3136;
+      @include fluid(font-size, 320px, 1600px, 24px, 33px);
     }
 
     &-text {
@@ -159,11 +234,18 @@
     flex-direction: column;
     width: 100%;
     max-width: 407px;
+    @include adaptive(767) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &-wrapper {
       display: flex;
       justify-content: space-between;
       padding-top: 64px;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -274,6 +356,9 @@
         font-size: 17px;
         line-height: line-height-convert(24,17);
         color: #2d3136;
+        @include adaptive(767) {
+          font-size: 15px;
+        }
       }
 
       span {
@@ -297,6 +382,9 @@
         font-size: 17px;
         line-height: line-height-convert(24,17);
         color: #273951;
+        @include adaptive(767) {
+          font-size: 15px;
+        }
       }
     }
 
