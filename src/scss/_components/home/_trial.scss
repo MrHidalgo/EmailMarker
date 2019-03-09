@@ -1,8 +1,8 @@
 // SECTION trial :: START
 
 .trial {
-  padding-top: 82px;
-  padding-bottom: 104px;
+  @include fluid(padding-top, 320px, 1200px, 50px, 82px);
+  @include fluid(padding-bottom, 320px, 1200px, 50px, 104px);
 
   .c-grid {
     max-width: 1690px;
@@ -12,6 +12,12 @@
     position: relative;
     display: flex;
     min-height: 555px;
+    @include adaptive(991) {
+      min-height: 455px;
+    }
+    @include adaptive(767) {
+      background-color: #6c63ff;
+    }
 
     &:before {
       content: '';
@@ -24,19 +30,35 @@
       width: calc(100% - (113px + 183px));
       height: calc(100% - (85px + 172px));
       background-color: #6c63ff;
+      @include adaptive(991) {
+        left: 100px;
+        right: 30px;
+        width: calc(100% - 130px);
+        height: calc(100% - (85px + 72px));
+      }
+      @include adaptive(767) {
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
     }
 
     &-left {
       display: flex;
       width: 725px;
       padding-left: 56px;
+      @include adaptive(1366) {
+        width: 669px;
+        padding-left: 0;
+      }
 
       > div {
         &:nth-of-type(1) {
           width: 322px;
           padding-top: 41px;
-          //padding-top: 43px;
-          //padding-left: 56px;
+          @include adaptive(767) {
+            display: none;
+          }
 
           img {
             display: block;
@@ -49,6 +71,11 @@
           width: 100%;
           max-width: calc(100% - 322px);
           padding-top: 108px;
+          @include adaptive(767) {
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
         }
       }
     }
@@ -56,6 +83,9 @@
     &-right {
       width: 100%;
       max-width: calc(100% - 725px);
+      @include adaptive(1366) {
+        max-width: calc(100% - 669px);
+      }
     }
   }
 
@@ -63,9 +93,12 @@
     padding-left: 71px;
     padding-bottom: 15px;
     font-weight: bold;
-    font-size: 44px;
     line-height: line-height-convert(58,44);
     color: #fff;
+    @include fluid(font-size, 320px, 1440px, 33px, 44px);
+    @include adaptive(767) {
+      padding-left: 0;
+    }
   }
 
   &__subtitle {
@@ -74,6 +107,10 @@
     font-size: 17px;
     line-height: line-height-convert(28,17);
     color: #fff;
+    @include adaptive(767) {
+      padding-left: 0;
+      font-size: 15px;
+    }
   }
 
   &__btn {
@@ -90,6 +127,10 @@
     border: 1px solid #fff;
     background-color: transparent;
     @include transition(background-color);
+    @include adaptive(767) {
+      right: auto;
+      margin-left: 0;
+    }
 
     &:hover {
       background-color: #ffffff;
@@ -104,10 +145,10 @@
 
     span {
       margin-right: 13px;
-      font-size: 20px;
       line-height: line-height-convert(28,20);
       color: #fff;
       @include transition(color);
+      @include fluid(font-size, 320px, 1200px, 16px, 20px);
     }
 
     i {
@@ -123,11 +164,17 @@
     display: block;
     max-width: 100%;
     height: auto;
+    @include adaptive(1199) {
+      display: none;
+    }
 
     &-wrapper {
       position: relative;
       width: 100%;
       height: 100%;
+      @include adaptive(991) {
+        display: none;
+      }
     }
 
     &-flower {
