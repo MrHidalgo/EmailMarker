@@ -238,6 +238,10 @@ $(document).ready(function (ev) {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
+
+  /**
+   *
+   */
   var initCookie = function initCookie() {
 
     /**
@@ -284,6 +288,9 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   *
+   */
   var initFollow = function initFollow() {
     /**
      *
@@ -309,9 +316,49 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   *
+   */
   var initLogoAnimation = function initLogoAnimation() {
     _tlLogo.staggerTo($('#EmailMarker path'), 0.45, { opacity: 0, ease: Power1.easeInOut }, 0.05);
     // .to($('#logoImage'), 0.95, {x:150}, -0.1)
+  };
+
+  /**
+   *
+   */
+  var initChangeImage2SVG = function initChangeImage2SVG() {
+    document.querySelectorAll('[image2svg-js]').forEach(function (element) {
+      var imgID = element.getAttribute('id'),
+          imgClass = element.getAttribute('class'),
+          imgURL = element.getAttribute('src');
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var svg = xhr.responseXML.getElementsByTagName('svg')[0];
+
+          if (imgID != null) {
+            svg.setAttribute('id', imgID);
+          }
+
+          if (imgClass != null) {
+            svg.setAttribute('class', imgClass + ' replaced-svg');
+          }
+
+          svg.removeAttribute('xmlns:a');
+
+          if (!svg.hasAttribute('viewBox') && svg.hasAttribute('height') && svg.hasAttribute('width')) {
+            svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'));
+          }
+          element.parentElement.replaceChild(svg, element);
+        }
+      };
+
+      xhr.open('GET', imgURL, true);
+      xhr.send(null);
+    });
   };
   /*
   * CALLBACK :: end
@@ -338,6 +385,7 @@ $(document).ready(function (ev) {
     initCookie();
     initFollow();
     initLogoAnimation();
+    initChangeImage2SVG();
   };
   initJquery();
 });

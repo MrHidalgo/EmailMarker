@@ -22,6 +22,11 @@ $(document).ready((ev) => {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
+
+
+  /**
+   *
+   */
   const initCookie = () => {
 
     /**
@@ -73,6 +78,9 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
   const initFollow = () => {
     /**
      *
@@ -98,10 +106,51 @@ $(document).ready((ev) => {
     });
   };
 
+  /**
+   *
+   */
   const initLogoAnimation = () => {
     _tlLogo
       .staggerTo($('#EmailMarker path'), 0.45, {opacity: 0, ease:Power1.easeInOut}, 0.05);
       // .to($('#logoImage'), 0.95, {x:150}, -0.1)
+  };
+
+
+  /**
+   *
+   */
+  const initChangeImage2SVG = () => {
+    document.querySelectorAll('[image2svg-js]').forEach(function (element) {
+      let imgID = element.getAttribute('id'),
+        imgClass = element.getAttribute('class'),
+        imgURL = element.getAttribute('src');
+
+      let xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          let svg = xhr.responseXML.getElementsByTagName('svg')[0];
+
+          if (imgID != null) {
+            svg.setAttribute('id', imgID);
+          }
+
+          if (imgClass != null) {
+            svg.setAttribute('class', imgClass + ' replaced-svg');
+          }
+
+          svg.removeAttribute('xmlns:a');
+
+          if (!svg.hasAttribute('viewBox') && svg.hasAttribute('height') && svg.hasAttribute('width')) {
+            svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
+          }
+          element.parentElement.replaceChild(svg, element)
+        }
+      };
+
+      xhr.open('GET', imgURL, true);
+      xhr.send(null);
+    })
   };
   /*
   * CALLBACK :: end
@@ -129,6 +178,7 @@ $(document).ready((ev) => {
     initCookie();
     initFollow();
     initLogoAnimation();
+    initChangeImage2SVG();
   };
   initJquery();
 });

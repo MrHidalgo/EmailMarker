@@ -4,6 +4,10 @@
   position: relative;
   height: 1520px;
 
+  .c-grid-fluid {
+    padding-left: 0;
+  }
+
   &__wrapper {
     display: flex;
 
@@ -11,7 +15,8 @@
     &-right {
       width: 50%;
 
-      img {
+      img,
+      svg {
         position: relative;
         top: -107px;
         left: -31px;
@@ -26,7 +31,7 @@
     }
 
     &-right {
-      padding-left: 8px;
+      padding-left: 23px;
     }
   }
 
