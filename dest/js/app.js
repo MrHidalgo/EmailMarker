@@ -218,6 +218,7 @@ $(window).on("scroll", function (ev) {
 /**
  * Animation variable
  */
+var _tl = new TimelineMax();
 var _tlLogo = new TimelineMax({
   paused: true
 });
@@ -324,41 +325,14 @@ $(document).ready(function (ev) {
     // .to($('#logoImage'), 0.95, {x:150}, -0.1)
   };
 
-  /**
-   *
-   */
-  var initChangeImage2SVG = function initChangeImage2SVG() {
-    document.querySelectorAll('[image2svg-js]').forEach(function (element) {
-      var imgID = element.getAttribute('id'),
-          imgClass = element.getAttribute('class'),
-          imgURL = element.getAttribute('src');
+  var initSVGAnimation = function initSVGAnimation() {
+    var svgHackVisible = function svgHackVisible() {
+      _tl.set(".h-main__bg svg, .validate__image svg, .verification__image svg", {
+        visibility: "visible"
+      });
+    };
 
-      var xhr = new XMLHttpRequest();
-
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var svg = xhr.responseXML.getElementsByTagName('svg')[0];
-
-          if (imgID != null) {
-            svg.setAttribute('id', imgID);
-          }
-
-          if (imgClass != null) {
-            svg.setAttribute('class', imgClass + ' replaced-svg');
-          }
-
-          svg.removeAttribute('xmlns:a');
-
-          if (!svg.hasAttribute('viewBox') && svg.hasAttribute('height') && svg.hasAttribute('width')) {
-            svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'));
-          }
-          element.parentElement.replaceChild(svg, element);
-        }
-      };
-
-      xhr.open('GET', imgURL, true);
-      xhr.send(null);
-    });
+    svgHackVisible();
   };
   /*
   * CALLBACK :: end
@@ -385,7 +359,7 @@ $(document).ready(function (ev) {
     initCookie();
     initFollow();
     initLogoAnimation();
-    initChangeImage2SVG();
+    initSVGAnimation();
   };
   initJquery();
 });

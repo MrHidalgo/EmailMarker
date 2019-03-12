@@ -1,5 +1,13 @@
 // COMMON :: START
 
+// SVG for animation
+.h-main__bg svg,
+.validate__image svg,
+.verification__image svg {
+  visibility: hidden;
+}
+// SVG for animation :: end
+
 // main
 .main {
   position: relative;

@@ -743,13 +743,20 @@ picture {
 }
 
 /* line 4, src/scss/_shared/_common.scss */
+.h-main__bg svg,
+.validate__image svg,
+.verification__image svg {
+  visibility: hidden;
+}
+
+/* line 12, src/scss/_shared/_common.scss */
 .main {
   position: relative;
   padding-top: 75px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 4, src/scss/_shared/_common.scss */
+  /* line 12, src/scss/_shared/_common.scss */
   .main {
     padding-top: -webkit-calc(75px + 142 * (100vw - 320px) / 1280);
     padding-top: calc(75px + 142 * (100vw - 320px) / 1280);
@@ -757,13 +764,13 @@ picture {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 4, src/scss/_shared/_common.scss */
+  /* line 12, src/scss/_shared/_common.scss */
   .main {
     padding-top: 217px;
   }
 }
 
-/* line 9, src/scss/_shared/_common.scss */
+/* line 17, src/scss/_shared/_common.scss */
 .main:before {
   content: '';
   z-index: -1;
@@ -776,7 +783,7 @@ picture {
   background-color: #f4f9fc;
 }
 
-/* line 20, src/scss/_shared/_common.scss */
+/* line 28, src/scss/_shared/_common.scss */
 .main__title {
   line-height: 1.07143;
   color: #464646;
@@ -784,7 +791,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 20, src/scss/_shared/_common.scss */
+  /* line 28, src/scss/_shared/_common.scss */
   .main__title {
     font-size: -webkit-calc(36px + 34 * (100vw - 320px) / 1280);
     font-size: calc(36px + 34 * (100vw - 320px) / 1280);
@@ -792,13 +799,13 @@ picture {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 20, src/scss/_shared/_common.scss */
+  /* line 28, src/scss/_shared/_common.scss */
   .main__title {
     font-size: 70px;
   }
 }
 
-/* line 30, src/scss/_shared/_common.scss */
+/* line 38, src/scss/_shared/_common.scss */
 .c-text {
   font-size: 17px;
   line-height: 1.82353;
@@ -806,18 +813,18 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 30, src/scss/_shared/_common.scss */
+  /* line 38, src/scss/_shared/_common.scss */
   .c-text {
     font-size: 15px;
   }
 }
 
-/* line 38, src/scss/_shared/_common.scss */
+/* line 46, src/scss/_shared/_common.scss */
 .c-text--medium {
   color: #818992;
 }
 
-/* line 45, src/scss/_shared/_common.scss */
+/* line 53, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -825,7 +832,7 @@ picture {
   display: flex;
 }
 
-/* line 48, src/scss/_shared/_common.scss */
+/* line 56, src/scss/_shared/_common.scss */
 .social__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -833,17 +840,17 @@ picture {
   display: flex;
 }
 
-/* line 51, src/scss/_shared/_common.scss */
+/* line 59, src/scss/_shared/_common.scss */
 .social__list-item {
   margin-left: 15px;
 }
 
-/* line 54, src/scss/_shared/_common.scss */
+/* line 62, src/scss/_shared/_common.scss */
 .social__list-item:first-of-type {
   margin-left: 0;
 }
 
-/* line 60, src/scss/_shared/_common.scss */
+/* line 68, src/scss/_shared/_common.scss */
 .social__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -866,7 +873,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 69, src/scss/_shared/_common.scss */
+/* line 77, src/scss/_shared/_common.scss */
 .social__btn:hover {
   opacity: 0.95;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -874,62 +881,62 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 81, src/scss/_shared/_common.scss */
+/* line 89, src/scss/_shared/_common.scss */
 .social__btn--fb {
   background-color: #3B5998;
 }
 
-/* line 84, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .social__btn--fb .icon-font {
   font-size: 19px;
 }
 
-/* line 81, src/scss/_shared/_common.scss */
+/* line 89, src/scss/_shared/_common.scss */
 .social__btn--tw {
   background-color: #55ACEE;
 }
 
-/* line 84, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .social__btn--tw .icon-font {
   font-size: 14px;
 }
 
-/* line 81, src/scss/_shared/_common.scss */
+/* line 89, src/scss/_shared/_common.scss */
 .social__btn--in {
   background-color: #007AB9;
 }
 
-/* line 84, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .social__btn--in .icon-font {
   font-size: 16px;
 }
 
-/* line 81, src/scss/_shared/_common.scss */
+/* line 89, src/scss/_shared/_common.scss */
 .social__btn--gp {
   background-color: #DC4E41;
 }
 
-/* line 84, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .social__btn--gp .icon-font {
   font-size: 12px;
 }
 
-/* line 81, src/scss/_shared/_common.scss */
+/* line 89, src/scss/_shared/_common.scss */
 .social__btn--pn {
   background-color: #CB2027;
 }
 
-/* line 84, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .social__btn--pn .icon-font {
   font-size: 18px;
 }
 
-/* line 90, src/scss/_shared/_common.scss */
+/* line 98, src/scss/_shared/_common.scss */
 .social__btn .icon-font {
   color: #fff;
 }
 
-/* line 99, src/scss/_shared/_common.scss */
+/* line 107, src/scss/_shared/_common.scss */
 .copyright__text {
   font-size: 12px;
   letter-spacing: 0.15em;
