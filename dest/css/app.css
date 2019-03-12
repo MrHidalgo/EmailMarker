@@ -4376,12 +4376,19 @@ picture {
   height: 1520px;
 }
 
-/* line 7, src/scss/_components/home/_verification.scss */
+@media screen and (max-width: 1199px) {
+  /* line 3, src/scss/_components/home/_verification.scss */
+  .verification {
+    height: auto;
+  }
+}
+
+/* line 10, src/scss/_components/home/_verification.scss */
 .verification .c-grid-fluid {
   padding-left: 0;
 }
 
-/* line 11, src/scss/_components/home/_verification.scss */
+/* line 14, src/scss/_components/home/_verification.scss */
 .verification__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4389,47 +4396,129 @@ picture {
   display: flex;
 }
 
-/* line 14, src/scss/_components/home/_verification.scss */
+@media screen and (max-width: 1199px) {
+  /* line 14, src/scss/_components/home/_verification.scss */
+  .verification__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 20, src/scss/_components/home/_verification.scss */
 .verification__wrapper-left, .verification__wrapper-right {
   width: 50%;
 }
 
-/* line 18, src/scss/_components/home/_verification.scss */
-.verification__wrapper-left svg, .verification__wrapper-right svg {
+@media screen and (max-width: 1199px) {
+  /* line 20, src/scss/_components/home/_verification.scss */
+  .verification__wrapper-left, .verification__wrapper-right {
+    width: 100%;
+  }
+}
+
+/* line 28, src/scss/_components/home/_verification.scss */
+.verification__wrapper-left {
+  overflow: hidden;
+}
+
+/* line 31, src/scss/_components/home/_verification.scss */
+.verification__wrapper-left svg {
+  z-index: -1;
   position: relative;
   top: -105px;
   left: -16px;
   max-width: 929.957px;
 }
 
-/* line 26, src/scss/_components/home/_verification.scss */
-.verification__wrapper-left {
-  overflow: hidden;
+@media screen and (max-width: 1535px) {
+  /* line 31, src/scss/_components/home/_verification.scss */
+  .verification__wrapper-left svg {
+    top: -55px;
+  }
 }
 
-/* line 30, src/scss/_components/home/_verification.scss */
+/* line 43, src/scss/_components/home/_verification.scss */
 .verification__wrapper-right {
   padding-left: 15px;
 }
 
-/* line 35, src/scss/_components/home/_verification.scss */
+@media screen and (max-width: 1199px) {
+  /* line 43, src/scss/_components/home/_verification.scss */
+  .verification__wrapper-right {
+    min-height: -webkit-calc(100% - 220px);
+    min-height: calc(100% - 220px);
+  }
+}
+
+/* line 51, src/scss/_components/home/_verification.scss */
 .verification__title {
   padding-top: 192px;
   padding-left: 140px;
   padding-bottom: 26px;
-  font-size: 45px;
   line-height: 1.44444;
   color: #2d3136;
+  font-size: 35px;
 }
 
-/* line 44, src/scss/_components/home/_verification.scss */
+@media screen and (min-width: 320px) {
+  /* line 51, src/scss/_components/home/_verification.scss */
+  .verification__title {
+    font-size: -webkit-calc(35px + 10 * (100vw - 320px) / 1280);
+    font-size: calc(35px + 10 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 51, src/scss/_components/home/_verification.scss */
+  .verification__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 51, src/scss/_components/home/_verification.scss */
+  .verification__title {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 51, src/scss/_components/home/_verification.scss */
+  .verification__title {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 51, src/scss/_components/home/_verification.scss */
+  .verification__title {
+    padding-top: 100px;
+  }
+}
+
+/* line 69, src/scss/_components/home/_verification.scss */
 .verification__text {
   width: 100%;
   max-width: 388px;
   margin-left: 140px;
 }
 
-/* line 52, src/scss/_components/home/_verification.scss */
+@media screen and (max-width: 1535px) {
+  /* line 69, src/scss/_components/home/_verification.scss */
+  .verification__text {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 69, src/scss/_components/home/_verification.scss */
+  .verification__text {
+    margin-left: 15px;
+  }
+}
+
+/* line 82, src/scss/_components/home/_verification.scss */
 .verification__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4443,7 +4532,67 @@ picture {
   max-width: 812px;
 }
 
-/* line 59, src/scss/_components/home/_verification.scss */
+@media screen and (max-width: 1199px) {
+  /* line 82, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 93, src/scss/_components/home/_verification.scss */
+.verification__block-wrapper .i-main__block-title {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 93, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper .i-main__block-title {
+    font-size: -webkit-calc(18px + 6 * (100vw - 320px) / 1280);
+    font-size: calc(18px + 6 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 93, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper .i-main__block-title {
+    font-size: 24px;
+  }
+}
+
+/* line 97, src/scss/_components/home/_verification.scss */
+.verification__block-wrapper .i-main__block-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 97, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper .i-main__block-text {
+    font-size: -webkit-calc(14px + 3 * (100vw - 320px) / 1280);
+    font-size: calc(14px + 3 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 97, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper .i-main__block-text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 97, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper .i-main__block-text {
+    white-space: pre-line;
+  }
+  /* line 101, src/scss/_components/home/_verification.scss */
+  .verification__block-wrapper .i-main__block-text br {
+    display: none;
+  }
+}
+
+/* line 108, src/scss/_components/home/_verification.scss */
 .verification__block-row {
   position: relative;
   width: 100%;
@@ -4451,7 +4600,7 @@ picture {
   max-width: calc((100% - (16px * 2)) / 3);
 }
 
-/* line 65, src/scss/_components/home/_verification.scss */
+/* line 114, src/scss/_components/home/_verification.scss */
 .verification__block-row a:hover {
   -webkit-box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
           box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
@@ -4462,19 +4611,35 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 71, src/scss/_components/home/_verification.scss */
+/* line 120, src/scss/_components/home/_verification.scss */
 .verification__block-row--first {
   padding-top: 292px;
 }
 
-/* line 75, src/scss/_components/home/_verification.scss */
+/* line 124, src/scss/_components/home/_verification.scss */
 .verification__block-row--1 {
   top: -60px;
 }
 
-/* line 79, src/scss/_components/home/_verification.scss */
+@media screen and (max-width: 1199px) {
+  /* line 124, src/scss/_components/home/_verification.scss */
+  .verification__block-row--1 {
+    top: 0;
+    padding-top: 60px;
+  }
+}
+
+/* line 132, src/scss/_components/home/_verification.scss */
 .verification__block-row--last {
   top: -227px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 132, src/scss/_components/home/_verification.scss */
+  .verification__block-row--last {
+    top: 0;
+    padding-top: 207px;
+  }
 }
 
 /* line 3, src/scss/_components/home/_trial.scss */

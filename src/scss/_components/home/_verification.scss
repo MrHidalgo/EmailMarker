@@ -3,6 +3,9 @@
 .verification {
   position: relative;
   height: 1520px;
+  @include adaptive(1199) {
+    height: auto;
+  }
 
   .c-grid-fluid {
     padding-left: 0;
@@ -10,25 +13,38 @@
 
   &__wrapper {
     display: flex;
+    @include adaptive(1199) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
-
-      svg {
-        position: relative;
-        top: -105px;
-        left: -16px;
-        max-width: 929.957px;
+      @include adaptive(1199) {
+        width: 100%;
       }
     }
 
     &-left {
       overflow: hidden;
+
+      svg {
+        z-index: -1;
+        position: relative;
+        top: -105px;
+        left: -16px;
+        max-width: 929.957px;
+        @include adaptive(1535) {
+          top: -55px;
+        }
+      }
     }
 
     &-right {
       padding-left: 15px;
+      @include adaptive(1199) {
+        min-height: calc(100% - 220px);
+      }
     }
   }
 
@@ -36,24 +52,57 @@
     padding-top: 192px;
     padding-left: 140px;
     padding-bottom: 26px;
-    font-size: 45px;
     line-height: line-height-convert(65,45);
     color: #2d3136;
+    @include fluid(font-size, 320px, 1600px, 35px, 45px);
+    @include adaptive(1535) {
+      padding-left: 70px;
+    }
+    @include adaptive(1365) {
+      padding-left: 15px;
+    }
+    @include adaptive(1199) {
+      padding-top: 100px;
+    }
   }
 
   &__text {
     width: 100%;
     max-width: 388px;
     margin-left: 140px;
+    @include adaptive(1535) {
+      margin-left: 70px;
+    }
+    @include adaptive(1365) {
+      margin-left: 15px;
+    }
   }
 
   &__block {
-
     &-wrapper {
       display: flex;
       justify-content: space-between;
       width: 100%;
       max-width: 812px;
+      @include adaptive(1199) {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .i-main__block-title {
+        @include fluid(font-size, 320px, 1600px, 18px, 24px);
+      }
+
+      .i-main__block-text {
+        @include fluid(font-size, 320px, 1600px, 14px, 17px);
+        @include adaptive(1439) {
+          white-space: pre-line;
+          br {
+            display: none;
+          }
+        }
+      }
     }
 
     &-row {
@@ -74,10 +123,18 @@
 
       &--1 {
         top: -60px;
+        @include adaptive(1199) {
+          top: 0;
+          padding-top: 60px;
+        }
       }
 
       &--last {
         top: -227px;
+        @include adaptive(1199) {
+          top: 0;
+          padding-top: 207px;
+        }
       }
     }
   }
