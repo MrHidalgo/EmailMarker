@@ -18,8 +18,8 @@
       img,
       svg {
         position: relative;
-        top: -107px;
-        left: -31px;
+        top: -105px;
+        left: -16px;
         display: block;
         max-width: 100%;
         height: auto;
@@ -31,13 +31,13 @@
     }
 
     &-right {
-      padding-left: 23px;
+      padding-left: 15px;
     }
   }
 
   &__title {
     padding-top: 192px;
-    padding-left: 125px;
+    padding-left: 140px;
     padding-bottom: 26px;
     font-size: 45px;
     line-height: line-height-convert(65,45);
@@ -47,7 +47,7 @@
   &__text {
     width: 100%;
     max-width: 388px;
-    margin-left: 125px;
+    margin-left: 140px;
   }
 
   &__block {

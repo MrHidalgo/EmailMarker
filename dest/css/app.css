@@ -3861,7 +3861,7 @@ picture {
 /* line 3, src/scss/_components/home/_main.scss */
 .h-main {
   position: relative;
-  padding-top: 170px;
+  padding-top: 64px;
 }
 
 /* line 7, src/scss/_components/home/_main.scss */
@@ -3873,20 +3873,50 @@ picture {
 .h-main__bg {
   z-index: -1;
   position: absolute;
-  top: 66px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-/* line 19, src/scss/_components/home/_main.scss */
-.h-main__bg img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* line 20, src/scss/_components/home/_main.scss */
+.h-main__bg-left, .h-main__bg-right {
+  width: 50%;
+  min-height: 100%;
 }
 
-/* line 26, src/scss/_components/home/_main.scss */
+/* line 27, src/scss/_components/home/_main.scss */
+.h-main__bg-left img,
+.h-main__bg-left svg {
+  position: relative;
+  top: -9px;
+  left: 17px;
+}
+
+/* line 34, src/scss/_components/home/_main.scss */
+.h-main__bg-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 38, src/scss/_components/home/_main.scss */
+.h-main__bg-right img,
+.h-main__bg-right svg {
+  position: relative;
+  top: -39px;
+}
+
+/* line 46, src/scss/_components/home/_main.scss */
 .h-main__badge {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3904,7 +3934,7 @@ picture {
   padding-bottom: 65px;
 }
 
-/* line 37, src/scss/_components/home/_main.scss */
+/* line 57, src/scss/_components/home/_main.scss */
 .h-main__badge > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3927,7 +3957,7 @@ picture {
           background-size: contain;
 }
 
-/* line 49, src/scss/_components/home/_main.scss */
+/* line 69, src/scss/_components/home/_main.scss */
 .h-main__badge > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 48px);
@@ -3935,7 +3965,7 @@ picture {
   padding-left: 4px;
 }
 
-/* line 55, src/scss/_components/home/_main.scss */
+/* line 75, src/scss/_components/home/_main.scss */
 .h-main__badge > div i {
   position: relative;
   top: 1px;
@@ -3945,7 +3975,7 @@ picture {
   line-height: 1;
 }
 
-/* line 65, src/scss/_components/home/_main.scss */
+/* line 85, src/scss/_components/home/_main.scss */
 .h-main__badge > div p {
   position: relative;
   top: -1px;
@@ -3953,18 +3983,18 @@ picture {
   color: #464646;
 }
 
-/* line 71, src/scss/_components/home/_main.scss */
+/* line 91, src/scss/_components/home/_main.scss */
 .h-main__badge > div p span {
   color: #005adc;
 }
 
-/* line 78, src/scss/_components/home/_main.scss */
+/* line 98, src/scss/_components/home/_main.scss */
 .h-main__title {
   padding-bottom: 59px;
   text-align: center;
 }
 
-/* line 82, src/scss/_components/home/_main.scss */
+/* line 102, src/scss/_components/home/_main.scss */
 .h-main__title p {
   position: relative;
   left: 9px;
@@ -3972,14 +4002,14 @@ picture {
   line-height: 1;
 }
 
-/* line 90, src/scss/_components/home/_main.scss */
+/* line 110, src/scss/_components/home/_main.scss */
 .h-main__text {
   padding-bottom: 82px;
   text-align: center;
   line-height: 1.7;
 }
 
-/* line 96, src/scss/_components/home/_main.scss */
+/* line 116, src/scss/_components/home/_main.scss */
 .h-main__rating {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3997,13 +4027,13 @@ picture {
   padding-bottom: 112px;
 }
 
-/* line 107, src/scss/_components/home/_main.scss */
+/* line 127, src/scss/_components/home/_main.scss */
 .h-main__rating > div:nth-of-type(1) {
   width: 39px;
   height: 40px;
 }
 
-/* line 112, src/scss/_components/home/_main.scss */
+/* line 132, src/scss/_components/home/_main.scss */
 .h-main__rating > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4025,7 +4055,7 @@ picture {
   padding-left: 8px;
 }
 
-/* line 122, src/scss/_components/home/_main.scss */
+/* line 142, src/scss/_components/home/_main.scss */
 .h-main__rating > div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4033,20 +4063,20 @@ picture {
   display: flex;
 }
 
-/* line 125, src/scss/_components/home/_main.scss */
+/* line 145, src/scss/_components/home/_main.scss */
 .h-main__rating > div p svg {
   margin-left: 2px;
   margin-right: 2px;
 }
 
-/* line 131, src/scss/_components/home/_main.scss */
+/* line 151, src/scss/_components/home/_main.scss */
 .h-main__rating > div span {
   font-size: 15px;
   line-height: 1;
   color: #242424;
 }
 
-/* line 139, src/scss/_components/home/_main.scss */
+/* line 159, src/scss/_components/home/_main.scss */
 .h-main__scroll {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4059,26 +4089,26 @@ picture {
   padding-bottom: 57px;
 }
 
-/* line 148, src/scss/_components/home/_main.scss */
+/* line 168, src/scss/_components/home/_main.scss */
 .h-main__scroll > div:nth-of-type(1) {
   width: 27px;
   padding-top: 2px;
 }
 
-/* line 153, src/scss/_components/home/_main.scss */
+/* line 173, src/scss/_components/home/_main.scss */
 .h-main__scroll > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 27px);
   max-width: calc(100% - 27px);
 }
 
-/* line 158, src/scss/_components/home/_main.scss */
+/* line 178, src/scss/_components/home/_main.scss */
 .h-main__scroll > div p {
   font-size: 15px;
   color: #242424;
 }
 
-/* line 163, src/scss/_components/home/_main.scss */
+/* line 183, src/scss/_components/home/_main.scss */
 .h-main__scroll > div span {
   font-size: 14px;
   line-height: 1;
@@ -4228,7 +4258,7 @@ picture {
 
 /* line 19, src/scss/_components/home/_validate.scss */
 .validate__wrapper-0 {
-  padding-bottom: 107px;
+  padding-bottom: 97px;
 }
 
 /* line 22, src/scss/_components/home/_validate.scss */
@@ -4349,8 +4379,8 @@ picture {
 .verification__wrapper-left svg, .verification__wrapper-right img,
 .verification__wrapper-right svg {
   position: relative;
-  top: -107px;
-  left: -31px;
+  top: -105px;
+  left: -16px;
   display: block;
   max-width: 100%;
   height: auto;
@@ -4363,13 +4393,13 @@ picture {
 
 /* line 33, src/scss/_components/home/_verification.scss */
 .verification__wrapper-right {
-  padding-left: 23px;
+  padding-left: 15px;
 }
 
 /* line 38, src/scss/_components/home/_verification.scss */
 .verification__title {
   padding-top: 192px;
-  padding-left: 125px;
+  padding-left: 140px;
   padding-bottom: 26px;
   font-size: 45px;
   line-height: 1.44444;
@@ -4380,7 +4410,7 @@ picture {
 .verification__text {
   width: 100%;
   max-width: 388px;
-  margin-left: 125px;
+  margin-left: 140px;
 }
 
 /* line 55, src/scss/_components/home/_verification.scss */
