@@ -3897,14 +3897,14 @@ picture {
 }
 
 /* line 27, src/scss/_components/home/_main.scss */
-.h-main__bg-left img,
 .h-main__bg-left svg {
   position: relative;
   top: -9px;
   left: 17px;
+  max-width: 760.768px;
 }
 
-/* line 34, src/scss/_components/home/_main.scss */
+/* line 35, src/scss/_components/home/_main.scss */
 .h-main__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3916,14 +3916,15 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 38, src/scss/_components/home/_main.scss */
-.h-main__bg-right img,
+/* line 39, src/scss/_components/home/_main.scss */
 .h-main__bg-right svg {
   position: relative;
   top: -39px;
+  max-width: 644.177px;
+  height: 100%;
 }
 
-/* line 46, src/scss/_components/home/_main.scss */
+/* line 48, src/scss/_components/home/_main.scss */
 .h-main__badge {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3941,7 +3942,7 @@ picture {
   padding-bottom: 65px;
 }
 
-/* line 57, src/scss/_components/home/_main.scss */
+/* line 59, src/scss/_components/home/_main.scss */
 .h-main__badge > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3964,7 +3965,7 @@ picture {
           background-size: contain;
 }
 
-/* line 69, src/scss/_components/home/_main.scss */
+/* line 71, src/scss/_components/home/_main.scss */
 .h-main__badge > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 48px);
@@ -3972,7 +3973,7 @@ picture {
   padding-left: 4px;
 }
 
-/* line 75, src/scss/_components/home/_main.scss */
+/* line 77, src/scss/_components/home/_main.scss */
 .h-main__badge > div i {
   position: relative;
   top: 1px;
@@ -3982,7 +3983,7 @@ picture {
   line-height: 1;
 }
 
-/* line 85, src/scss/_components/home/_main.scss */
+/* line 87, src/scss/_components/home/_main.scss */
 .h-main__badge > div p {
   position: relative;
   top: -1px;
@@ -3990,18 +3991,18 @@ picture {
   color: #464646;
 }
 
-/* line 91, src/scss/_components/home/_main.scss */
+/* line 93, src/scss/_components/home/_main.scss */
 .h-main__badge > div p span {
   color: #005adc;
 }
 
-/* line 98, src/scss/_components/home/_main.scss */
+/* line 100, src/scss/_components/home/_main.scss */
 .h-main__title {
   padding-bottom: 59px;
   text-align: center;
 }
 
-/* line 102, src/scss/_components/home/_main.scss */
+/* line 104, src/scss/_components/home/_main.scss */
 .h-main__title p {
   position: relative;
   left: 9px;
@@ -4009,14 +4010,14 @@ picture {
   line-height: 1;
 }
 
-/* line 110, src/scss/_components/home/_main.scss */
+/* line 112, src/scss/_components/home/_main.scss */
 .h-main__text {
   padding-bottom: 82px;
   text-align: center;
   line-height: 1.7;
 }
 
-/* line 116, src/scss/_components/home/_main.scss */
+/* line 118, src/scss/_components/home/_main.scss */
 .h-main__rating {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4034,13 +4035,13 @@ picture {
   padding-bottom: 112px;
 }
 
-/* line 127, src/scss/_components/home/_main.scss */
+/* line 129, src/scss/_components/home/_main.scss */
 .h-main__rating > div:nth-of-type(1) {
   width: 39px;
   height: 40px;
 }
 
-/* line 132, src/scss/_components/home/_main.scss */
+/* line 134, src/scss/_components/home/_main.scss */
 .h-main__rating > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4062,7 +4063,7 @@ picture {
   padding-left: 8px;
 }
 
-/* line 142, src/scss/_components/home/_main.scss */
+/* line 144, src/scss/_components/home/_main.scss */
 .h-main__rating > div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4070,20 +4071,20 @@ picture {
   display: flex;
 }
 
-/* line 145, src/scss/_components/home/_main.scss */
+/* line 147, src/scss/_components/home/_main.scss */
 .h-main__rating > div p svg {
   margin-left: 2px;
   margin-right: 2px;
 }
 
-/* line 151, src/scss/_components/home/_main.scss */
+/* line 153, src/scss/_components/home/_main.scss */
 .h-main__rating > div span {
   font-size: 15px;
   line-height: 1;
   color: #242424;
 }
 
-/* line 159, src/scss/_components/home/_main.scss */
+/* line 161, src/scss/_components/home/_main.scss */
 .h-main__scroll {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4096,26 +4097,26 @@ picture {
   padding-bottom: 57px;
 }
 
-/* line 168, src/scss/_components/home/_main.scss */
+/* line 170, src/scss/_components/home/_main.scss */
 .h-main__scroll > div:nth-of-type(1) {
   width: 27px;
   padding-top: 2px;
 }
 
-/* line 173, src/scss/_components/home/_main.scss */
+/* line 175, src/scss/_components/home/_main.scss */
 .h-main__scroll > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 27px);
   max-width: calc(100% - 27px);
 }
 
-/* line 178, src/scss/_components/home/_main.scss */
+/* line 180, src/scss/_components/home/_main.scss */
 .h-main__scroll > div p {
   font-size: 15px;
   color: #242424;
 }
 
-/* line 183, src/scss/_components/home/_main.scss */
+/* line 185, src/scss/_components/home/_main.scss */
 .h-main__scroll > div span {
   font-size: 14px;
   line-height: 1;
@@ -4357,6 +4358,18 @@ picture {
   color: #2d3136;
 }
 
+/* line 97, src/scss/_components/home/_validate.scss */
+.validate__image-0 svg {
+  max-width: 1125.329px;
+  height: 100%;
+}
+
+/* line 104, src/scss/_components/home/_validate.scss */
+.validate__image-1 svg {
+  max-width: 821px;
+  height: 100%;
+}
+
 /* line 3, src/scss/_components/home/_verification.scss */
 .verification {
   position: relative;
@@ -4382,28 +4395,24 @@ picture {
 }
 
 /* line 18, src/scss/_components/home/_verification.scss */
-.verification__wrapper-left img,
-.verification__wrapper-left svg, .verification__wrapper-right img,
-.verification__wrapper-right svg {
+.verification__wrapper-left svg, .verification__wrapper-right svg {
   position: relative;
   top: -105px;
   left: -16px;
-  display: block;
-  max-width: 100%;
-  height: auto;
+  max-width: 929.957px;
 }
 
-/* line 29, src/scss/_components/home/_verification.scss */
+/* line 26, src/scss/_components/home/_verification.scss */
 .verification__wrapper-left {
   overflow: hidden;
 }
 
-/* line 33, src/scss/_components/home/_verification.scss */
+/* line 30, src/scss/_components/home/_verification.scss */
 .verification__wrapper-right {
   padding-left: 15px;
 }
 
-/* line 38, src/scss/_components/home/_verification.scss */
+/* line 35, src/scss/_components/home/_verification.scss */
 .verification__title {
   padding-top: 192px;
   padding-left: 140px;
@@ -4413,14 +4422,14 @@ picture {
   color: #2d3136;
 }
 
-/* line 47, src/scss/_components/home/_verification.scss */
+/* line 44, src/scss/_components/home/_verification.scss */
 .verification__text {
   width: 100%;
   max-width: 388px;
   margin-left: 140px;
 }
 
-/* line 55, src/scss/_components/home/_verification.scss */
+/* line 52, src/scss/_components/home/_verification.scss */
 .verification__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4434,7 +4443,7 @@ picture {
   max-width: 812px;
 }
 
-/* line 62, src/scss/_components/home/_verification.scss */
+/* line 59, src/scss/_components/home/_verification.scss */
 .verification__block-row {
   position: relative;
   width: 100%;
@@ -4442,7 +4451,7 @@ picture {
   max-width: calc((100% - (16px * 2)) / 3);
 }
 
-/* line 68, src/scss/_components/home/_verification.scss */
+/* line 65, src/scss/_components/home/_verification.scss */
 .verification__block-row a:hover {
   -webkit-box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
           box-shadow: 0 7px 13px rgba(0, 32, 111, 0.1);
@@ -4453,17 +4462,17 @@ picture {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 74, src/scss/_components/home/_verification.scss */
+/* line 71, src/scss/_components/home/_verification.scss */
 .verification__block-row--first {
   padding-top: 292px;
 }
 
-/* line 78, src/scss/_components/home/_verification.scss */
+/* line 75, src/scss/_components/home/_verification.scss */
 .verification__block-row--1 {
   top: -60px;
 }
 
-/* line 82, src/scss/_components/home/_verification.scss */
+/* line 79, src/scss/_components/home/_verification.scss */
 .verification__block-row--last {
   top: -227px;
 }

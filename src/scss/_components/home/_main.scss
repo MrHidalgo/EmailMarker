@@ -24,21 +24,23 @@
     }
 
     &-left {
-      img,
       svg {
         position: relative;
         top: -9px;
         left: 17px;
+        max-width: 760.768px;
       }
     }
+
     &-right {
       display: flex;
       justify-content: flex-end;
 
-      img,
       svg {
         position: relative;
         top: -39px;
+        max-width: 644.177px;
+        height: 100%;
       }
     }
   }
