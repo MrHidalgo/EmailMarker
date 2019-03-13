@@ -17,6 +17,15 @@
     width: 100%;
     max-width: calc(100% / 4);
     min-height: 566px;
+    @include adaptive(991) {
+      max-width: calc(100% / 2);
+      min-height: 450px;
+    }
+    @include adaptive(575) {
+      max-width: 100%;
+      min-height: 0;
+      margin-bottom: 30px;
+    }
 
     &-0 {
       background-color: #f4f9fc;
@@ -65,10 +74,20 @@
 
     &-bottom {
       padding: 43px 36px 15px 35px;
+      @include adaptive(1199) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @include adaptive(575) {
+        padding-bottom: 43px;
+      }
     }
 
     &-wrapper {
       display: flex;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
 
     &-title {
@@ -77,6 +96,7 @@
       font-size: 27px;
       line-height: line-height-convert(39,27);
       color: #2d3136;
+      @include fluid(font-size, 320px, 1440px, 22px, 27px);
     }
   }
 }

@@ -4154,56 +4154,74 @@ picture {
   min-height: 566px;
 }
 
-/* line 21, src/scss/_components/home/_description.scss */
+@media screen and (max-width: 991px) {
+  /* line 13, src/scss/_components/home/_description.scss */
+  .description__block {
+    max-width: -webkit-calc(100% / 2);
+    max-width: calc(100% / 2);
+    min-height: 450px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 13, src/scss/_components/home/_description.scss */
+  .description__block {
+    max-width: 100%;
+    min-height: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 30, src/scss/_components/home/_description.scss */
 .description__block-0 {
   background-color: #f4f9fc;
   -webkit-border-radius: 3px 0 0 3px;
           border-radius: 3px 0 0 3px;
 }
 
-/* line 25, src/scss/_components/home/_description.scss */
+/* line 34, src/scss/_components/home/_description.scss */
 .description__block-0 .description__block-top {
   background-color: #635aff;
 }
 
-/* line 30, src/scss/_components/home/_description.scss */
+/* line 39, src/scss/_components/home/_description.scss */
 .description__block-1 {
   background-color: rgba(244, 249, 252, 0.6);
 }
 
-/* line 33, src/scss/_components/home/_description.scss */
+/* line 42, src/scss/_components/home/_description.scss */
 .description__block-1 .description__block-top {
   background-color: #6C63FF;
 }
 
-/* line 36, src/scss/_components/home/_description.scss */
+/* line 45, src/scss/_components/home/_description.scss */
 .description__block-1 .description__block-top svg {
   opacity: 0.5;
 }
 
-/* line 42, src/scss/_components/home/_description.scss */
+/* line 51, src/scss/_components/home/_description.scss */
 .description__block-2 {
   background-color: rgba(244, 249, 252, 0.3);
 }
 
-/* line 45, src/scss/_components/home/_description.scss */
+/* line 54, src/scss/_components/home/_description.scss */
 .description__block-2 .description__block-top {
   background-color: #766EFF;
 }
 
-/* line 50, src/scss/_components/home/_description.scss */
+/* line 59, src/scss/_components/home/_description.scss */
 .description__block-3 {
   background-color: rgba(244, 249, 252, 0.1);
   -webkit-border-radius: 0 3px 3px 0;
           border-radius: 0 3px 3px 0;
 }
 
-/* line 54, src/scss/_components/home/_description.scss */
+/* line 63, src/scss/_components/home/_description.scss */
 .description__block-3 .description__block-top {
   background-color: #827BFF;
 }
 
-/* line 59, src/scss/_components/home/_description.scss */
+/* line 68, src/scss/_components/home/_description.scss */
 .description__block-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4217,12 +4235,27 @@ picture {
   padding: 10px 10px 10px 35px;
 }
 
-/* line 66, src/scss/_components/home/_description.scss */
+/* line 75, src/scss/_components/home/_description.scss */
 .description__block-bottom {
   padding: 43px 36px 15px 35px;
 }
 
-/* line 70, src/scss/_components/home/_description.scss */
+@media screen and (max-width: 1199px) {
+  /* line 75, src/scss/_components/home/_description.scss */
+  .description__block-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 75, src/scss/_components/home/_description.scss */
+  .description__block-bottom {
+    padding-bottom: 43px;
+  }
+}
+
+/* line 86, src/scss/_components/home/_description.scss */
 .description__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4230,13 +4263,38 @@ picture {
   display: flex;
 }
 
-/* line 74, src/scss/_components/home/_description.scss */
+@media screen and (max-width: 991px) {
+  /* line 86, src/scss/_components/home/_description.scss */
+  .description__block-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 93, src/scss/_components/home/_description.scss */
 .description__block-title {
   padding-bottom: 43px;
   font-weight: bold;
   font-size: 27px;
   line-height: 1.44444;
   color: #2d3136;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 93, src/scss/_components/home/_description.scss */
+  .description__block-title {
+    font-size: -webkit-calc(22px + 5 * (100vw - 320px) / 1120);
+    font-size: calc(22px + 5 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 93, src/scss/_components/home/_description.scss */
+  .description__block-title {
+    font-size: 27px;
+  }
 }
 
 /* line 3, src/scss/_components/home/_validate.scss */
