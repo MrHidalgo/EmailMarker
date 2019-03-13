@@ -6,6 +6,9 @@
   bottom: 64px;
   right: 60px;
   width: 20px;
+  @include adaptive(767) {
+    display: none !important;
+  }
 
   @each $classMod, $iconH in
       ('fb', 19px),

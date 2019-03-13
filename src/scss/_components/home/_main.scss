@@ -1,11 +1,18 @@
 // SECTION homepage main :: START
 
 .h-main {
+  overflow: hidden;
   position: relative;
   padding-top: 64px;
+  @include adaptive(575) {
+    padding-top: 30px;
+  }
 
   .d-main__btn-wrapper {
     padding-bottom: 148px;
+    @include adaptive(767) {
+      padding-bottom: 50px;
+    }
   }
 
   &__bg {
@@ -16,6 +23,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+    @include adaptive(575) {
+      display: none;
+    }
 
     &-left,
     &-right {
@@ -29,6 +39,15 @@
         top: -9px;
         left: 17px;
         max-width: 760.768px;
+        @include adaptive(1919) {
+          left: -50px;
+        }
+        @include adaptive(1535) {
+          left: -100px;
+        }
+        @include adaptive(991) {
+          top: 120px;
+        }
       }
     }
 
@@ -41,6 +60,12 @@
         top: -39px;
         max-width: 644.177px;
         height: 100%;
+        @include adaptive(1919) {
+          right: -50px;
+        }
+        @include adaptive(1535) {
+          right: -100px;
+        }
       }
     }
   }
@@ -100,12 +125,16 @@
   &__title {
     padding-bottom: 59px;
     text-align: center;
+    @include fluid(font-size, 320px, 1600px, 32px, 70px);
 
     p {
       position: relative;
       left: 9px;
       display: inline-block;
       line-height: 1;
+      @include adaptive(767) {
+        left: 0;
+      }
     }
   }
 
@@ -113,6 +142,37 @@
     padding-bottom: 82px;
     text-align: center;
     line-height: 1.7;
+    @include adaptive(1599) {
+      width: 100%;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include adaptive(767) {
+      max-width: 320px;
+    }
+    @include adaptive(575) {
+      padding-bottom: 60px;
+    }
+  }
+
+  .d-main__btn-wrapper {
+    @include adaptive(1919) {
+      flex-direction: column;
+    }
+
+    .d-main__btn-info {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      max-width: 380px;
+      padding-right: 0;
+
+      img {
+        margin-top: 0;
+        transform: rotate(45deg);
+      }
+    }
   }
 
   &__rating {
@@ -124,6 +184,9 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 112px;
+    @include adaptive(767) {
+      padding-bottom: 50px;
+    }
 
     > div {
       &:nth-of-type(1) {
