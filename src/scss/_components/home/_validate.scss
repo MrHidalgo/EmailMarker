@@ -18,39 +18,64 @@
 
     &-0 {
       padding-bottom: 97px;
+      @include adaptive(1199) {
+        flex-direction: column;
+      }
+      @include adaptive(1199) {
+        padding-bottom: 50px;
+      }
 
       .validate__wrapper-left {
         width: 742px;
         padding-top: 297px;
         padding-left: 125px;
+        @include adaptive(1534) {
+          width: 500px;
+          padding-left: 15px;
+          padding-top: 250px;
+        }
+        @include adaptive(1199) {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 30px;
+        }
       }
 
       .validate__wrapper-right {
         width: 100%;
         max-width: calc(100% - 742px);
-
-        img {
-          display: block;
+        @include adaptive(1534) {
+          max-width: calc(100% - 500px);
+          padding-left: 15px;
+        }
+        @include adaptive(1199) {
           max-width: 100%;
-          height: auto;
+          padding-left: 0;
         }
       }
     }
 
     &-1 {
+      @include adaptive(1199) {
+        flex-direction: column-reverse;
+      }
       .validate__wrapper-left,
       .validate__wrapper-right {
         width: 50%;
+        @include adaptive(1199) {
+          width: 100%;
+        }
       }
 
       .validate__wrapper-left {
         padding-left: 51px;
         padding-right: 15px;
-
-        img {
-          display: block;
-          max-width: 100%;
-          height: auto;
+        @include adaptive(1365) {
+          padding-left: 0;
+        }
+        @include adaptive(1199) {
+          padding-left: 0;
+          padding-right: 0;
         }
       }
 
@@ -59,6 +84,10 @@
         flex-direction: column;
         padding-top: 46px;
         padding-left: 9px;
+        @include adaptive(1199) {
+          flex-wrap: wrap;
+         flex-direction: row;
+        }
       }
     }
   }
@@ -67,17 +96,28 @@
     width: 100%;
     max-width: 350px;
     padding-bottom: 105px;
+    @include adaptive(1199) {
+      max-width: 50%;
+      padding-right: 30px;
+    }
+    @include adaptive(575) {
+      max-width: 100%;
+      padding-right: 0;
+    }
 
     &:last-of-type {
       padding-bottom: 164px;
+      @include adaptive(1199) {
+        padding-bottom: 50px;
+      }
     }
 
     &-title {
       padding-bottom: 31px;
       font-weight: bold;
-      font-size: 27px;
       line-height: line-height-convert(37,27);
       color: #2d3136;
+      @include fluid(font-size, 320px, 1440px, 22px, 27px);
     }
 
     &-text {
@@ -87,14 +127,15 @@
   }
 
   &__title {
-    font-size: 45px;
     line-height: line-height-convert(65,45);
     color: #2d3136;
+    @include fluid(font-size, 320px, 1440px, 35px, 45px);
   }
 
   &__image {
     &-0 {
       svg {
+        width: 100%;
         max-width: 1125.329px;
         height: 100%;
       }
@@ -102,6 +143,7 @@
 
     &-1 {
       svg {
+        width: 100%;
         max-width: 821px;
         height: 100%;
       }
