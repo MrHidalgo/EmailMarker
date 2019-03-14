@@ -169,6 +169,89 @@ var initSwiper = function initSwiper() {
 };
 
 /**
+ * @name scrollAnimation
+ *
+ * @param elem
+ * @param el
+ *
+ * @description
+ */
+var scrollAnimation = function scrollAnimation(elem, el) {
+
+  $(elem).css({
+    'animation-name': $(el).data('animation-name') ? $(el).data('animation-name') + ", fadeIn" : 'slideInUp, fadeIn',
+    'animation-delay': $(el).data('animation-delay') || '0s',
+    'animation-duration': $(el).data('animation-duration') || '1s'
+  });
+};
+
+/**
+ * @name initViewPortChecker
+ *
+ * @param className {String}              - default is `viewport-hide-js`
+ * @param classNameToAdd {String}         - default is `viewport-show-js animated`
+ * @param offsetVal {Number}              - default is 100
+ * @param callbackFunctionName {Object}   - default is `scrollAnimation()`
+ *
+ * @description Detects if an element is in the viewport and adds a class to it
+ *
+ * You can to add some attribute:
+ * - <div data-vp-add-class="random"></div>                       > classToAdd
+ * - <div data-vp-remove-class="random"></div>                    > classToRemove
+ * - <div data-vp-remove-after-animation="true|false"></div>      > Removes added classes after CSS3 animation has completed
+ * - <div data-vp-offset="[100 OR 10%]"></div>                    > offset
+ * - <div data-vp-repeat="true"></div>                            > repeat
+ * - <div data-vp-scrollHorizontal="false"></div>                 > scrollHorizontal
+ */
+var initViewPortChecker = function initViewPortChecker() {
+  var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "viewport-hide-js";
+  var classNameToAdd = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "viewport-show-js animated";
+  var offsetVal = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 100;
+  var callbackFunctionName = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : scrollAnimation;
+
+
+  $("." + className).not(".full-visible").each(function (idx, el) {
+
+    $(el).viewportChecker({
+      classToAdd: classNameToAdd,
+      classToAddForFullView: 'full-visible',
+      classToRemove: className,
+      removeClassAfterAnimation: true,
+      offset: offsetVal,
+      repeat: false,
+      callbackFunction: function callbackFunction(elem, action) {
+
+        callbackFunctionName(elem, el);
+      }
+    });
+  });
+};
+
+var initViewPortCheckerAnimation = function initViewPortCheckerAnimation() {
+  var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "viewport-hide-js";
+  var classNameToAdd = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "viewport-show-js animated";
+  var offsetVal = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 100;
+  var callbackFunctionName = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : scrollAnimation;
+
+
+  $("." + className).not(".full-visible").each(function (idx, el) {
+
+    $(el).viewportChecker({
+      classToAdd: classNameToAdd,
+      classToAddForFullView: 'full-visible',
+      classToRemove: className,
+      removeClassAfterAnimation: false,
+      offset: offsetVal,
+      repeat: false,
+      callbackFunction: function callbackFunction(elem, action) {
+
+        callbackFunctionName();
+      }
+    });
+  });
+};
+
+/**
  * @name initWebFontLoader
  *
  * @description Loading fonts regardless of the source, then adds a standard set of events you may use to control the loading experience... for more details => https://github.com/typekit/fvd
@@ -219,9 +302,9 @@ $(window).on("scroll", function (ev) {
  * Animation variable
  */
 var _tl = new TimelineMax();
-var _tlLogo = new TimelineMax({
-  paused: true
-});
+var _tlLogo = new TimelineMax({ paused: true });
+var _tlWoman = new TimelineMax({ paused: true });
+var _tlMan = new TimelineMax({ paused: true });
 
 /**
  * @description Document DOM ready.
@@ -330,10 +413,41 @@ $(document).ready(function (ev) {
       _tl.set(".h-main__bg svg, .validate__image svg, .verification__image svg", {
         visibility: "visible"
       });
+      _tlWoman.set(".main-woman-cloud, .main-woman-flower, .main-woman-plane, #main-woman", {
+        transformOrigin: "center"
+      });
+      _tlMan.set(".main-man-flower, #main-man-email, .main-man-plane, #main-man", {
+        transformOrigin: "center"
+      });
+    };
+    var initVerificationAnimation = function initVerificationAnimation() {
+      console.log("initVerificationAnimation");
+    };
+    var initValidateAnimation0 = function initValidateAnimation0() {
+      console.log("initValidateAnimation0");
+    };
+    var initValidateAnimation1 = function initValidateAnimation1() {
+      console.log("initValidateAnimation1");
+    };
+    var initHMainWomanAnimation = function initHMainWomanAnimation() {
+      _tlWoman.fromTo('.main-woman-cloud-0', 1, { opacity: 0, x: '-400px', y: '30px', scale: 0 }, { opacity: 1, x: 0, scale: 1, ease: Power1.easeInOut }).fromTo('.main-woman-cloud-1', 0.75, { opacity: 0, x: '-200px', scale: 0 }, { opacity: 1, x: 0, scale: 1, ease: Power1.easeInOut }, '-=0.5').fromTo('.main-woman-flower-0, .main-woman-flower-1, .main-woman-flower-2', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.1').fromTo('#main-woman', 1, { opacity: 0, x: '-200px' }, { opacity: 1, x: 0, ease: Power1.easeOut }).fromTo('.main-woman-plane-0', 1, { opacity: 0, x: '-200', y: '200px' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.main-woman-plane-1', 1, { opacity: 0, x: '-150', y: '150' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.25').fromTo('.main-woman-plane-2', 1, { opacity: 0, x: '-100', y: '100' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.5');
+
+      _tlWoman.play();
+    };
+    var initHMainManAnimation = function initHMainManAnimation() {
+      _tlMan.fromTo('.main-man-flower-0', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('.main-man-flower-1', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.25').fromTo('#main-man-email', 0.75, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#main-man', 0.75, { opacity: 0, x: '200px' }, { opacity: 1, x: 0, ease: Power1.easeOut }).fromTo('.main-man-plane-0', 1, { opacity: 0, x: '200', y: '200px' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('.main-man-plane-1', 1, { opacity: 0, x: '150', y: '150' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.25');
+
+      _tlMan.play();
     };
 
     svgHackVisible();
+    initViewPortCheckerAnimation('animation-h-main-woman-js', 'animation-h-main-woman-start-js', '50%', initHMainWomanAnimation);
+    initViewPortCheckerAnimation('animation-h-main-man-js', 'animation-h-main-start-man-js', '50%', initHMainManAnimation);
+    // initViewPortCheckerAnimation('animation-validate-0-js', 'animation-validate-0-start-js', '50%', initValidateAnimation0);
+    // initViewPortCheckerAnimation('animation-validate-1-js', 'animation-validate-1-start-js', '50%', initValidateAnimation1);
+    // initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
   };
+
   /*
   * CALLBACK :: end
   * ============================================= */

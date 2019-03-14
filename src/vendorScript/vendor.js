@@ -9,5 +9,6 @@
 * - TweenMax;
 * - jquery-migrate;
 * - stellar;
+* - jQuery-viewport-checker;
 *
 * */

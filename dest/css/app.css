@@ -3874,7 +3874,6 @@ picture {
 
 /* line 3, src/scss/_components/home/_main.scss */
 .h-main {
-  overflow: hidden;
   position: relative;
   padding-top: 64px;
 }

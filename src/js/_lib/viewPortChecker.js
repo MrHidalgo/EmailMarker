@@ -62,3 +62,31 @@ const initViewPortChecker = (
   });
 
 };
+
+
+const initViewPortCheckerAnimation = (
+  className = "viewport-hide-js",
+  classNameToAdd = "viewport-show-js animated",
+  offsetVal = 100,
+  callbackFunctionName = scrollAnimation
+) => {
+
+  $("." + className).not(".full-visible").each(function(idx, el) {
+
+    $(el).viewportChecker({
+      classToAdd: classNameToAdd,
+      classToAddForFullView: 'full-visible',
+      classToRemove : className,
+      removeClassAfterAnimation: false,
+      offset: offsetVal,
+      repeat: false,
+      callbackFunction: function(elem, action) {
+
+        callbackFunctionName();
+
+      }
+    });
+
+  });
+
+};
