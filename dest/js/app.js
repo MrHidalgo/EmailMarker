@@ -305,6 +305,7 @@ var _tl = new TimelineMax();
 var _tlLogo = new TimelineMax({ paused: true });
 var _tlWoman = new TimelineMax({ paused: true });
 var _tlMan = new TimelineMax({ paused: true });
+var _tlValidateCard = new TimelineMax({ paused: true });
 
 /**
  * @description Document DOM ready.
@@ -410,13 +411,13 @@ $(document).ready(function (ev) {
 
   var initSVGAnimation = function initSVGAnimation() {
     var svgHackVisible = function svgHackVisible() {
-      _tl.set(".h-main__bg svg, .validate__image svg, .verification__image svg", {
-        visibility: "visible"
-      });
       _tlWoman.set(".main-woman-cloud, .main-woman-flower, .main-woman-plane, #main-woman", {
         transformOrigin: "center"
       });
       _tlMan.set(".main-man-flower, #main-man-email, .main-man-plane, #main-man", {
+        transformOrigin: "center"
+      });
+      _tlValidateCard.set("#validate-0-menu, #validate-0-num-1, #validate-0-num-2, #validate-0-num-3", {
         transformOrigin: "center"
       });
     };
@@ -424,18 +425,29 @@ $(document).ready(function (ev) {
       console.log("initVerificationAnimation");
     };
     var initValidateAnimation0 = function initValidateAnimation0() {
-      console.log("initValidateAnimation0");
+      _tl.set(".validate__image svg", {
+        visibility: "visible"
+      });
+      _tlValidateCard.fromTo('#validate-0-rect-bg, .validate-0-point-0, .validate-0-point-1', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('#validate-0-play, .validate-0-line, #validate-0-documentation', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.75').fromTo('#validate-0-menu', 1, { opacity: 0, y: '-100px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=1').fromTo('#validate-0-itegration', 1, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.25').fromTo('#validate-0-resultat', 1, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=1').fromTo('#validate-0-upload', 0.5, { opacity: 0, y: '20px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=1').fromTo('#validate-0-bar, #validate-0-filter', 0.75, { opacity: 0, y: '20px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-0-lists', 0.75, { opacity: 0, y: '50px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('#validate-0-upload-2', 0.75, { opacity: 0, y: '50px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-0-num-1', 0.75, { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-0-lists-2', 0.75, { opacity: 0, y: '50px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-0-num-2', 0.75, { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-0-download-list', 0.75, { opacity: 0, y: '50px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-0-num-3', 0.75, { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: Power1.easeInOut }, '-=0.5');
+
+      _tlValidateCard.play();
     };
     var initValidateAnimation1 = function initValidateAnimation1() {
       console.log("initValidateAnimation1");
     };
     var initHMainWomanAnimation = function initHMainWomanAnimation() {
+      _tl.set(".h-main__bg svg", {
+        visibility: "visible"
+      });
       _tlWoman.fromTo('.main-woman-cloud-0', 1, { opacity: 0, x: '-400px', y: '30px', scale: 0 }, { opacity: 1, x: 0, scale: 1, ease: Power1.easeInOut }).fromTo('.main-woman-cloud-1', 0.75, { opacity: 0, x: '-200px', scale: 0 }, { opacity: 1, x: 0, scale: 1, ease: Power1.easeInOut }, '-=0.5').fromTo('.main-woman-flower-0, .main-woman-flower-1, .main-woman-flower-2', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.1').fromTo('#main-woman', 1, { opacity: 0, x: '-200px' }, { opacity: 1, x: 0, ease: Power1.easeOut }).fromTo('.main-woman-plane-0', 1, { opacity: 0, x: '-200', y: '200px' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.main-woman-plane-1', 1, { opacity: 0, x: '-150', y: '150' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.25').fromTo('.main-woman-plane-2', 1, { opacity: 0, x: '-100', y: '100' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.5');
 
       _tlWoman.play();
     };
     var initHMainManAnimation = function initHMainManAnimation() {
-      _tlMan.fromTo('.main-man-flower-0', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('.main-man-flower-1', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.25').fromTo('#main-man-email', 0.75, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#main-man', 0.75, { opacity: 0, x: '200px' }, { opacity: 1, x: 0, ease: Power1.easeOut }).fromTo('.main-man-plane-0', 1, { opacity: 0, x: '200', y: '200px' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('.main-man-plane-1', 1, { opacity: 0, x: '150', y: '150' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.25');
+      _tl.set(".h-main__bg svg", {
+        visibility: "visible"
+      });
+      _tlMan.fromTo('.main-man-flower-0', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('.main-man-flower-1', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.25').fromTo('#main-man-email', 0.75, { opacity: 0, x: '200px', y: '50px' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#main-man', 0.75, { opacity: 0, x: '200px' }, { opacity: 1, x: 0, ease: Power1.easeOut }).fromTo('.main-man-plane-0', 1, { opacity: 0, x: '200', y: '200px' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('.main-man-plane-1', 1, { opacity: 0, x: '150', y: '150' }, { opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }, '-=0.25');
 
       _tlMan.play();
     };
@@ -443,7 +455,7 @@ $(document).ready(function (ev) {
     svgHackVisible();
     initViewPortCheckerAnimation('animation-h-main-woman-js', 'animation-h-main-woman-start-js', '50%', initHMainWomanAnimation);
     initViewPortCheckerAnimation('animation-h-main-man-js', 'animation-h-main-start-man-js', '50%', initHMainManAnimation);
-    // initViewPortCheckerAnimation('animation-validate-0-js', 'animation-validate-0-start-js', '50%', initValidateAnimation0);
+    initViewPortCheckerAnimation('animation-validate-0-js', 'animation-validate-0-start-js', '50%', initValidateAnimation0);
     // initViewPortCheckerAnimation('animation-validate-1-js', 'animation-validate-1-start-js', '50%', initValidateAnimation1);
     // initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
   };
