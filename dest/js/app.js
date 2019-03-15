@@ -307,6 +307,7 @@ var _tlWoman = new TimelineMax({ paused: true });
 var _tlMan = new TimelineMax({ paused: true });
 var _tlValidateCard = new TimelineMax({ paused: true });
 var _tlValidateDesc = new TimelineMax({ paused: true });
+var _tlVerification = new TimelineMax({ paused: true });
 
 /**
  * @description Document DOM ready.
@@ -421,12 +422,15 @@ $(document).ready(function (ev) {
       _tlValidateCard.set("#validate-0-menu, #validate-0-num-1, #validate-0-num-2, #validate-0-num-3", {
         transformOrigin: "center"
       });
-      _tlValidateDesc.set('', {
-        transformOrigin: "center"
-      });
     };
     var initVerificationAnimation = function initVerificationAnimation() {
-      console.log("initVerificationAnimation");
+      _tlVerification.set('.verification__image svg', {
+        visibility: "visible"
+      });
+
+      _tlVerification.fromTo('.verification-flower', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('.verification-cloud', 1, { opacity: 0, x: '-150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.verification-point', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=1').fromTo('#verification-graph-line', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.7').fromTo('#verification-rect-main, #verification-rect-gr', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.3').fromTo('#verification-graph-circle', 1.5, { opacity: 0, scale: 0, rotation: 360, transformOrigin: 'center' }, { opacity: 1, scale: 1, rotation: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('#verification-data', 0.75, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=1').fromTo('.verification-download-list-0', 1, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=1').fromTo('.verification-download-list-1', 1, { opacity: 0, x: '150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('#verification-man', 1, { opacity: 0, x: '-200px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=1').fromTo('#verification-man-card', 0.75, { opacity: 0, y: '-100px' }, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=1');
+
+      _tlVerification.play();
     };
     var initValidateAnimation0 = function initValidateAnimation0() {
       _tl.set(".validate__image-0 svg", {
@@ -442,7 +446,7 @@ $(document).ready(function (ev) {
         visibility: "visible"
       });
 
-      _tlValidateDesc.fromTo('.validate-1-flower-1', 0.45, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('.validate-1-flower-2', 0.9, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.1').fromTo('.validate-1-flower-3', 0.65, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-flower-4', 0.55, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.25').fromTo('.validate-1-circle', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=1').fromTo('.validate-1-table-1', 0.65, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-table-2', 0.65, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-table-3', 0.65, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-table-4', 0.65, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('#validate-1-pc', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.5').fromTo('.validate-1-block-1', 0.75, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-2', 0.75, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-3', 0.75, { opacity: 0, x: '-150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-4', 0.75, { opacity: 0, x: '150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-5', 0.75, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-6', 0.75, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('#validate-1-man', 1, { opacity: 0, x: '-150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-1-woman', 1, { opacity: 0, x: '150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.5');
+      _tlValidateDesc.fromTo('.validate-1-flower-1', 0.45, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }).fromTo('.validate-1-flower-2', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.1').fromTo('.validate-1-flower-3', 0.45, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-flower-4', 0.75, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.25').fromTo('.validate-1-circle', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=1').fromTo('.validate-1-table-1', 0.35, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-table-2', 0.35, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-table-3', 0.35, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('.validate-1-table-4', 0.35, { opacity: 0, height: 0 }, { opacity: 1, height: 'auto', ease: Power1.easeInOut }, '-=0.3').fromTo('#validate-1-pc', 1, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut }, '-=0.5').fromTo('.validate-1-block-1', 0.75, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-2', 0.75, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-3', 0.75, { opacity: 0, x: '-150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-4', 0.75, { opacity: 0, x: '150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-5', 0.75, { opacity: 0, x: '-100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('.validate-1-block-6', 0.75, { opacity: 0, x: '100px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75').fromTo('#validate-1-man', 1, { opacity: 0, x: '-150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.5').fromTo('#validate-1-woman', 1, { opacity: 0, x: '150px' }, { opacity: 1, x: 0, ease: Power1.easeInOut }, '-=0.75');
 
       _tlValidateDesc.play();
     };
@@ -468,7 +472,7 @@ $(document).ready(function (ev) {
     initViewPortCheckerAnimation('animation-h-main-man-js', 'animation-h-main-start-man-js', '50%', initHMainManAnimation);
     initViewPortCheckerAnimation('animation-validate-0-js', 'animation-validate-0-start-js', '50%', initValidateAnimation0);
     initViewPortCheckerAnimation('animation-validate-1-js', 'animation-validate-1-start-js', '50%', initValidateAnimation1);
-    // initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
+    initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
   };
 
   /*
