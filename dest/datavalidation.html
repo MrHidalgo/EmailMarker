@@ -136,7 +136,7 @@
         <div class="c-grid">
           <div class="table__wrapper">
             <div class="table__block">
-              <div class="table__block-head">
+              <div class="table__block-head" table-sticky-head-js>
                 <div class="table__block-tr">
                   <div class="table__block-th"></div>
                   <div class="table__block-th">
@@ -146,13 +146,20 @@
                     <p>Datavalidation</p>
                   </div>
                 </div>
-              </div>
-              <div class="table__block-body">
                 <div class="table__block-tr table__block-tr--first">
                   <div class="table__block-td"><span>Price per 10000 email verifications</span></div>
                   <div class="table__block-td"><span>$ 21</span></div>
                   <div class="table__block-td"><span>$ 50</span></div>
                 </div>
+              </div>
+              <div class="table__block-body">
+                <!--.table__block-tr.table__block-tr--first-->
+                <!--  .table__block-td-->
+                <!--    span!= "Price per 10000 email verifications"-->
+                <!--  .table__block-td-->
+                <!--    span!= "$ 21"-->
+                <!--  .table__block-td-->
+                <!--    span!= "$ 50"-->
                 <div class="table__block-tr">
                   <div class="table__block-td">
                     <p>Email Bounce Detection</p>

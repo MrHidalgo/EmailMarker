@@ -475,6 +475,12 @@ $(document).ready(function (ev) {
     initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
   };
 
+  var initStickyElem = function initStickyElem() {
+    $("[table-sticky-head-js]").stick_in_parent({
+      offset_top: 76
+    });
+  };
+
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -501,6 +507,7 @@ $(document).ready(function (ev) {
     initFollow();
     initLogoAnimation();
     initSVGAnimation();
+    initStickyElem();
   };
   initJquery();
 });

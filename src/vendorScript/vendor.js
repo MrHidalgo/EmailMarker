@@ -10,5 +10,6 @@
 * - jquery-migrate;
 * - stellar;
 * - jQuery-viewport-checker;
+* - sticky-kit;
 *
 * */

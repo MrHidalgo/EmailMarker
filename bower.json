@@ -36,6 +36,7 @@
     "jquery": "^3.3.1",
     "swiper": "^4.5.0",
     "jquery.stellar": "^0.6.2",
-    "jQuery-viewport-checker": "^1.8.8"
+    "jQuery-viewport-checker": "^1.8.8",
+    "sticky-kit": "^1.1.2"
   }
 }

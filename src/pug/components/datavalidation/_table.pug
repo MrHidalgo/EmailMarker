@@ -6,7 +6,7 @@ section#table.table
     .table__wrapper
 
       .table__block
-        .table__block-head
+        .table__block-head(table-sticky-head-js)
           .table__block-tr
             .table__block-th
             .table__block-th
@@ -14,7 +14,6 @@ section#table.table
             .table__block-th
               p!= "Datavalidation"
 
-        .table__block-body
           .table__block-tr.table__block-tr--first
             .table__block-td
               span!= "Price per 10000 email verifications"
@@ -22,6 +21,15 @@ section#table.table
               span!= "$ 21"
             .table__block-td
               span!= "$ 50"
+
+        .table__block-body
+          //.table__block-tr.table__block-tr--first
+          //  .table__block-td
+          //    span!= "Price per 10000 email verifications"
+          //  .table__block-td
+          //    span!= "$ 21"
+          //  .table__block-td
+          //    span!= "$ 50"
 
           .table__block-tr
             .table__block-td
