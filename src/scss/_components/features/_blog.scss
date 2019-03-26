@@ -137,20 +137,52 @@
   }
 
   &__more {
+    overflow: hidden;
     display: flex;
     align-items: center;
     padding-bottom: 20px;
 
+    &:hover {
+      span {
+        &:before {
+          transform: translateX(0);
+          @include transition(transform 0.5s);
+        }
+      }
+      .icon-arrow-right-0 {
+        transform: translateX(100%);
+        @include transition(transform 0.5s);
+      }
+    }
+
     span {
+      position: relative;
       padding-right: 16px;
       @extend %fontEina04Bold;
       font-size: 15px;
       line-height: line-height-convert(31,15);
       color: #242424;
+      @include adaptive(374) {
+        font-size: 14px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 16px);
+        height: 2px;
+        border-radius: 2px;
+        background-color: #242424;
+        transform: translateX(-110%);
+        @include transition(transform 0.5s);
+      }
     }
 
     .icon-font {
       color: #242424;
+      @include transition(transform 0.5s);
     }
   }
 }

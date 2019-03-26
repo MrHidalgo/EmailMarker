@@ -167,7 +167,7 @@
     max-width: 812px;
     height: 495px;
     border-radius: 3px;
-    background: linear-gradient(#fff 0%, #f4f9fc 100%);
+    background: linear-gradient(#f4f9fc 0%, #fff 100%);
     box-shadow: 0px -13px 11px rgba(0, 32, 111, 0.06);
     @include adaptive(767) {
       height: 400px;
