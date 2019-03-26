@@ -3875,7 +3875,7 @@ picture {
 /* line 3, src/scss/_components/home/_main.scss */
 .h-main {
   position: relative;
-  padding-top: 64px;
+  padding-top: 44px;
 }
 
 @media screen and (max-width: 575px) {
@@ -3885,19 +3885,19 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/home/_main.scss */
+/* line 10, src/scss/_components/home/_main.scss */
 .h-main .d-main__btn-wrapper {
   padding-bottom: 148px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/home/_main.scss */
+  /* line 10, src/scss/_components/home/_main.scss */
   .h-main .d-main__btn-wrapper {
     padding-bottom: 50px;
   }
 }
 
-/* line 18, src/scss/_components/home/_main.scss */
+/* line 17, src/scss/_components/home/_main.scss */
 .h-main__bg {
   z-index: -1;
   position: absolute;
@@ -3912,15 +3912,16 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 18, src/scss/_components/home/_main.scss */
+  /* line 17, src/scss/_components/home/_main.scss */
   .h-main__bg {
     display: none;
   }
 }
 
-/* line 30, src/scss/_components/home/_main.scss */
+/* line 29, src/scss/_components/home/_main.scss */
 .h-main__bg-left, .h-main__bg-right {
   width: 50%;
+  height: 100%;
   min-height: 100%;
 }
 
@@ -3929,6 +3930,7 @@ picture {
   position: relative;
   top: -9px;
   left: 17px;
+  width: 100%;
   max-width: 760.768px;
   height: 100%;
 }
@@ -3954,7 +3956,7 @@ picture {
   }
 }
 
-/* line 55, src/scss/_components/home/_main.scss */
+/* line 56, src/scss/_components/home/_main.scss */
 .h-main__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3966,29 +3968,30 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 59, src/scss/_components/home/_main.scss */
+/* line 60, src/scss/_components/home/_main.scss */
 .h-main__bg-right svg {
   position: relative;
   top: -39px;
+  width: 100%;
   max-width: 644.177px;
   height: 100%;
 }
 
 @media screen and (max-width: 1919px) {
-  /* line 59, src/scss/_components/home/_main.scss */
+  /* line 60, src/scss/_components/home/_main.scss */
   .h-main__bg-right svg {
     right: -50px;
   }
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 59, src/scss/_components/home/_main.scss */
+  /* line 60, src/scss/_components/home/_main.scss */
   .h-main__bg-right svg {
     right: -100px;
   }
 }
 
-/* line 74, src/scss/_components/home/_main.scss */
+/* line 76, src/scss/_components/home/_main.scss */
 .h-main__badge {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4006,7 +4009,7 @@ picture {
   padding-bottom: 65px;
 }
 
-/* line 85, src/scss/_components/home/_main.scss */
+/* line 87, src/scss/_components/home/_main.scss */
 .h-main__badge > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4029,7 +4032,7 @@ picture {
           background-size: contain;
 }
 
-/* line 97, src/scss/_components/home/_main.scss */
+/* line 99, src/scss/_components/home/_main.scss */
 .h-main__badge > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 48px);
@@ -4037,7 +4040,7 @@ picture {
   padding-left: 4px;
 }
 
-/* line 103, src/scss/_components/home/_main.scss */
+/* line 105, src/scss/_components/home/_main.scss */
 .h-main__badge > div i {
   position: relative;
   top: 1px;
@@ -4047,7 +4050,7 @@ picture {
   line-height: 1;
 }
 
-/* line 113, src/scss/_components/home/_main.scss */
+/* line 115, src/scss/_components/home/_main.scss */
 .h-main__badge > div p {
   position: relative;
   top: -1px;
@@ -4055,12 +4058,12 @@ picture {
   color: #464646;
 }
 
-/* line 119, src/scss/_components/home/_main.scss */
+/* line 121, src/scss/_components/home/_main.scss */
 .h-main__badge > div p span {
   color: #005adc;
 }
 
-/* line 126, src/scss/_components/home/_main.scss */
+/* line 128, src/scss/_components/home/_main.scss */
 .h-main__title {
   padding-bottom: 59px;
   text-align: center;
@@ -4068,7 +4071,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 126, src/scss/_components/home/_main.scss */
+  /* line 128, src/scss/_components/home/_main.scss */
   .h-main__title {
     font-size: -webkit-calc(32px + 38 * (100vw - 320px) / 1280);
     font-size: calc(32px + 38 * (100vw - 320px) / 1280);
@@ -4076,13 +4079,13 @@ picture {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 126, src/scss/_components/home/_main.scss */
+  /* line 128, src/scss/_components/home/_main.scss */
   .h-main__title {
     font-size: 70px;
   }
 }
 
-/* line 131, src/scss/_components/home/_main.scss */
+/* line 133, src/scss/_components/home/_main.scss */
 .h-main__title p {
   position: relative;
   left: 9px;
@@ -4091,13 +4094,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 131, src/scss/_components/home/_main.scss */
+  /* line 133, src/scss/_components/home/_main.scss */
   .h-main__title p {
     left: 0;
   }
 }
 
-/* line 142, src/scss/_components/home/_main.scss */
+/* line 144, src/scss/_components/home/_main.scss */
 .h-main__text {
   padding-bottom: 82px;
   text-align: center;
@@ -4105,7 +4108,7 @@ picture {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 142, src/scss/_components/home/_main.scss */
+  /* line 144, src/scss/_components/home/_main.scss */
   .h-main__text {
     width: 100%;
     max-width: 550px;
@@ -4115,21 +4118,21 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 142, src/scss/_components/home/_main.scss */
+  /* line 144, src/scss/_components/home/_main.scss */
   .h-main__text {
     max-width: 320px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 142, src/scss/_components/home/_main.scss */
+  /* line 144, src/scss/_components/home/_main.scss */
   .h-main__text {
     padding-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 1919px) {
-  /* line 160, src/scss/_components/home/_main.scss */
+  /* line 162, src/scss/_components/home/_main.scss */
   .h-main .d-main__btn-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4139,7 +4142,7 @@ picture {
   }
 }
 
-/* line 165, src/scss/_components/home/_main.scss */
+/* line 167, src/scss/_components/home/_main.scss */
 .h-main .d-main__btn-wrapper .d-main__btn-info {
   position: static;
   display: -webkit-box;
@@ -4155,7 +4158,7 @@ picture {
   padding-right: 0;
 }
 
-/* line 172, src/scss/_components/home/_main.scss */
+/* line 174, src/scss/_components/home/_main.scss */
 .h-main .d-main__btn-wrapper .d-main__btn-info img {
   margin-top: 0;
   -webkit-transform: rotate(45deg);
@@ -4163,7 +4166,7 @@ picture {
           transform: rotate(45deg);
 }
 
-/* line 179, src/scss/_components/home/_main.scss */
+/* line 181, src/scss/_components/home/_main.scss */
 .h-main__rating {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4182,19 +4185,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 179, src/scss/_components/home/_main.scss */
+  /* line 181, src/scss/_components/home/_main.scss */
   .h-main__rating {
     padding-bottom: 50px;
   }
 }
 
-/* line 193, src/scss/_components/home/_main.scss */
+/* line 195, src/scss/_components/home/_main.scss */
 .h-main__rating > div:nth-of-type(1) {
   width: 39px;
   height: 40px;
 }
 
-/* line 198, src/scss/_components/home/_main.scss */
+/* line 200, src/scss/_components/home/_main.scss */
 .h-main__rating > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4216,7 +4219,7 @@ picture {
   padding-left: 8px;
 }
 
-/* line 208, src/scss/_components/home/_main.scss */
+/* line 210, src/scss/_components/home/_main.scss */
 .h-main__rating > div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4224,20 +4227,20 @@ picture {
   display: flex;
 }
 
-/* line 211, src/scss/_components/home/_main.scss */
+/* line 213, src/scss/_components/home/_main.scss */
 .h-main__rating > div p svg {
   margin-left: 2px;
   margin-right: 2px;
 }
 
-/* line 217, src/scss/_components/home/_main.scss */
+/* line 219, src/scss/_components/home/_main.scss */
 .h-main__rating > div span {
   font-size: 15px;
   line-height: 1;
   color: #242424;
 }
 
-/* line 225, src/scss/_components/home/_main.scss */
+/* line 227, src/scss/_components/home/_main.scss */
 .h-main__scroll {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4250,26 +4253,26 @@ picture {
   padding-bottom: 57px;
 }
 
-/* line 234, src/scss/_components/home/_main.scss */
+/* line 236, src/scss/_components/home/_main.scss */
 .h-main__scroll > div:nth-of-type(1) {
   width: 27px;
   padding-top: 2px;
 }
 
-/* line 239, src/scss/_components/home/_main.scss */
+/* line 241, src/scss/_components/home/_main.scss */
 .h-main__scroll > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 27px);
   max-width: calc(100% - 27px);
 }
 
-/* line 244, src/scss/_components/home/_main.scss */
+/* line 246, src/scss/_components/home/_main.scss */
 .h-main__scroll > div p {
   font-size: 15px;
   color: #242424;
 }
 
-/* line 249, src/scss/_components/home/_main.scss */
+/* line 251, src/scss/_components/home/_main.scss */
 .h-main__scroll > div span {
   font-size: 14px;
   line-height: 1;

@@ -1,9 +1,8 @@
 // SECTION homepage main :: START
 
 .h-main {
-  //overflow: hidden;
   position: relative;
-  padding-top: 64px;
+  padding-top: 44px;
   @include adaptive(575) {
     padding-top: 30px;
   }
@@ -30,6 +29,7 @@
     &-left,
     &-right {
       width: 50%;
+      height: 100%;
       min-height: 100%;
     }
 
@@ -38,6 +38,7 @@
         position: relative;
         top: -9px;
         left: 17px;
+        width: 100%;
         max-width: 760.768px;
         height: 100%;
         @include adaptive(1919) {
@@ -59,6 +60,7 @@
       svg {
         position: relative;
         top: -39px;
+        width: 100%;
         max-width: 644.177px;
         height: 100%;
         @include adaptive(1919) {

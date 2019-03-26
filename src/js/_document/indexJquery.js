@@ -164,8 +164,7 @@ $(document).ready((ev) => {
         });
 
       _tlValidateCard
-        .fromTo('#validate-0-rect-bg, .validate-0-point-0, .validate-0-point-1', 0.55, {opacity: 0}, {opacity: 1, ease: Power1.easeInOut})
-        .fromTo('#validate-0-play, .validate-0-line, #validate-0-documentation', 0.55, {opacity: 0}, {opacity: 1, ease: Power1.easeInOut}, '-=0.25')
+        .fromTo('#validate-0-rect-bg, .validate-0-point-0, .validate-0-point-1, #validate-0-play, .validate-0-line, #validate-0-documentation', 0.75, {opacity: 0}, {opacity: 1, ease: Power1.easeInOut})
         .fromTo('#validate-0-menu', 0.45, {opacity: 0, y:'-100px'}, {opacity: 1, y:0, ease: Power1.easeInOut}, '-=0.35')
         .fromTo('#validate-0-itegration', 0.25, {opacity: 0, x:'-100px'}, {opacity: 1, x:0, ease: Power1.easeInOut}, '-=0.25')
         .fromTo('#validate-0-resultat', 0.25, {opacity: 0, x:'100px'}, {opacity: 1, x:0, ease: Power1.easeInOut}, '-=1')
@@ -211,7 +210,7 @@ $(document).ready((ev) => {
     };
     const initHMainWomanAnimation = () => {
       _tl.set(
-        ".h-main__bg svg", {
+        ".h-main__bg .h-main__bg-left svg", {
           visibility: "visible"
         });
       _tlWoman
@@ -227,9 +226,10 @@ $(document).ready((ev) => {
     };
     const initHMainManAnimation = () => {
       _tl.set(
-        ".h-main__bg svg", {
+        ".h-main__bg .h-main__bg-right svg", {
           visibility: "visible"
         });
+
       _tlMan
         .fromTo('.main-man-flower-0', 0.75, {opacity: 0}, {opacity: 1, ease: Power1.easeInOut})
         .fromTo('.main-man-flower-1', 0.55, {opacity: 0}, {opacity: 1, ease: Power1.easeInOut}, '-=0.35')
@@ -242,13 +242,20 @@ $(document).ready((ev) => {
     };
 
     svgHackVisible();
-    initViewPortCheckerAnimation('animation-h-main-woman-js', 'animation-h-main-woman-start-js', '50%', initHMainWomanAnimation);
-    initViewPortCheckerAnimation('animation-h-main-man-js', 'animation-h-main-start-man-js', '50%', initHMainManAnimation);
-    initViewPortCheckerAnimation('animation-validate-0-js', 'animation-validate-0-start-js', '50%', initValidateAnimation0);
-    initViewPortCheckerAnimation('animation-validate-1-js', 'animation-validate-1-start-js', '50%', initValidateAnimation1);
-    initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
+
+    setTimeout(() => {
+      initViewPortCheckerAnimation('animation-h-main-woman-js', 'animation-h-main-woman-start-js', '50%', initHMainWomanAnimation);
+      initViewPortCheckerAnimation('animation-h-main-man-js', 'animation-h-main-start-man-js', '50%', initHMainManAnimation);
+      initViewPortCheckerAnimation('animation-validate-0-js', 'animation-validate-0-start-js', '50%', initValidateAnimation0);
+      initViewPortCheckerAnimation('animation-validate-1-js', 'animation-validate-1-start-js', '50%', initValidateAnimation1);
+      initViewPortCheckerAnimation('animation-verification-js', 'animation-verification-start-js', '50%', initVerificationAnimation);
+    }, 100);
   };
 
+
+  /**
+   *
+   */
   const initStickyElem = () => {
     $("[table-sticky-head-js]").stick_in_parent({
       offset_top: 76
