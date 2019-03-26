@@ -9411,6 +9411,7 @@ picture {
 
 /* line 288, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn {
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9437,32 +9438,106 @@ picture {
   }
 }
 
-/* line 293, src/scss/_components/integrations/_main.scss */
+/* line 294, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn:hover {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 /* line 298, src/scss/_components/integrations/_main.scss */
-.i-main__block-btn > div:nth-of-type(1) {
-  width: 54px;
+.i-main__block-btn:hover > div:nth-of-type(1) {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 302, src/scss/_components/integrations/_main.scss */
-.i-main__block-btn > div:nth-of-type(2) {
-  width: 100%;
-  max-width: -webkit-calc(100% - 54px);
-  max-width: calc(100% - 54px);
+.i-main__block-btn:hover > div:nth-of-type(2) {
+  -webkit-transform: translateX(-54px);
+      -ms-transform: translateX(-54px);
+          transform: translateX(-54px);
+  padding-left: 15px;
+  -webkit-transition: padding-left 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: padding-left 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 307, src/scss/_components/integrations/_main.scss */
+.i-main__block-btn:hover > div:nth-of-type(2) .icon-plus {
+  -webkit-transform: translateY(-50%) translateX(150%);
+      -ms-transform: translateY(-50%) translateX(150%);
+          transform: translateY(-50%) translateX(150%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 316, src/scss/_components/integrations/_main.scss */
+.i-main__block-btn > div:nth-of-type(1) {
+  width: 54px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 321, src/scss/_components/integrations/_main.scss */
+.i-main__block-btn > div:nth-of-type(2) {
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc(100% - 54px);
+  max-width: calc(100% - 54px);
+  -webkit-transition: padding-left 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: padding-left 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 327, src/scss/_components/integrations/_main.scss */
+.i-main__block-btn > div:nth-of-type(2) .icon-plus {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%) translateX(200%);
+      -ms-transform: translateY(-50%) translateX(200%);
+          transform: translateY(-50%) translateX(200%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 337, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div .icon-plus {
+  position: relative;
+  display: block;
   color: #04C7FF;
   font-size: 25px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 307, src/scss/_components/integrations/_main.scss */
+  /* line 337, src/scss/_components/integrations/_main.scss */
   .i-main__block-btn > div .icon-plus {
     font-size: -webkit-calc(25px + 7 * (100vw - 320px) / 448);
     font-size: calc(25px + 7 * (100vw - 320px) / 448);
@@ -9470,13 +9545,13 @@ picture {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 307, src/scss/_components/integrations/_main.scss */
+  /* line 337, src/scss/_components/integrations/_main.scss */
   .i-main__block-btn > div .icon-plus {
     font-size: 32px;
   }
 }
 
-/* line 312, src/scss/_components/integrations/_main.scss */
+/* line 346, src/scss/_components/integrations/_main.scss */
 .i-main__block-btn > div span {
   font-weight: bold;
   line-height: 1.2;
@@ -9485,7 +9560,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 312, src/scss/_components/integrations/_main.scss */
+  /* line 346, src/scss/_components/integrations/_main.scss */
   .i-main__block-btn > div span {
     font-size: -webkit-calc(20px + 5 * (100vw - 320px) / 448);
     font-size: calc(20px + 5 * (100vw - 320px) / 448);
@@ -9493,7 +9568,7 @@ picture {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 312, src/scss/_components/integrations/_main.scss */
+  /* line 346, src/scss/_components/integrations/_main.scss */
   .i-main__block-btn > div span {
     font-size: 25px;
   }
