@@ -13,13 +13,13 @@ PageList:
   ready: 95
 - file: pricing.html
   titleName: Pricing
-  ready: 90
+  ready: 95
 - file: integrations.html
   titleName: Integrations
   ready: 95
 - file: datavalidation.html
   titleName: Datavalidation
-  ready: 90
+  ready: 95
 
 - file:
   titleName: DASHBOARD

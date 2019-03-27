@@ -12,6 +12,15 @@
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 0 0 21px rgba(0, 32, 111, 0.06);
+  @include adaptive(575) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-height: 166px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
   &:hover {
     .cookie__right {
@@ -26,6 +35,9 @@
     padding-top: 21px;
     padding-bottom: 21px;
     width: 140px;
+    @include adaptive(374) {
+      display: none;
+    }
   }
 
   &__middle {
@@ -34,6 +46,10 @@
     width: 100%;
     max-width: calc(100% - (140px + 70px));
     padding: 21px 32px 21px 0;
+    @include adaptive(374) {
+      max-width: calc(100% - 70px);
+      padding-left: 32px;
+    }
 
     p {
       font-size: 14px;

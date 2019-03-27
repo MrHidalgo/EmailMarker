@@ -2966,7 +2966,22 @@ picture {
           box-shadow: 0 0 21px rgba(0, 32, 111, 0.06);
 }
 
-/* line 17, src/scss/_components/_cookie.scss */
+@media screen and (max-width: 575px) {
+  /* line 3, src/scss/_components/_cookie.scss */
+  .cookie {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-height: 166px;
+    -webkit-border-bottom-left-radius: 0;
+            border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+            border-bottom-right-radius: 0;
+  }
+}
+
+/* line 26, src/scss/_components/_cookie.scss */
 .cookie:hover .cookie__right {
   background-color: rgba(108, 99, 255, 0.95);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2974,7 +2989,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 23, src/scss/_components/_cookie.scss */
+/* line 32, src/scss/_components/_cookie.scss */
 .cookie__left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2989,7 +3004,14 @@ picture {
   width: 140px;
 }
 
-/* line 31, src/scss/_components/_cookie.scss */
+@media screen and (max-width: 374px) {
+  /* line 32, src/scss/_components/_cookie.scss */
+  .cookie__left {
+    display: none;
+  }
+}
+
+/* line 43, src/scss/_components/_cookie.scss */
 .cookie__middle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3005,14 +3027,23 @@ picture {
   padding: 21px 32px 21px 0;
 }
 
-/* line 38, src/scss/_components/_cookie.scss */
+@media screen and (max-width: 374px) {
+  /* line 43, src/scss/_components/_cookie.scss */
+  .cookie__middle {
+    max-width: -webkit-calc(100% - 70px);
+    max-width: calc(100% - 70px);
+    padding-left: 32px;
+  }
+}
+
+/* line 54, src/scss/_components/_cookie.scss */
 .cookie__middle p {
   font-size: 14px;
   color: #818992;
   line-height: 1.57143;
 }
 
-/* line 45, src/scss/_components/_cookie.scss */
+/* line 61, src/scss/_components/_cookie.scss */
 .cookie__right {
   cursor: pointer;
   display: -webkit-box;
@@ -3034,7 +3065,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 54, src/scss/_components/_cookie.scss */
+/* line 70, src/scss/_components/_cookie.scss */
 .cookie__right p {
   font-family: "SFProDisplay", sans-serif;
   font-size: 17px;
