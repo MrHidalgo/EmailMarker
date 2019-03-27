@@ -20,7 +20,7 @@ section#questions.questions
       .questions__slider-content
         .questions__slider-content--left
           mixin swiperContent()
-            each val, idx in [1,2,3,4]
+            each val, idx in [1,2,3,4,5,6,7,8,9]
               .swiper-slide
                   .questions__slide
                     .questions__slide-top
@@ -35,20 +35,20 @@ section#questions.questions
                         p!= "We secure data transmission through a 256-bit SSL protocol. Your data is encrypted and stored under the rules of our privacy policy."
 
 
-          +swiper('swiper-container-questions', 'swiperContent', false, false, true)
+          +swiper('swiper-container-questions', 'swiperContent', true, false, false)
 
-        .questions__slider-content--right
-          each val1, idx1 in [1,2,3]
-            .questions__slide(class!= "questions__slide-" + idx1)
-              .questions__slide-top
-                img(
-                  src="./img/img-questions-slide-" + ((idx1 % 2 === 0) ? 0 : 1) + ".png"
-                  srcset="./img/img-questions-slide-" + ((idx1 % 2 === 0) ? 0 : 1) + "@2x.png 2x"
-                  alt="" title=""
-                )
-              .questions__slide-bottom
-                p.questions__slide-title!= "Maritza Parra"
-                .questions__slide-text
-                  p!= "We secure data transmission through a 256-bit SSL protocol. Your data is encrypted and stored under the rules of our privacy policy."
+        //.questions__slider-content--right
+        //  each val1, idx1 in [1,2,3]
+        //    .questions__slide(class!= "questions__slide-" + idx1)
+        //      .questions__slide-top
+        //        img(
+        //          src="./img/img-questions-slide-" + ((idx1 % 2 === 0) ? 0 : 1) + ".png"
+        //          srcset="./img/img-questions-slide-" + ((idx1 % 2 === 0) ? 0 : 1) + "@2x.png 2x"
+        //          alt="" title=""
+        //        )
+        //      .questions__slide-bottom
+        //        p.questions__slide-title!= "Maritza Parra"
+        //        .questions__slide-text
+        //          p!= "We secure data transmission through a 256-bit SSL protocol. Your data is encrypted and stored under the rules of our privacy policy."
 
 // SECTION questions :: END

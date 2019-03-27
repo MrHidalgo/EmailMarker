@@ -2,4 +2,34 @@
   width: 100%;
   max-width: 500px;
   min-height: 484px;
+
+  &-questions {
+    max-width: 100%;
+    min-height: 0;
+    @include adaptive(575) {
+      padding-bottom: 50px;
+    }
+
+    .swiper {
+      &-pagination {
+        display: none;
+        @include adaptive(575) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 0;
+
+          &-bullet {
+            width: 12px;
+            height: 12px;
+            margin: 0 6px !important;
+
+            &-active {
+              background-color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
 }

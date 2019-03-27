@@ -155,16 +155,31 @@ var initSwiper = function initSwiper() {
     normalizeSlideIndex: true,
     grabCursor: true,
     freeMode: false,
-    slidesPerView: 1,
-    spaceBetween: 8,
+    slidesPerView: 4,
+    spaceBetween: 16,
     navigation: {
       prevEl: '.questions__slider-btn--prev',
       nextEl: '.questions__slider-btn--next'
     },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: true
+    breakpoints: {
+      1439: {
+        slidesPerView: 3
+      },
+      991: {
+        slidesPerView: 2
+      },
+      767: {
+        slidesPerView: 1
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
     }
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    //   draggable: true
+    // }
   });
 };
 

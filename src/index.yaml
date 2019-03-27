@@ -7,16 +7,16 @@ PageList:
 
 - file: index.html
   titleName: Home
-  ready: 90
+  ready: 95
 - file: features.html
   titleName: Features
-  ready: 90
+  ready: 95
 - file: pricing.html
   titleName: Pricing
   ready: 90
 - file: integrations.html
   titleName: Integrations
-  ready: 90
+  ready: 95
 - file: datavalidation.html
   titleName: Datavalidation
   ready: 90
