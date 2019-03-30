@@ -30,10 +30,7 @@
   },
   "dependencies": {
     "normalize-css": "^8.0.0",
-    "bower-webfontloader": "^1.6.6",
-    "svg4everybody": "^2.1.9",
     "reset-css": "^4.0.1",
-    "jquery": "^3.3.1",
     "swiper": "^4.5.0",
     "jquery.stellar": "^0.6.2",
     "jQuery-viewport-checker": "^1.8.8",

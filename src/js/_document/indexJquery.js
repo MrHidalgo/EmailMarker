@@ -272,9 +272,9 @@ $(document).ready((ev) => {
    */
   const initJquery = () => {
     // default
-    initWebFontLoader();
+    // initWebFontLoader();
     initPreventBehavior();
-    initSvg4everybody();
+    // initSvg4everybody();
     // ==========================================
 
     // lib
